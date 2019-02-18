@@ -10,6 +10,11 @@
 
 
 parser_config = {
+    'all_spider': {
+        'title': '//title/text()',
+        'descr': '//meta[@name="description"]/text()|//meta[@name="Description"]/text()',
+        'keywords': '//meta[@name="keywords"]/text()|//meta[@name="Keywords"]/text()',
+    },
     'cnys_spider': {
         'content_original': '//div[@class="reads"]',
     },
@@ -23,7 +28,6 @@ parser_config = {
     'health_spider': {
         'content_original': '//div[@class="article-content-container two-col-content-container"]',
     },
-
     'wsj_spider': {
         'content_original': '//div[@class="wsj-snippet-body"]',
     },

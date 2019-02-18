@@ -53,10 +53,10 @@ import traceback
 def post_item(item):
     try:
         # todo:根据url作为唯一标准，进行update和新增操作
-        server = "obt.tour-best.com:1500"
-        user = "root"
-        password = "root!@#$%"
-        database = "DBS_Crawl_V3"
+        server = "ip:port"
+        user = "name"
+        password = "pwd"
+        database = "db_name"
         conn = pymssql.connect(server, user, password, database)
         cursor = conn.cursor()
         sql = "INSERT INTO Article_List (Article_Title, Article_Descr, Article_Keywords,Article_fromURL,Article_H1,Article_Lenth,Article_Descr_ByApp," \

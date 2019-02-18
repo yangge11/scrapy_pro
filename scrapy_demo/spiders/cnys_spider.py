@@ -28,30 +28,26 @@ class SpiderAll(CrawlSpider):
 
     def parse_article(self, response):
         item = ArticleItem()
+        for key in parser_config['all_spider'].keys():
+            try:
+                item[key] = response.xpath(parser_config['all_spider'][key]).extract()[0].encode('utf-8') if len(
+                    response.xpath(parser_config['all_spider'][key]).extract()) > 0 else ''
+            except:
+                traceback.print_exc()
         for key in parser_config[self.name].keys():
             try:
                 item[key] = response.xpath(parser_config[self.name][key]).extract()[0].encode('utf-8') if len(
                     response.xpath(parser_config[self.name][key]).extract()) > 0 else ''
             except:
                 traceback.print_exc()
-                pass
         # url无法分辨的时候使用
         if item['content_original'] == '':
             self.log('*** not article url for %s' % response._url.encode('utf-8'))
             return
-        item['title'] = response.xpath('//title/text()').extract()[0].encode('utf-8')
-        item['descr'] = response.xpath('//meta[@name="description"]/text()').extract()[0].encode('utf-8') if len(
-            response.xpath('//meta[@name="description"]/text()').extract()) > 0 else ''
-
-        """response.xpath('//meta[@name="description"]/@content').extract()[0]"""
-
-        item['keywords'] = response.xpath('//meta[@name="keywords"]/text()').extract()[0].encode('utf-8') if len(
-            response.xpath('//meta[@name="keywords"]/text()').extract()) > 0 else ''
         item['fromURL'] = response._url.encode('utf-8')
         item['creat_date'] = time.strftime("%Y/%m/%d %H:%M:%S")
-
-        item['content_clear'] = del_html_attr(response.xpath(parser_config[self.name]['content_original']).extract()[0])
-        item['lenth'] = len(item['content_clear'])
+        item['content_clear'] = del_html_attr(item['content_original']).encode('utf-8')
+        item['lenth'] = len(item['content_clear'].replace(' ', ''))
 
         jieba.enable_parallel(20)
         cn_str = get_CN_str(item['content_clear'])
@@ -67,43 +63,13 @@ class SpiderAll(CrawlSpider):
         item['keywords_by_app'] = ','.join([c[0] for c in article_keywords])
         item['descr_by_app'] = ','.join([c[0] for c in article_descr])
         item['note_by_app'] = ','.join([c[0] for c in article_note])
-        item['content_clear'] = item['content_clear'].encode('utf-8')
         return item
 
     def parse_content_answer(self, response):
         # todo:
         item = ArticleItem()
-        item['title'] = response.xpath('//title/text()').extract()[0].encode('utf-8')
-        item['descr'] = response.xpath('//meta[@name="description"]/text()').extract()[0].encode('utf-8') if len(
-            response.xpath('//meta[@name="description"]/text()').extract()) > 0 else ''
-        item['keywords'] = response.xpath('//meta[@name="keywords"]/text()').extract()[0].encode('utf-8') if len(
-            response.xpath('//meta[@name="keywords"]/text()').extract()) > 0 else ''
-        item['fromURL'] = response._url.encode('utf-8')
-        item['h1'] = response.xpath('//h1/text()').extract()[0].encode('utf-8')
-        item['create_date'] = time.strftime("%Y/%m/%d %H:%M:%S")
-        item['content_original'] = response.xpath('//div[@class="reads"]').extract()[0].encode('utf-8')
-        item['content_clear'] = del_html_attr(response.xpath('//div[@class="reads"]').extract()[0])
-        item['lenth'] = len(item['content_clear'])
-
-        jieba.enable_parallel(20)
-        cn_str = get_CN_str(item['content_clear'])
-        words = [x.encode('utf-8') for x in jieba.cut_for_search(cn_str)]
-        article_keywords = [x for x in words if len(x) >= len('标签')]
-        article_descr = [x for x in words if len(x) >= len('分词短语')]
-        article_note = [x for x in words if len(x) >= len('分词文章摘要')]
-        jieba.disable_parallel()
-
-        article_keywords = Counter(article_keywords).most_common(20)
-        article_descr = Counter(article_descr).most_common(10)
-        article_note = Counter(article_note).most_common(5)
-        item['keywords_by_app'] = ','.join([c[0] for c in article_keywords])
-        item['descr_by_app'] = ','.join([c[0] for c in article_descr])
-        item['note_by_app'] = ','.join([c[0] for c in article_note])
-        item['content_clear'] = item['content_clear'].encode('utf-8')
+        '哈哈asas<>'
         return item
-
-    def from_crawler(cls, crawler, *args, **kwargs):
-        pass
 
 
 class CNYSSpider(SpiderAll):
@@ -294,6 +260,23 @@ class ZhidaoBaiduSpider(SpiderAll):
         Rule(LinkExtractor(allow=('.*')), callback='parse_article', follow=True),
         Rule(LinkExtractor(allow_domains=allowed_domains, deny=('://.*/.*login.*',)), follow=True),
     )
+
+
+class EditionSpider(SpiderAll):
+    name = 'edition_health_spider'
+    allowed_domains = ['edition.cnn.com/health']
+    'https://edition.cnn.com/2019/02/13/health/nuedexta-doj-investigation-invs/index.html'
+
+    start_urls = [
+        'https://edition.cnn.com/health',
+    ]
+    rules = (
+        Rule(LinkExtractor(allow=('.*')), callback='parse_article', follow=True),
+        Rule(LinkExtractor(allow_domains=allowed_domains, deny=('://.*/.*login.*',)), follow=True),
+    )
+
+
+'https://edition.cnn.com/health'
 
 
 class DemoSpider(SpiderAll):
