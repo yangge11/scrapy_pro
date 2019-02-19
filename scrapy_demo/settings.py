@@ -53,7 +53,7 @@ ROBOTSTXT_OBEY = False
 # See https://doc.scrapy.org/en/latest/topics/downloader-middleware.html
 DOWNLOADER_MIDDLEWARES = {
     # 'scrapy_demo.middlewares.ScrapyDemoDownloaderMiddleware': 543,
-    'scrapy_demo.middlewares.ScrapyDemoDownloaderProxyMiddleWare': 403,
+    # 'scrapy_demo.middlewares.ScrapyDemoDownloaderProxyMiddleWare': 403,
 }
 
 # Enable or disable extensions
@@ -66,6 +66,7 @@ DOWNLOADER_MIDDLEWARES = {
 # See https://doc.scrapy.org/en/latest/topics/item-pipeline.html
 ITEM_PIPELINES = {
     'scrapy_demo.pipelines.ScrapyDemoPipeline': 300,
+    'scrapy_redis.pipelines.RedisPipeline': 400,
 }
 
 # Enable and configure the AutoThrottle extension (disabled by default)
@@ -93,3 +94,16 @@ ITEM_PIPELINES = {
 DEFAULT_REQUEST_HEADERS = {
     'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.87 Safari/537.36',
 }
+
+DUPEFILTER_CLASS = 'scrapy_redis.dupefilter.RFPDupeFilter'
+SCHEDULER = 'scrapy_redis.scheduler.Scheduler'
+
+SCHEDULER_PERSIST = True
+REDIS_URL = '127.0.0.1:6379'
+
+# LOG_LEVEL = 'ERROR'
+# today = datetime.now()
+# log_file_path = "log/{}-{}-{} {}:{}:{}.log".format(today.year, today.month, today.day, today.hour, today.minute,
+#                                                    today.second)
+# LOG_LEVEL = 'DEBUG'
+# LOG_FILE = log_file_path
