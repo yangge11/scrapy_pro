@@ -276,7 +276,18 @@ class EditionSpider(SpiderAll):
     )
 
 
-'https://edition.cnn.com/health'
+# 以下使用代理
+class ParadeSpider(SpiderAll):
+    name = 'parade_spider'
+    allowed_domains = ['parade.com']
+
+    start_urls = [
+        'https://parade.com/',
+    ]
+    rules = (
+        Rule(LinkExtractor(allow='.*', attrs=('href',), ), callback='parse_article', follow=True),
+        Rule(LinkExtractor(allow_domains=allowed_domains), follow=True),
+    )
 
 
 class DemoSpider(SpiderAll):
@@ -287,6 +298,6 @@ class DemoSpider(SpiderAll):
         'https://www.wsj.com/',
     ]
     rules = (
-        Rule(LinkExtractor(allow='articles/.*', attrs=('href',), ), callback='parse_article', follow=True),
+        Rule(LinkExtractor(allow='.*', attrs=('href',), ), callback='parse_article', follow=True),
         Rule(LinkExtractor(allow_domains=allowed_domains), follow=True),
     )

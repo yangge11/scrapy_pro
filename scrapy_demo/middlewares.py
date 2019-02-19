@@ -4,6 +4,7 @@
 #
 # See documentation in:
 # https://doc.scrapy.org/en/latest/topics/spider-middleware.html
+import random
 
 from scrapy import signals
 
@@ -101,3 +102,11 @@ class ScrapyDemoDownloaderMiddleware(object):
 
     def spider_opened(self, spider):
         spider.logger.info('Spider opened: %s' % spider.name)
+
+
+class ScrapyDemoDownloaderProxyMiddleWare(object):
+    proxy_list = ["http://128.1.41.120:18283", ]
+
+    def process_request(self, request, spider):
+        ip = random.choice(self.proxy_list)
+        request.meta['proxy'] = ip
