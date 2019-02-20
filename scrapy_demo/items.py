@@ -47,3 +47,13 @@ class ArticleItem(scrapy.Item):
     creat_date = scrapy.Field()
     content_original = scrapy.Field()
     content_clear = scrapy.Field()
+
+
+class MediaItem(scrapy.Item):
+    # define the fields for your item here like:
+    # name = scrapy.Field()
+    index_pages = scrapy.Field()
+    user_pages = scrapy.Field()
+    income_pages = scrapy.Field()
+    content_pages = scrapy.Field()
+    account = scrapy.Field()

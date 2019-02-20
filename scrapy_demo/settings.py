@@ -54,6 +54,7 @@ ROBOTSTXT_OBEY = False
 DOWNLOADER_MIDDLEWARES = {
     # 'scrapy_demo.middlewares.ScrapyDemoDownloaderMiddleware': 543,
     # 'scrapy_demo.middlewares.ScrapyDemoDownloaderProxyMiddleWare': 403,
+    'scrapy_demo.middlewares.ScrapyDemoDownloaderMiddleware': 544,
 }
 
 # Enable or disable extensions

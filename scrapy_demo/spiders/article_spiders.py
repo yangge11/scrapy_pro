@@ -4,7 +4,7 @@
 
 # @Time    : 2019/1/24 11:09
 # @Author  : zengyang@tv365.net(ZengYang)
-# @File    : cnys_spider.py
+# @File    : article_spiders.py
 # @Software: PyCharm
 # @ToUse  :
 import sys  # 引用sys模块进来，并不是进行sys的第一次加载
@@ -301,3 +301,5 @@ class DemoSpider(SpiderAll):
         Rule(LinkExtractor(allow='.*', attrs=('href',), ), callback='parse_article', follow=True),
         Rule(LinkExtractor(allow_domains=allowed_domains), follow=True),
     )
+
+

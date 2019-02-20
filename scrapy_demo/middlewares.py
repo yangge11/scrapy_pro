@@ -4,9 +4,18 @@
 #
 # See documentation in:
 # https://doc.scrapy.org/en/latest/topics/spider-middleware.html
+import logging
 import random
+import time
 
 from scrapy import signals
+from scrapy.http import HtmlResponse
+from selenium.webdriver.android import webdriver
+from selenium.webdriver.common.by import By
+from selenium.webdriver.support import expected_conditions
+from selenium.webdriver.support.wait import WebDriverWait
+from sh import TimeoutException
+from selenium.webdriver import FirefoxOptions
 
 
 class ScrapyDemoSpiderMiddleware(object):
@@ -102,6 +111,56 @@ class ScrapyDemoDownloaderMiddleware(object):
 
     def spider_opened(self, spider):
         spider.logger.info('Spider opened: %s' % spider.name)
+
+    def get_bai_jia_response(self, spider, request):
+        response = None
+        if request.url == spider.login_url:
+            opts = FirefoxOptions()
+            opts.add_argument("--headless")
+            driver = webdriver.Firefox(executable_path=spider.DRIVER_FIREFOX_HOME, firefox_options=opts)
+            driver.set_page_load_timeout(5)
+            try:
+                driver.get(request.url)
+            except TimeoutException:
+                logging.warn('time out 5s')
+                element = WebDriverWait(driver, 120, 0.5).until(
+                    expected_conditions.presence_of_element_located((By.ID, "TANGRAM__PSP_4__footerULoginBtn")))
+                put_login = driver.find_element_by_id('TANGRAM__PSP_4__footerULoginBtn')
+                put_login.click()
+                time.sleep(random.randint(1, 5))
+
+                name = driver.find_element_by_id('TANGRAM__PSP_4__userName')
+                name.send_keys(request.meta['account']['user_name'])
+                time.sleep(random.randint(1, 5))
+
+                password = driver.find_element_by_id('TANGRAM__PSP_4__password')
+                password.send_keys(request.meta['account']['pwd'])
+                time.sleep(random.randint(1, 5))
+                enter = driver.find_element_by_id('TANGRAM__PSP_4__submit')
+                enter.click()
+                time.sleep(5)
+                # element = WebDriverWait(driver, 60, 0.5).until(expected_conditions.presence_of_element_located((By.CLASS_NAME, "client_pages_home")))
+            while True:
+                time.sleep(random.randint(30, 50))
+                body = driver.page_source
+                if '粉丝总人数' in body.encode('utf8'):
+                    logging.debug('login success===> %s' % request.meta['account']['user_name'])
+                    break
+                try:
+                    driver.refresh()
+                    time.sleep(5)
+                except:
+                    logging.warn('refresh failed in %s' % request.meta['account']['user_name'])
+
+            cookies = driver.get_cookies()
+            account_cookie = {}
+            for cookie in cookies:
+                if 'name' in cookie.keys() and 'value' in cookie.keys():
+                    account_cookie[cookie['name']] = cookie['value']
+            request.meta['cookie'] = account_cookie
+            response = HtmlResponse(url=driver.current_url, body=body.encode('utf-8'))
+            driver.quit()
+        return response
 
 
 class ScrapyDemoDownloaderProxyMiddleWare(object):

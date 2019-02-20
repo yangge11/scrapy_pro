@@ -2,8 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="30b239cd-8a2b-4aca-aa5a-764cca91cbf1" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/scrapy_demo/spiders/media_spiders.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scrapy_demo/items.py" beforeDir="false" afterPath="$PROJECT_DIR$/scrapy_demo/items.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scrapy_demo/middlewares.py" beforeDir="false" afterPath="$PROJECT_DIR$/scrapy_demo/middlewares.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/scrapy_demo/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/scrapy_demo/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scrapy_demo/spiders/cnys_spider.py" beforeDir="false" afterPath="$PROJECT_DIR$/scrapy_demo/spiders/article_spiders.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -52,7 +57,7 @@
           <entry key="gitattributes" value="3" />
           <entry key="html" value="6" />
           <entry key="md" value="8" />
-          <entry key="py" value="220" />
+          <entry key="py" value="222" />
           <entry key="txt" value="2" />
         </counts>
       </usages-collector>
@@ -62,22 +67,22 @@
           <entry key="Ini" value="3" />
           <entry key="Markdown" value="8" />
           <entry key="PLAIN_TEXT" value="5" />
-          <entry key="Python" value="220" />
+          <entry key="Python" value="222" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="dummy" value="2" />
+          <entry key="dummy" value="10" />
           <entry key="gitattributes" value="6" />
-          <entry key="md" value="838" />
-          <entry key="py" value="4418" />
+          <entry key="md" value="887" />
+          <entry key="py" value="4590" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="Markdown" value="838" />
-          <entry key="PLAIN_TEXT" value="8" />
-          <entry key="Python" value="4410" />
+          <entry key="Markdown" value="887" />
+          <entry key="PLAIN_TEXT" value="16" />
+          <entry key="Python" value="4582" />
           <entry key="RegExp" value="1" />
           <entry key="SQL" value="7" />
         </counts>
@@ -89,40 +94,49 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/scrapy_demo/spiders/cnys_spider.py">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/scrapy_demo/spiders/article_spiders.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="96">
-              <caret line="29" selection-start-line="29" selection-end-line="29" />
+            <state relative-caret-position="3374">
+              <caret line="277" lean-forward="true" selection-start-line="277" selection-end-line="277" />
               <folding>
                 <element signature="e#214#252#0" expanded="true" />
-                <marker date="1550484133474" expanded="true" signature="693:2832" ph="..." />
-                <marker date="1550484133474" expanded="true" signature="694:699" ph="..." />
+                <marker date="1550652539992" expanded="true" signature="697:2836" ph="..." />
+                <marker date="1550652539992" expanded="true" signature="698:703" ph="..." />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/scrapy_demo/spiders/media_spiders.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="209">
+              <caret line="74" column="23" selection-start-line="74" selection-start-column="23" selection-end-line="74" selection-end-column="23" />
+              <folding>
+                <element signature="e#81#92#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/scrapy_demo/items.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="425">
+              <caret line="51" column="15" selection-start-line="51" selection-start-column="6" selection-end-line="51" selection-end-column="15" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/scrapy_demo/middlewares.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="121">
-              <caret line="103" column="61" lean-forward="true" selection-start-line="103" selection-start-column="61" selection-end-line="103" selection-end-column="61" />
+            <state relative-caret-position="2295">
+              <caret line="153" lean-forward="true" selection-start-line="153" selection-end-line="153" />
               <folding>
-                <element signature="e#168#181#0" expanded="true" />
+                <element signature="e#168#182#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/README.md">
-          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-            <state split_layout="SPLIT">
-              <first_editor relative-caret-position="210">
-                <caret line="14" column="10" lean-forward="true" selection-start-line="14" selection-start-column="10" selection-end-line="14" selection-end-column="10" />
-              </first_editor>
-              <second_editor />
             </state>
           </provider>
         </entry>
@@ -130,8 +144,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/scrapy_demo/settings.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="243">
-              <caret line="105" column="24" selection-start-line="105" selection-start-column="24" selection-end-line="105" selection-end-column="24" />
+            <state relative-caret-position="29">
+              <caret line="52" column="72" selection-start-line="52" selection-start-column="72" selection-end-line="52" selection-end-column="72" />
             </state>
           </provider>
         </entry>
@@ -141,8 +155,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Python Script" />
         <option value="HTML File" />
+        <option value="Python Script" />
       </list>
     </option>
   </component>
@@ -191,16 +205,19 @@
         <option value="$PROJECT_DIR$/scrapy_demo/dao/mysql_pool.py" />
         <option value="$PROJECT_DIR$/scrapy_demo/dao/db_conn.py" />
         <option value="$PROJECT_DIR$/scrapy_demo/demo/demo1.py" />
-        <option value="$PROJECT_DIR$/scrapy_demo/items.py" />
         <option value="$PROJECT_DIR$/.gitattributes" />
         <option value="$PROJECT_DIR$/scrapy_demo/demo/demo_formate.html" />
         <option value="$PROJECT_DIR$/scrapy_demo/parsers/common_parser.py" />
         <option value="$PROJECT_DIR$/scrapy_demo/config.py" />
         <option value="$PROJECT_DIR$/scrapy_demo/pipelines.py" />
         <option value="$PROJECT_DIR$/scrapy_demo/dao/dao_item.py" />
-        <option value="$PROJECT_DIR$/scrapy_demo/middlewares.py" />
-        <option value="$PROJECT_DIR$/scrapy_demo/spiders/cnys_spider.py" />
         <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/scrapy_demo/spiders/cnys_spider.py" />
+        <option value="$PROJECT_DIR$/scrapy_demo/spiders/article_spider.py" />
+        <option value="$PROJECT_DIR$/scrapy_demo/spiders/article_spiders.py" />
+        <option value="$PROJECT_DIR$/scrapy_demo/items.py" />
+        <option value="$PROJECT_DIR$/scrapy_demo/middlewares.py" />
+        <option value="$PROJECT_DIR$/scrapy_demo/spiders/media_spiders.py" />
         <option value="$PROJECT_DIR$/scrapy_demo/settings.py" />
       </list>
     </option>
@@ -212,7 +229,7 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="y" value="23" />
+    <option name="y" value="88" />
     <option name="width" value="1440" />
     <option name="height" value="812" />
   </component>
@@ -336,7 +353,7 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/scrapy_demo/spiders/cnys_spider.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/scrapy_demo/spiders/article_spiders.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -473,15 +490,16 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1440" height="812" extended-state="6" />
+    <frame x="0" y="88" width="1440" height="812" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49892473" visible="true" weight="0.24821173" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49892473" visible="true" weight="0.24821173" />
       <window_info id="Structure" order="1" sideWeight="0.50107527" side_tool="true" weight="0.26303855" />
       <window_info id="Favorites" order="2" sideWeight="0.50107527" side_tool="true" weight="0.26303855" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32905984" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32855093" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.28107345" />
-      <window_info active="true" anchor="bottom" id="Debug" order="3" sideWeight="0.49928468" visible="true" weight="0.4332855" />
+      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49928468" weight="0.2826399" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.328125" />
@@ -520,12 +538,12 @@
           <option name="timeStamp" value="39" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/scrapy_demo/spiders/cnys_spider.py</url>
+          <url>file://$PROJECT_DIR$/scrapy_demo/spiders/article_spiders.py</url>
           <line>65</line>
           <option name="timeStamp" value="66" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/scrapy_demo/spiders/cnys_spider.py</url>
+          <url>file://$PROJECT_DIR$/scrapy_demo/spiders/article_spiders.py</url>
           <line>29</line>
           <option name="timeStamp" value="69" />
         </line-breakpoint>
@@ -595,13 +613,6 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file:///Library/Python/2.7/site-packages/twisted/internet/defer.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="116">
-          <caret line="458" selection-start-line="458" selection-end-line="458" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file:///Library/Python/2.7/site-packages/scrapy/middleware.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="123">
@@ -812,13 +823,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/scrapy_demo/items.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="690">
-          <caret line="46" column="31" lean-forward="true" selection-start-line="46" selection-start-column="31" selection-end-line="46" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/scrapy_demo/__init__.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -915,41 +919,58 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/scrapy_demo/middlewares.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="121">
-          <caret line="103" column="61" lean-forward="true" selection-start-line="103" selection-start-column="61" selection-end-line="103" selection-end-column="61" />
-          <folding>
-            <element signature="e#168#181#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="210">
-            <caret line="14" column="10" lean-forward="true" selection-start-line="14" selection-start-column="10" selection-end-line="14" selection-end-column="10" />
+          <first_editor relative-caret-position="316">
+            <caret line="25" lean-forward="true" selection-start-line="25" selection-end-line="25" />
           </first_editor>
           <second_editor />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/scrapy_demo/settings.py">
+    <entry file="file://$PROJECT_DIR$/scrapy_demo/spiders/article_spiders.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="243">
-          <caret line="105" column="24" selection-start-line="105" selection-start-column="24" selection-end-line="105" selection-end-column="24" />
+        <state relative-caret-position="3374">
+          <caret line="277" lean-forward="true" selection-start-line="277" selection-end-line="277" />
+          <folding>
+            <element signature="e#214#252#0" expanded="true" />
+            <marker date="1550652539992" expanded="true" signature="697:2836" ph="..." />
+            <marker date="1550652539992" expanded="true" signature="698:703" ph="..." />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/scrapy_demo/spiders/cnys_spider.py">
+    <entry file="file://$PROJECT_DIR$/scrapy_demo/items.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="96">
-          <caret line="29" selection-start-line="29" selection-end-line="29" />
+        <state relative-caret-position="425">
+          <caret line="51" column="15" selection-start-line="51" selection-start-column="6" selection-end-line="51" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scrapy_demo/spiders/media_spiders.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="209">
+          <caret line="74" column="23" selection-start-line="74" selection-start-column="23" selection-end-line="74" selection-end-column="23" />
           <folding>
-            <element signature="e#214#252#0" expanded="true" />
-            <marker date="1550484133474" expanded="true" signature="693:2832" ph="..." />
-            <marker date="1550484133474" expanded="true" signature="694:699" ph="..." />
+            <element signature="e#81#92#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scrapy_demo/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="29">
+          <caret line="52" column="72" selection-start-line="52" selection-start-column="72" selection-end-line="52" selection-end-column="72" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scrapy_demo/middlewares.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2295">
+          <caret line="153" lean-forward="true" selection-start-line="153" selection-end-line="153" />
+          <folding>
+            <element signature="e#168#182#0" expanded="true" />
           </folding>
         </state>
       </provider>
