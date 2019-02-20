@@ -2,13 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="30b239cd-8a2b-4aca-aa5a-764cca91cbf1" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/scrapy_demo/spiders/media_spiders.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scrapy_demo/unit_test/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scrapy_demo/unit_test/crawl_crack.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scrapy_demo/items.py" beforeDir="false" afterPath="$PROJECT_DIR$/scrapy_demo/items.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scrapy_demo/middlewares.py" beforeDir="false" afterPath="$PROJECT_DIR$/scrapy_demo/middlewares.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scrapy_demo/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/scrapy_demo/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scrapy_demo/spiders/cnys_spider.py" beforeDir="false" afterPath="$PROJECT_DIR$/scrapy_demo/spiders/article_spiders.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -57,7 +53,7 @@
           <entry key="gitattributes" value="3" />
           <entry key="html" value="6" />
           <entry key="md" value="8" />
-          <entry key="py" value="222" />
+          <entry key="py" value="224" />
           <entry key="txt" value="2" />
         </counts>
       </usages-collector>
@@ -67,7 +63,7 @@
           <entry key="Ini" value="3" />
           <entry key="Markdown" value="8" />
           <entry key="PLAIN_TEXT" value="5" />
-          <entry key="Python" value="222" />
+          <entry key="Python" value="224" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
@@ -75,14 +71,14 @@
           <entry key="dummy" value="10" />
           <entry key="gitattributes" value="6" />
           <entry key="md" value="887" />
-          <entry key="py" value="4590" />
+          <entry key="py" value="4684" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="Markdown" value="887" />
           <entry key="PLAIN_TEXT" value="16" />
-          <entry key="Python" value="4582" />
+          <entry key="Python" value="4676" />
           <entry key="RegExp" value="1" />
           <entry key="SQL" value="7" />
         </counts>
@@ -129,13 +125,25 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/scrapy_demo/middlewares.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2295">
-              <caret line="153" lean-forward="true" selection-start-line="153" selection-end-line="153" />
+            <state relative-caret-position="232">
+              <caret line="148" column="20" lean-forward="true" selection-start-line="148" selection-start-column="20" selection-end-line="148" selection-end-column="20" />
               <folding>
                 <element signature="e#168#182#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/scrapy_demo/unit_test/crawl_crack.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="139">
+              <caret line="11" column="9" lean-forward="true" selection-start-line="11" selection-start-column="9" selection-end-line="11" selection-end-column="9" />
+              <folding>
+                <element signature="e#236#247#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -219,6 +227,8 @@
         <option value="$PROJECT_DIR$/scrapy_demo/middlewares.py" />
         <option value="$PROJECT_DIR$/scrapy_demo/spiders/media_spiders.py" />
         <option value="$PROJECT_DIR$/scrapy_demo/settings.py" />
+        <option value="$PROJECT_DIR$/scrapy_demo/unit_test.py" />
+        <option value="$PROJECT_DIR$/scrapy_demo/unit_test/crawl_crack.py" />
       </list>
     </option>
   </component>
@@ -276,25 +286,7 @@
               <item name="scrapy_demo" type="b2602c69:ProjectViewProjectNode" />
               <item name="scrapy_demo" type="462c0819:PsiDirectoryNode" />
               <item name="scrapy_demo" type="462c0819:PsiDirectoryNode" />
-              <item name="dao" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="scrapy_demo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="scrapy_demo" type="462c0819:PsiDirectoryNode" />
-              <item name="scrapy_demo" type="462c0819:PsiDirectoryNode" />
-              <item name="demo" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="scrapy_demo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="scrapy_demo" type="462c0819:PsiDirectoryNode" />
-              <item name="scrapy_demo" type="462c0819:PsiDirectoryNode" />
-              <item name="parsers" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="scrapy_demo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="scrapy_demo" type="462c0819:PsiDirectoryNode" />
-              <item name="scrapy_demo" type="462c0819:PsiDirectoryNode" />
-              <item name="spiders" type="462c0819:PsiDirectoryNode" />
+              <item name="unit_test" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -613,20 +605,6 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file:///Library/Python/2.7/site-packages/scrapy/middleware.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="123">
-          <caret line="69" selection-start-line="69" selection-end-line="69" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file:///Library/Python/2.7/site-packages/scrapy/pipelines/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="244">
-          <caret line="23" selection-start-line="23" selection-end-line="23" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file:///Library/Python/2.7/site-packages/scrapy/core/scraper.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="123">
@@ -965,12 +943,25 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/scrapy_demo/unit_test.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/scrapy_demo/middlewares.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2295">
-          <caret line="153" lean-forward="true" selection-start-line="153" selection-end-line="153" />
+        <state relative-caret-position="232">
+          <caret line="148" column="20" lean-forward="true" selection-start-line="148" selection-start-column="20" selection-end-line="148" selection-end-column="20" />
           <folding>
             <element signature="e#168#182#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scrapy_demo/unit_test/crawl_crack.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="139">
+          <caret line="11" column="9" lean-forward="true" selection-start-line="11" selection-start-column="9" selection-end-line="11" selection-end-column="9" />
+          <folding>
+            <element signature="e#236#247#0" expanded="true" />
           </folding>
         </state>
       </provider>
