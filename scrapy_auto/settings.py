@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 
-# Scrapy settings for scrapy_demo project
+# Scrapy settings for scrapy_auto project
 #
 # For simplicity, this file contains only settings considered important or
 # commonly used. You can find more settings consulting the documentation:
@@ -9,13 +9,13 @@
 #     https://doc.scrapy.org/en/latest/topics/downloader-middleware.html
 #     https://doc.scrapy.org/en/latest/topics/spider-middleware.html
 
-BOT_NAME = 'scrapy_demo'
+BOT_NAME = 'scrapy_auto'
 
-SPIDER_MODULES = ['scrapy_demo.spiders']
-NEWSPIDER_MODULE = 'scrapy_demo.spiders'
+SPIDER_MODULES = ['scrapy_auto.spiders']
+NEWSPIDER_MODULE = 'scrapy_auto.spiders'
 
 # Crawl responsibly by identifying yourself (and your website) on the user-agent
-# USER_AGENT = 'scrapy_demo (+http://www.yourdomain.com)'
+# USER_AGENT = 'scrapy_auto (+http://www.yourdomain.com)'
 
 # Obey robots.txt rules
 ROBOTSTXT_OBEY = False
@@ -46,15 +46,14 @@ ROBOTSTXT_OBEY = False
 # Enable or disable spider middlewares
 # See https://doc.scrapy.org/en/latest/topics/spider-middleware.html
 # SPIDER_MIDDLEWARES = {
-#    'scrapy_demo.middlewares.ScrapyDemoSpiderMiddleware': 543,
+#    'scrapy_auto.middlewares.ScrapyDemoSpiderMiddleware': 543,
 # }
 
 # Enable or disable downloader middlewares
 # See https://doc.scrapy.org/en/latest/topics/downloader-middleware.html
 DOWNLOADER_MIDDLEWARES = {
-    # 'scrapy_demo.middlewares.ScrapyDemoDownloaderMiddleware': 543,
-    # 'scrapy_demo.middlewares.ScrapyDemoDownloaderProxyMiddleWare': 403,
-    'scrapy_demo.middlewares.ScrapyDemoDownloaderMiddleware': 544,
+    # 'scrapy_auto.middlewares.ScrapyDemoDownloaderMiddleware': 543,
+    # 'scrapy_auto.middlewares.ScrapyDemoDownloaderProxyMiddleWare': 403,
 }
 
 # Enable or disable extensions
@@ -66,8 +65,8 @@ DOWNLOADER_MIDDLEWARES = {
 # Configure item pipelines
 # See https://doc.scrapy.org/en/latest/topics/item-pipeline.html
 ITEM_PIPELINES = {
-    'scrapy_demo.pipelines.ScrapyDemoPipeline': 300,
-    'scrapy_redis.pipelines.RedisPipeline': 400,
+    'scrapy_auto.pipelines.ScrapyDemoPipeline': 300,
+    # 'scrapy_redis.pipelines.RedisPipeline': 400,
 }
 
 # Enable and configure the AutoThrottle extension (disabled by default)
@@ -91,16 +90,16 @@ ITEM_PIPELINES = {
 # HTTPCACHE_IGNORE_HTTP_CODES = []
 # HTTPCACHE_STORAGE = 'scrapy.extensions.httpcache.FilesystemCacheStorage'
 # 修改编码为utf-8
-# FEED_EXPORT_ENCODING = 'utf-8'
+FEED_EXPORT_ENCODING = 'utf-8'
 DEFAULT_REQUEST_HEADERS = {
     'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.87 Safari/537.36',
 }
 
-DUPEFILTER_CLASS = 'scrapy_redis.dupefilter.RFPDupeFilter'
-SCHEDULER = 'scrapy_redis.scheduler.Scheduler'
+# DUPEFILTER_CLASS = 'scrapy_redis.dupefilter.RFPDupeFilter'
+# SCHEDULER = 'scrapy_redis.scheduler.Scheduler'
 
-SCHEDULER_PERSIST = True
-REDIS_URL = '127.0.0.1:6379'
+# SCHEDULER_PERSIST = True
+# REDIS_URL = '127.0.0.1:6379'
 
 # LOG_LEVEL = 'ERROR'
 # today = datetime.now()

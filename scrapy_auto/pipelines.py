@@ -7,7 +7,7 @@
 import pymongo
 from twisted.enterprise import adbapi
 
-from scrapy_demo.dao.dao_item import post_item
+from scrapy_auto.dao.dao_item import post_item
 
 
 class ScrapyDemoPipeline(object):

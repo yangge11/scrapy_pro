@@ -49,6 +49,18 @@ class ArticleItem(scrapy.Item):
     content_clear = scrapy.Field()
 
 
+class JobItem(scrapy.Item):
+    city = scrapy.Field()
+    skill = scrapy.Field()
+    welfare = scrapy.Field()
+    salary = scrapy.Field()
+    education = scrapy.Field()
+    url = scrapy.Field()
+    search_word = scrapy.Field()
+    sub_job_type = scrapy.Field()
+    job_type = scrapy.Field()
+
+
 class MediaItem(scrapy.Item):
     # define the fields for your item here like:
     # name = scrapy.Field()

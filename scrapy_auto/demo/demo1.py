@@ -7,7 +7,7 @@
 # @File    : demo1.py
 # @Software: PyCharm
 # @ToUse  :
-from scrapy_demo.parsers.common_parser import del_html_attr
+from scrapy_auto.tools.common_parser import del_html_attr
 
 
 def del_html_attr_test():

@@ -9,7 +9,7 @@ import traceback
 from scrapy import Request, FormRequest
 from scrapy.spiders import CrawlSpider
 
-from scrapy_demo.items import MediaItem
+from scrapy_auto.items import MediaItem
 
 
 class CommonSpider(CrawlSpider):

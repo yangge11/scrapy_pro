@@ -10,7 +10,7 @@
 import sys  # 引用sys模块进来，并不是进行sys的第一次加载
 import traceback
 
-from scrapy_demo.config import parser_config
+from scrapy_auto.config import parser_config
 from scrapy.linkextractors import LinkExtractor
 
 reload(sys)  # 重新加载sys
@@ -19,9 +19,9 @@ import time
 from collections import Counter
 import jieba
 from scrapy.spiders import Rule, CrawlSpider
-from scrapy_demo.items import ArticleItem
+from scrapy_auto.items import ArticleItem
 
-from scrapy_demo.parsers.common_parser import del_html_attr, get_CN_str
+from scrapy_auto.tools.common_parser import del_html_attr, get_CN_str
 
 
 class SpiderAll(CrawlSpider):
@@ -125,19 +125,6 @@ class HealthSpider(SpiderAll):
 
     start_urls = [
         'https://www.health.com/',
-    ]
-    rules = (
-        Rule(LinkExtractor(allow=('.*')), callback='parse_article', follow=True),
-        Rule(LinkExtractor(allow_domains=allowed_domains, deny=('://.*/.*login.*',)), follow=True),
-    )
-
-
-class EditionHealthSpider(SpiderAll):
-    name = 'edition_health_spider'
-    allowed_domains = ['edition.cnn.com']
-
-    start_urls = [
-        'https://edition.cnn.com/health',
     ]
     rules = (
         Rule(LinkExtractor(allow=('.*')), callback='parse_article', follow=True),
@@ -301,5 +288,3 @@ class DemoSpider(SpiderAll):
         Rule(LinkExtractor(allow='.*', attrs=('href',), ), callback='parse_article', follow=True),
         Rule(LinkExtractor(allow_domains=allowed_domains), follow=True),
     )
-
-

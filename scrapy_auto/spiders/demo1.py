@@ -11,7 +11,6 @@ import scrapy
 
 
 class Demo1(scrapy.Spider):
-
     def parse(self, response):
         pass
 
