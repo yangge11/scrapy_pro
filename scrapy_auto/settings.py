@@ -8,6 +8,7 @@
 #     https://doc.scrapy.org/en/latest/topics/settings.html
 #     https://doc.scrapy.org/en/latest/topics/downloader-middleware.html
 #     https://doc.scrapy.org/en/latest/topics/spider-middleware.html
+import datetime
 
 BOT_NAME = 'scrapy_auto'
 
@@ -21,7 +22,7 @@ NEWSPIDER_MODULE = 'scrapy_auto.spiders'
 ROBOTSTXT_OBEY = False
 
 # Configure maximum concurrent requests performed by Scrapy (default: 16)
-# CONCURRENT_REQUESTS = 32
+CONCURRENT_REQUESTS = 16
 
 # Configure a delay for requests for the same website (default: 0)
 # See https://doc.scrapy.org/en/latest/topics/settings.html#download-delay
@@ -65,8 +66,9 @@ DOWNLOADER_MIDDLEWARES = {
 # Configure item pipelines
 # See https://doc.scrapy.org/en/latest/topics/item-pipeline.html
 ITEM_PIPELINES = {
-    'scrapy_auto.pipelines.ScrapyDemoPipeline': 300,
+    # 'scrapy_auto.pipelines.ScrapyDemoPipeline': 300,
     # 'scrapy_redis.pipelines.RedisPipeline': 400,
+    'scrapy_auto.pipelines.MySQLPipeline': 100,
 }
 
 # Enable and configure the AutoThrottle extension (disabled by default)
@@ -101,9 +103,11 @@ DEFAULT_REQUEST_HEADERS = {
 # SCHEDULER_PERSIST = True
 # REDIS_URL = '127.0.0.1:6379'
 
-# LOG_LEVEL = 'ERROR'
-# today = datetime.now()
-# log_file_path = "log/{}-{}-{} {}:{}:{}.log".format(today.year, today.month, today.day, today.hour, today.minute,
-#                                                    today.second)
-# LOG_LEVEL = 'DEBUG'
-# LOG_FILE = log_file_path
+LOG_LEVEL = 'ERROR'
+LOG_FILE = "g://boss.txt"
+
+MYSQL_DB_NAME = 'crawl_data'
+MYSQL_HOST = '47.105.142.45'
+MYSQL_PORT = 3306
+MYSQL_USER = 'root'
+MYSQL_PASSWORD = 'zeng!@#456'

@@ -4,11 +4,15 @@
 #
 # See documentation in:
 # https://doc.scrapy.org/en/latest/topics/spider-middleware.html
+import json
 import logging
 import random
 import time
+from collections import defaultdict
 
 from scrapy import signals
+from scrapy.downloadermiddlewares.httpproxy import HttpProxyMiddleware
+from scrapy.exceptions import NotConfigured
 from scrapy.http import HtmlResponse
 from selenium.webdriver.android import webdriver
 from selenium.webdriver.common.by import By
@@ -169,3 +173,34 @@ class ScrapyDemoDownloaderProxyMiddleWare(object):
     def process_request(self, request, spider):
         ip = random.choice(self.proxy_list)
         request.meta['proxy'] = ip
+
+
+class RandomHttpProxyMiddleware(HttpProxyMiddleware):
+    """
+    代理中间件，为每一次请求提供随机代理
+    """
+
+    def __init__(self, auth_encoding='latin-1', proxy_list_file=None):
+        if not proxy_list_file:
+            raise NotConfigured
+        self.auth_encoding = auth_encoding
+        self.proxies = defaultdict(list)
+        with open(proxy_list_file) as f:
+            proxy_list = json.load(f)
+            for proxy in proxy_list:
+                scheme = proxy['proxy_scheme']
+                url = proxy['proxy']
+                self.proxies[scheme].append(self._get_proxy(url, scheme))
+
+    @classmethod
+    def from_crawler(cls, crawler):
+        auth_encoding = crawler.settings.get('HTTPPROXY_AUTH_ENCODING', 'latain-1')
+        proxy_list_file = crawler.settings.get('HTTPPROXY_PROXY_LIST_FILE')
+        return cls(auth_encoding, proxy_list_file)
+
+    def _set_proxy(self, request, scheme):
+        creds, proxy = random.choice(self.proxies[scheme])
+        request.meta['proxy'] = proxy
+        if creds:
+            request.headers['Proxy-Authorization'] = b'Basic ' + creds
+

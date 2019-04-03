@@ -4,7 +4,7 @@
 
 # @Time    : 2019/1/25 11:45
 # @Author  : zengyang@tv365.net(ZengYang)
-# @File    : demo1.py
+# @File    : demo_spider.py
 # @Software: PyCharm
 # @ToUse  :
 from scrapy_auto.tools.common_parser import del_html_attr

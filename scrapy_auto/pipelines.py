@@ -4,16 +4,21 @@
 #
 # Don't forget to add your pipeline to the ITEM_PIPELINES setting
 # See: https://doc.scrapy.org/en/latest/topics/item-pipeline.html
-import pymongo
-from twisted.enterprise import adbapi
+import codecs
+import logging
+import time
+import traceback
 
-from scrapy_auto.dao.dao_item import post_item
+import pymongo
+from scrapy.exporters import JsonItemExporter
+from scrapy.utils.python import to_bytes
+from scrapy.utils.serialize import ScrapyJSONEncoder
+from twisted.enterprise import adbapi
 
 
 class ScrapyDemoPipeline(object):
     def process_item(self, item, spider):
         print 123456
-        # post_item(item)
         # return item
 
 
@@ -47,34 +52,64 @@ class MySQLPipeline(object):
 
     @classmethod
     def from_crawler(cls, crawler):
-        # 从项目的配置文件中读取相应的参数
         cls.MYSQL_DB_NAME = crawler.settings.get("MYSQL_DB_NAME", 'scrapy_default')
         cls.HOST = crawler.settings.get("MYSQL_HOST", 'localhost')
         cls.PORT = crawler.settings.get("MYSQL_PORT", 3306)
-        cls.USER = crawler.settings.get("MYSQL_USER", 'root')
-        cls.PASSWD = crawler.settings.get("MYSQL_PASSWORD", 'new.1234')
+        cls.USER = crawler.settings.get("MYSQL_USER", '')
+        cls.PASSWD = crawler.settings.get("MYSQL_PASSWORD", '')
         return cls()
 
     def open_spider(self, spider):
         self.dbpool = adbapi.ConnectionPool('pymysql', host=self.HOST, port=self.PORT, user=self.USER,
-                                            passwd=self.PASSWD, db=self.MYSQL_DB_NAME, charset='utf8')
+                                            passwd=self.PASSWD, db=self.MYSQL_DB_NAME, charset='utf8mb4')
 
     def close_spider(self, spider):
         self.dbpool.close()
 
     def process_item(self, item, spider):
         self.dbpool.runInteraction(self.insert_db, item)
-
         return item
+
+    def update_db(self, tx, item):
+        values = (
+            item['url'],
+            item['city'],
+            item['skill'],
+            item['welfare'],
+            item['salary'],
+            item['education'],
+            item['search_word'],
+            item['sub_job_type'],
+            item['job_type'],
+            time.strftime("%Y/%m/%d %H:%M:%S"),
+            time.strftime("%Y/%m/%d %H:%M:%S"),
+        )
+        sql = 'update job (`url`,`city`,`skill`,`welfare`,`salary`,`education`,`search_word`,`sub_job_type`,`job_type`,`create_time`,`update_time`) VALUES (%s,%s,%s,%s,%s,%s)'
+        tx.execute(sql, values)
+        pass
 
     def insert_db(self, tx, item):
         values = (
-            item['upc'],
-            item['name'],
-            item['price'],
-            item['review_rating'],
-            item['review_num'],
-            item['stock'],
+            item['url'],
+            item['city'],
+            item['skill'],
+            item['welfare'],
+            item['salary'],
+            item['education'],
+            item['search_word'],
+            item['sub_job_type'],
+            item['job_type'],
+            time.strftime("%Y/%m/%d %H:%M:%S"),
+            time.strftime("%Y/%m/%d %H:%M:%S"),
         )
-        sql = 'INSERT INTO books VALUES (%s,%s,%s,%s,%s,%s)'
-        tx.execute(sql, values)
+        sql = 'INSERT INTO job (`url`,`city`,`skill`,`welfare`,`salary`,`education`,`search_word`,`sub_job_type`,`job_type`,`create_time`,`update_time`) VALUES (%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s)'
+        try:
+            tx.execute(sql, values)
+        except:
+            # todo:数据库断开连接
+            logging.error('error for mysql %s' % item['url'])
+            traceback.print_exc()
+            self.dbpool = adbapi.ConnectionPool('pymysql', host=self.HOST, port=self.PORT, user=self.USER,
+                                                passwd=self.PASSWD, db=self.MYSQL_DB_NAME, charset='utf8mb4')
+        pass
+

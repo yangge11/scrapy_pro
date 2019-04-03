@@ -8,6 +8,8 @@
 # @Software: PyCharm
 # @ToUse  : 抓取boss直聘岗位信息
 import json
+import logging
+import traceback
 
 import scrapy
 from scrapy.spiders import CrawlSpider, Spider, Rule
@@ -21,7 +23,7 @@ class BossZhiPin(CrawlSpider):
     name = 'boss_spider'
     allowed_domains = ['www.zhipin.com']
     custom_settings = {
-        'CONCURRENT_REQUESTS': 1,
+        'CONCURRENT_REQUESTS': 3,
         'DOWNLOAD_DELAY': 1,
     }
     start_urls = [
@@ -37,7 +39,6 @@ class BossZhiPin(CrawlSpider):
     # )
 
     def parse(self, response):
-        item = JobItem()
         """
         该函数仅抓取一次岗位目录数据
         """
@@ -50,36 +51,43 @@ class BossZhiPin(CrawlSpider):
                     to_crawl_list.append(search_word_dict['name'])
                     self.job_dict_mapping[search_word_dict['name']] = [job_type_dict['name'], sub_job_type_dict['name']]
         new_urls = ['https://www.zhipin.com/c100010000/?query=%s&page=1' % query_str for query_str in
-                    set(to_crawl_list)]
-        for new_url in new_urls[:2]:
+                    set(to_crawl_list) if query_str in ['美工','记者','运营总监','活动策划']]
+        # new_urls.append('https://www.zhipin.com/c100010000/?query=爬虫&page=1')
+        for new_url in new_urls:
+            item = JobItem()
             item['search_word'] = new_url.replace('https://www.zhipin.com/c100010000/?query=', '').replace('&page=1',
                                                                                                            '')
-            item['job_type'] = self.job_dict_mapping[item['search_word']][0]
-            item['sub_job_type'] = self.job_dict_mapping[item['search_word']][1]
+            item['job_type'] = self.job_dict_mapping[item['search_word']][0] if item['search_word'] in self.job_dict_mapping else ''
+            item['sub_job_type'] = self.job_dict_mapping[item['search_word']][1] if item['search_word'] in self.job_dict_mapping else ''
             yield scrapy.Request(url=new_url, callback=self.parse_job_list, meta={'item': item})
-        pass
+            pass
 
     def parse_job_list(self, response):
-        urls_detail = response.xpath('//ul/li//h3/a/@href').extract()
+        urls_detail = response.xpath('//ul/li//div[@class="info-primary"]//h3/a/@href').extract()
         next_page = response.xpath('//div[@class="page"]/a[last()]/@href').extract()[0].encode('utf-8')
-        if next_page != 'javascript:;':
-            yield scrapy.Request(url=response.urljoin(next_page), callback=self.parse_job_list)
         for url_detail in urls_detail:
-            yield scrapy.Request(url=response.urljoin(url_detail), callback=self.parse_job_detail, meta={'item': response.meta['item']})
-        pass
+            yield scrapy.Request(url=response.urljoin(url_detail), callback=self.parse_job_detail,
+                                 meta={'item': response.meta['item']})
+        if next_page != 'javascript:;':
+            yield scrapy.Request(url=response.urljoin(next_page), callback=self.parse_job_list,
+                                 meta={'item': response.meta['item']})
 
     def parse_job_detail(self, response):
         """
         :param response:
         :return:
         """
-        item = response.meta['item']
-        item['city'] = response.xpath('//div[@class="info-primary"]/p/text()').extract()[0].encode('utf-8')
-        item['skill'] = '###'.join(
-            response.xpath('//div[@class="job-sec"]/div[@class="text"]/text()').extract()).encode('utf-8')
-        item['welfare'] = '###'.join(response.xpath('//div[@class="job-tags"]/span/text()').extract()).encode('utf-8')
-        item['salary'] = response.xpath('//div[@class="name"]/span[@class="salary"]/text()').extract()[0].encode(
-            'utf-8')
-        item['education'] = response.xpath('//div[@class="info-primary"]/p/text()').extract()[2].encode('utf-8')
+        item = JobItem()
+        item.update(response.meta['item'])
+        item['city'] = response.xpath('//div[@class="info-primary"]/p/text()').extract()[0].encode('utf-8'). \
+            replace('\t', '').replace('\n', '').replace(' ', '')
+        item['skill'] = '###'.join(response.xpath('//div[@class="job-sec"]/div[@class="text"]/text()').extract()). \
+            encode('utf-8').replace('\t', '').replace('\n', '').replace(' ', '')
+        item['welfare'] = '###'.join(response.xpath('//div[@class="job-tags"]/span/text()').extract()). \
+            encode('utf-8').replace('\t', '').replace('\n', '').replace(' ', '')
+        item['salary'] = response.xpath('//div[@class="name"]/span[@class="salary"]/text()').extract()[0]. \
+            encode('utf-8').replace('\t', '').replace('\n', '').replace(' ', '')
+        item['education'] = response.xpath('//div[@class="info-primary"]/p/text()').extract()[2].encode('utf-8'). \
+            replace('\t', '').replace('\n', '').replace(' ', '')
         item['url'] = response.url
         yield item
