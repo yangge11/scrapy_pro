@@ -2,26 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="30b239cd-8a2b-4aca-aa5a-764cca91cbf1" name="Default Changelist" comment="Default Changelist">
-      <change afterPath="$PROJECT_DIR$/scrapy_auto/spiders/FreeProxySpider.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scrapy_auto/tools/data_show.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scrapy_auto/unit_test/httpsProxys.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/begin.py" beforeDir="false" afterPath="$PROJECT_DIR$/begin.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scrapy_auto/dao/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scrapy_auto/dao/dao_item.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scrapy_auto/dao/db_conn.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scrapy_auto/demo/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scrapy_auto/demo/demo1.py" beforeDir="false" afterPath="$PROJECT_DIR$/scrapy_auto/unit_test/demo1.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scrapy_auto/demo/demo_formate.html" beforeDir="false" afterPath="$PROJECT_DIR$/scrapy_auto/unit_test/demo_formate.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scrapy_auto/middlewares.py" beforeDir="false" afterPath="$PROJECT_DIR$/scrapy_auto/middlewares.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scrapy_auto/pipelines.py" beforeDir="false" afterPath="$PROJECT_DIR$/scrapy_auto/pipelines.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scrapy_auto/service/spider_arg_service.py" beforeDir="false" afterPath="$PROJECT_DIR$/scrapy_auto/service/service.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scrapy_auto/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/scrapy_auto/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scrapy_auto/spiders/demo1.py" beforeDir="false" afterPath="$PROJECT_DIR$/scrapy_auto/spiders/demo_spider.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scrapy_auto/spiders/employ_spiders.py" beforeDir="false" afterPath="$PROJECT_DIR$/scrapy_auto/spiders/employ_spiders.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scrapy_auto/unit_test/mydemo.py" beforeDir="false" afterPath="$PROJECT_DIR$/scrapy_auto/unit_test/mydemo.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -85,8 +66,8 @@
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="385">
-                <caret line="22" column="10" lean-forward="true" selection-start-line="22" selection-start-column="10" selection-end-line="22" selection-end-column="10" />
+              <first_editor relative-caret-position="450">
+                <caret line="24" lean-forward="true" selection-start-line="24" selection-end-line="24" />
               </first_editor>
               <second_editor />
             </state>
@@ -528,8 +509,9 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="2062" height="1126" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49892473" visible="true" weight="0.14021955" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49892473" visible="true" weight="0.14021955" />
       <window_info id="Structure" order="1" sideWeight="0.50107527" side_tool="true" weight="0.26303855" />
       <window_info id="Favorites" order="2" sideWeight="0.50107527" side_tool="true" weight="0.26303855" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -546,7 +528,7 @@
       <window_info anchor="bottom" id="Terminal" order="11" sideWeight="0.498503" weight="0.2826962" />
       <window_info anchor="bottom" id="Python Console" order="12" weight="0.28169015" />
       <window_info anchor="bottom" id="Concurrent Activities Diagram" order="13" weight="0.32909605" />
-      <window_info active="true" anchor="bottom" id="调试" order="14" sideWeight="0.6671657" visible="true" weight="0.34607646" />
+      <window_info anchor="bottom" id="调试" order="14" sideWeight="0.6671657" visible="true" weight="0.34607646" />
       <window_info anchor="bottom" id="DB Execution Console" order="15" weight="0.32997987" />
       <window_info anchor="bottom" id="Graph Database Console" order="16" show_stripe_button="false" sideWeight="0.498503" weight="0.32997987" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
@@ -1061,8 +1043,8 @@
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="385">
-            <caret line="22" column="10" lean-forward="true" selection-start-line="22" selection-start-column="10" selection-end-line="22" selection-end-column="10" />
+          <first_editor relative-caret-position="450">
+            <caret line="24" lean-forward="true" selection-start-line="24" selection-end-line="24" />
           </first_editor>
           <second_editor />
         </state>
