@@ -2,7 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="30b239cd-8a2b-4aca-aa5a-764cca91cbf1" name="Default Changelist" comment="Default Changelist">
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scrapy_auto/service/static/img/education_percentage.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scrapy_auto/service/static/img/word_cloud.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scrapy_auto/service/static/img/work_count.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scrapy_auto/service/templates/show_data.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scrapy_auto/service/service.py" beforeDir="false" afterPath="$PROJECT_DIR$/scrapy_auto/service/service.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scrapy_auto/service/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/scrapy_auto/service/templates/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scrapy_auto/spiders/employ_spiders.py" beforeDir="false" afterPath="$PROJECT_DIR$/scrapy_auto/spiders/employ_spiders.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scrapy_auto/tools/data_show.py" beforeDir="false" afterPath="$PROJECT_DIR$/scrapy_auto/tools/data_show.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -41,8 +49,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/scrapy_auto/spiders/employ_spiders.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="445">
-              <caret line="68" column="56" selection-start-line="68" selection-start-column="56" selection-end-line="68" selection-end-column="56" />
+            <state relative-caret-position="1925">
+              <caret line="77" column="11" selection-start-line="77" selection-start-column="11" selection-end-line="77" selection-end-column="11" />
               <folding>
                 <element signature="e#228#239#0" expanded="true" />
               </folding>
@@ -53,8 +61,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/scrapy_auto/tools/data_show.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="425">
-              <caret line="150" column="8" lean-forward="true" selection-start-line="150" selection-start-column="8" selection-end-line="150" selection-end-column="8" />
+            <state relative-caret-position="270">
+              <caret line="124" column="19" lean-forward="true" selection-start-line="124" selection-start-column="19" selection-end-line="124" selection-end-column="19" />
               <folding>
                 <element signature="e#217#230#0" expanded="true" />
               </folding>
@@ -62,23 +70,20 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/README.md">
-          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-            <state split_layout="SPLIT">
-              <first_editor relative-caret-position="450">
-                <caret line="24" lean-forward="true" selection-start-line="24" selection-end-line="24" />
-              </first_editor>
-              <second_editor />
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/scrapy_auto/service/templates/show_data.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="200">
+              <caret line="8" column="24" selection-start-line="8" selection-start-column="24" selection-end-line="8" selection-end-column="24" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/scrapy_auto/service/templates/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="200">
-              <caret line="8" column="57" selection-start-line="8" selection-start-column="57" selection-end-line="8" selection-end-column="57" />
+            <state relative-caret-position="-89333">
+              <caret line="26" column="79330" selection-start-line="26" selection-start-column="79330" selection-end-line="26" selection-end-column="79330" />
               <folding>
                 <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
@@ -87,10 +92,22 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/README.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="450">
+                <caret line="18" column="17" selection-start-line="18" selection-start-column="17" selection-end-line="18" selection-end-column="17" />
+              </first_editor>
+              <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/scrapy_auto/service/service.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
-              <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
+            <state relative-caret-position="300">
+              <caret line="18" column="22" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="22" />
             </state>
           </provider>
         </entry>
@@ -98,7 +115,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/scrapy_auto/settings.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="352">
+            <state relative-caret-position="236">
               <caret line="105" column="19" selection-start-line="105" selection-start-column="19" selection-end-line="105" selection-end-column="19" />
             </state>
           </provider>
@@ -108,19 +125,7 @@
         <entry file="file://$PROJECT_DIR$/begin.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="375">
-              <caret line="15" column="38" selection-start-line="15" selection-start-column="38" selection-end-line="15" selection-end-column="38" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/scrapy_auto/pipelines.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1150">
-              <caret line="55" column="35" selection-start-line="55" selection-start-column="35" selection-end-line="55" selection-end-column="35" />
-              <folding>
-                <element signature="e#193#206#0" expanded="true" />
-              </folding>
+              <caret line="15" column="40" selection-start-line="15" selection-start-column="40" selection-end-line="15" selection-end-column="40" />
             </state>
           </provider>
         </entry>
@@ -130,14 +135,13 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="HTML File" />
         <option value="Python Script" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>wsj_spider</find>
       <find>scrapy</find>
       <find>jieb</find>
       <find>edition_health_spider</find>
@@ -167,6 +171,7 @@
       <find>西双版纳</find>
       <find>丽江</find>
       <find>\xe7</find>
+      <find>No coordinate is specified for</find>
     </findStrings>
     <replaceStrings>
       <replace />
@@ -213,11 +218,12 @@
         <option value="$PROJECT_DIR$/scrapy_auto/settings.py" />
         <option value="$PROJECT_DIR$/begin.py" />
         <option value="$PROJECT_DIR$/scrapy_auto/unit_test/mydemo.py" />
-        <option value="$PROJECT_DIR$/scrapy_auto/spiders/employ_spiders.py" />
-        <option value="$PROJECT_DIR$/scrapy_auto/service/service.py" />
-        <option value="$PROJECT_DIR$/scrapy_auto/service/templates/index.html" />
-        <option value="$PROJECT_DIR$/scrapy_auto/tools/data_show.py" />
         <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/scrapy_auto/spiders/employ_spiders.py" />
+        <option value="$PROJECT_DIR$/scrapy_auto/service/templates/index.html" />
+        <option value="$PROJECT_DIR$/scrapy_auto/service/service.py" />
+        <option value="$PROJECT_DIR$/scrapy_auto/service/templates/show_data.html" />
+        <option value="$PROJECT_DIR$/scrapy_auto/tools/data_show.py" />
       </list>
     </option>
   </component>
@@ -228,8 +234,8 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="341" />
-    <option name="y" value="306" />
+    <option name="x" value="340" />
+    <option name="y" value="305" />
     <option name="width" value="1440" />
     <option name="height" value="815" />
   </component>
@@ -256,6 +262,21 @@
               <item name="scrapy_pro" type="462c0819:PsiDirectoryNode" />
               <item name="scrapy_auto" type="462c0819:PsiDirectoryNode" />
               <item name="service" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="scrapy_pro" type="b2602c69:ProjectViewProjectNode" />
+              <item name="scrapy_pro" type="462c0819:PsiDirectoryNode" />
+              <item name="scrapy_auto" type="462c0819:PsiDirectoryNode" />
+              <item name="service" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="scrapy_pro" type="b2602c69:ProjectViewProjectNode" />
+              <item name="scrapy_pro" type="462c0819:PsiDirectoryNode" />
+              <item name="scrapy_auto" type="462c0819:PsiDirectoryNode" />
+              <item name="service" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+              <item name="img" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="scrapy_pro" type="b2602c69:ProjectViewProjectNode" />
@@ -298,13 +319,14 @@
     </option>
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="G:\code\scrapy_pro\scrapy_auto\service\templates" />
-      <recent name="$PROJECT_DIR$/scrapy_demo/dao" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="G:\code\scrapy_pro\scrapy_auto\templates" />
       <recent name="G:\code\scrapy_pro\scrapy_auto\unit_test" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="G:\code\scrapy_pro\scrapy_auto\service\static\img" />
+      <recent name="G:\code\scrapy_pro\scrapy_auto\service\templates" />
+      <recent name="$PROJECT_DIR$/scrapy_demo/dao" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -511,7 +533,7 @@
     <frame x="-7" y="-7" width="2062" height="1126" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49892473" visible="true" weight="0.14021955" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49892473" visible="true" weight="0.14171657" />
       <window_info id="Structure" order="1" sideWeight="0.50107527" side_tool="true" weight="0.26303855" />
       <window_info id="Favorites" order="2" sideWeight="0.50107527" side_tool="true" weight="0.26303855" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -528,7 +550,7 @@
       <window_info anchor="bottom" id="Terminal" order="11" sideWeight="0.498503" weight="0.2826962" />
       <window_info anchor="bottom" id="Python Console" order="12" weight="0.28169015" />
       <window_info anchor="bottom" id="Concurrent Activities Diagram" order="13" weight="0.32909605" />
-      <window_info anchor="bottom" id="调试" order="14" sideWeight="0.6671657" visible="true" weight="0.34607646" />
+      <window_info anchor="bottom" id="调试" order="14" sideWeight="0.6671657" visible="true" weight="0.36016098" />
       <window_info anchor="bottom" id="DB Execution Console" order="15" weight="0.32997987" />
       <window_info anchor="bottom" id="Graph Database Console" order="16" show_stripe_button="false" sideWeight="0.498503" weight="0.32997987" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
@@ -591,7 +613,7 @@
     </breakpoint-manager>
     <watches-manager>
       <configuration name="PythonConfigurationType">
-        <watch expression="u'\xe7'" language="Python" />
+        <watch expression="dict_result.items()" language="Python" />
       </configuration>
     </watches-manager>
   </component>
@@ -604,6 +626,11 @@
       </expression>
     </expressions>
     <expressions id="watch">
+      <expression>
+        <expression-string>dict_result.items()</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
       <expression>
         <expression-string>u'\xe7'</expression-string>
         <language-id>Python</language-id>
@@ -649,11 +676,6 @@
         <language-id>Python</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
-      <expression>
-        <expression-string>tags[0]</expression-string>
-        <language-id>Python</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
     </expressions>
     <expressions id="evaluateExpression">
       <expression>
@@ -664,31 +686,10 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://C:/Python27/Lib/site-packages/scrapy/utils/defer.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="182">
-          <caret line="62" selection-start-line="62" selection-end-line="62" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://C:/Python27/Lib/site-packages/twisted/internet/task.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="182">
-          <caret line="670" selection-start-line="670" selection-end-line="670" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://C:/Python27/Lib/site-packages/twisted/internet/base.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="182">
           <caret line="1266" selection-start-line="1266" selection-end-line="1266" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://C:/Python27/Lib/site-packages/scrapy/spidermiddlewares/depth.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="407">
-          <caret line="57" selection-start-line="57" selection-end-line="57" />
         </state>
       </provider>
     </entry>
@@ -892,16 +893,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/scrapy_auto/pipelines.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1150">
-          <caret line="55" column="35" selection-start-line="55" selection-start-column="35" selection-end-line="55" selection-end-column="35" />
-          <folding>
-            <element signature="e#193#206#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/proxy_list.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="125">
@@ -916,20 +907,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/begin.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="15" column="38" selection-start-line="15" selection-start-column="38" selection-end-line="15" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/scrapy_auto/settings.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="352">
-          <caret line="105" column="19" selection-start-line="105" selection-start-column="19" selection-end-line="105" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://C:/Python27/Lib/site-packages/lml/plugin.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="207">
@@ -937,9 +914,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/scrapy_auto/tools/render.html">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/scrapy_auto/tools/render.html" />
     <entry file="file://$PROJECT_DIR$/scrapy_auto/unit_test/mydemo.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-50">
@@ -975,37 +950,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://C:/Python27/Lib/site-packages/flask/templating.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="208">
-          <caret line="121" column="4" selection-start-line="121" selection-start-column="4" selection-end-line="121" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/scrapy_auto/spiders/employ_spiders.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="445">
-          <caret line="68" column="56" selection-start-line="68" selection-start-column="56" selection-end-line="68" selection-end-column="56" />
-          <folding>
-            <element signature="e#228#239#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://C:/Python27/Lib/site-packages/pyecharts/base.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-467">
           <caret line="130" column="8" selection-start-line="130" selection-start-column="8" selection-end-line="130" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/scrapy_auto/service/templates/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="200">
-          <caret line="8" column="57" selection-start-line="8" selection-start-column="57" selection-end-line="8" selection-end-column="57" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1023,20 +971,34 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/scrapy_auto/service/service.py">
+    <entry file="file://C:/Python27/Lib/site-packages/scrapy/spidermiddlewares/depth.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
+        <state relative-caret-position="435">
+          <caret line="57" selection-start-line="57" selection-end-line="57" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/scrapy_auto/tools/data_show.py">
+    <entry file="file://$PROJECT_DIR$/scrapy_auto/pipelines.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="150" column="8" lean-forward="true" selection-start-line="150" selection-start-column="8" selection-end-line="150" selection-end-column="8" />
+        <state relative-caret-position="536">
+          <caret line="55" column="35" selection-start-line="55" selection-start-column="35" selection-end-line="55" selection-end-column="35" />
           <folding>
-            <element signature="e#217#230#0" expanded="true" />
+            <element signature="e#193#206#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/begin.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="375">
+          <caret line="15" column="40" selection-start-line="15" selection-start-column="40" selection-end-line="15" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scrapy_auto/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="236">
+          <caret line="105" column="19" selection-start-line="105" selection-start-column="19" selection-end-line="105" selection-end-column="19" />
         </state>
       </provider>
     </entry>
@@ -1044,9 +1006,63 @@
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
           <first_editor relative-caret-position="450">
-            <caret line="24" lean-forward="true" selection-start-line="24" selection-end-line="24" />
+            <caret line="18" column="17" selection-start-line="18" selection-start-column="17" selection-end-line="18" selection-end-column="17" />
           </first_editor>
           <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/Python27/Lib/site-packages/flask/templating.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="53">
+          <caret line="121" column="4" selection-start-line="121" selection-start-column="4" selection-end-line="121" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scrapy_auto/service/static/img/work_count.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scrapy_auto/service/service.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="18" column="22" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scrapy_auto/service/templates/show_data.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="200">
+          <caret line="8" column="24" selection-start-line="8" selection-start-column="24" selection-end-line="8" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scrapy_auto/tools/data_show.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="124" column="19" lean-forward="true" selection-start-line="124" selection-start-column="19" selection-end-line="124" selection-end-column="19" />
+          <folding>
+            <element signature="e#217#230#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scrapy_auto/spiders/employ_spiders.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1925">
+          <caret line="77" column="11" selection-start-line="77" selection-start-column="11" selection-end-line="77" selection-end-column="11" />
+          <folding>
+            <element signature="e#228#239#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scrapy_auto/service/templates/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-89333">
+          <caret line="26" column="79330" selection-start-line="26" selection-start-column="79330" selection-end-line="26" selection-end-column="79330" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

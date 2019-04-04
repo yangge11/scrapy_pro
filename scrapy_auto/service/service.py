@@ -7,19 +7,18 @@
 # @File    : service.py
 # @Software: PyCharm
 # @ToUse  : 数据可视化service
-from flask import Flask, render_template, app
+from flask import Flask, render_template
 
 app = Flask(__name__)
 
 
-@app.route('/index', methods=["GET"])
+@app.route('/', methods=["GET"])
 def index():
     return render_template('index.html')
 
-
-@app.route("/")
-def hello():
-    return "Hello World!"
+@app.route("/show_data")
+def education():
+    return render_template('show_data.html')
 
 
 if __name__ == '__main__':

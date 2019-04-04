@@ -64,7 +64,7 @@ def drawPic_education():
     labels = []
     sizes = []
     colors = ['red', 'orange', 'yellow', 'green', 'blue', 'cyan', 'purple', 'gray', 'pink', 'black', 'white', 'brown']
-    explode = [0.5, 0.4, 0.3, 0.2, 0.1]
+    explode = [0.3, 0.2, 0.1]
     try:
         cursor.execute("SELECT education,COUNT(education) FROM job GROUP BY education ORDER BY RAND();")
         results = cursor.fetchall()
@@ -81,7 +81,7 @@ def drawPic_education():
 
     plt.rcParams['font.sans-serif'] = ['FangSong']
     plt.rcParams['axes.unicode_minus'] = False
-    plt.pie(sizes, colors=tuple(colors), explode=tuple(explode[:-5]), labels=tuple(labels), autopct='%1.1f%%',
+    plt.pie(sizes, colors=tuple(colors), explode=tuple(explode[:-3]), labels=tuple(labels), autopct='%1.1f%%',
             shadow=True, startangle=90)
     plt.axis('equal')
     plt.title(u'招聘信息学历要求占比', fontsize=12)
@@ -109,12 +109,12 @@ def drawPic_place():
     # 初始化图表
     geo = Geo(
         title=u"抓取的招聘信息数量在全国各地的分布",
-        width=1200,
-        height=600,
+        width=1920,
+        height=1080,
         title_pos="center",
         background_color='#404a59',
     )
-    # results = [(u'广州', 80), (u'漳州', 180)]
+    # dict_result = {u'广州': 80, u'漳州': 180}
     # data = [(key, value) for key, value in dict_result.items()]
     # attr, value = geo.cast(data)
     error_citys = []
@@ -123,7 +123,7 @@ def drawPic_place():
             # 图表配置
             geo.add(
                 "",
-                [key],
+                [key.decode('utf-8')],
                 [value * random.randint(30, 40)],
                 is_visualmap=True,
                 visual_range=[0, 12000],
@@ -146,6 +146,6 @@ def map_demo():
 
 if __name__ == '__main__':
     # drawPic_search_job()
-    drawPic_education()
-    # drawPic_place()
+    # drawPic_education()
+    drawPic_place()
     pass

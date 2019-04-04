@@ -51,14 +51,16 @@ class BossZhiPin(CrawlSpider):
                     to_crawl_list.append(search_word_dict['name'])
                     self.job_dict_mapping[search_word_dict['name']] = [job_type_dict['name'], sub_job_type_dict['name']]
         new_urls = ['https://www.zhipin.com/c100010000/?query=%s&page=1' % query_str for query_str in
-                    set(to_crawl_list) if query_str in ['美工','记者','运营总监','活动策划']]
+                    set(to_crawl_list) if 'Python' == query_str]
         # new_urls.append('https://www.zhipin.com/c100010000/?query=爬虫&page=1')
         for new_url in new_urls:
             item = JobItem()
             item['search_word'] = new_url.replace('https://www.zhipin.com/c100010000/?query=', '').replace('&page=1',
                                                                                                            '')
-            item['job_type'] = self.job_dict_mapping[item['search_word']][0] if item['search_word'] in self.job_dict_mapping else ''
-            item['sub_job_type'] = self.job_dict_mapping[item['search_word']][1] if item['search_word'] in self.job_dict_mapping else ''
+            item['job_type'] = self.job_dict_mapping[item['search_word']][0] if item[
+                                                                                    'search_word'] in self.job_dict_mapping else ''
+            item['sub_job_type'] = self.job_dict_mapping[item['search_word']][1] if item[
+                                                                                        'search_word'] in self.job_dict_mapping else ''
             yield scrapy.Request(url=new_url, callback=self.parse_job_list, meta={'item': item})
             pass
 
