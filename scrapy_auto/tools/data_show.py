@@ -67,6 +67,8 @@ def drawPic_education():
         # print(results)
         for item in results:
             if len(item) > 1:
+                if item[0] == '昆明':
+                    continue # boss脏数据
                 labels.append(item[0])
                 sizes.append(item[1])
                 explode.append(0)
