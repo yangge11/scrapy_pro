@@ -1,7 +1,7 @@
 
-var myChart_7cc0640a627d457a8d24be7067e4cb84 = echarts.init(document.getElementById('7cc0640a627d457a8d24be7067e4cb84'), 'light', {renderer: 'canvas'});
+var myChart_57b006d34e02407cbe7dadc9db28c01d = echarts.init(document.getElementById('57b006d34e02407cbe7dadc9db28c01d'), 'light', {renderer: 'canvas'});
 
-var option_7cc0640a627d457a8d24be7067e4cb84 = {
+var option_57b006d34e02407cbe7dadc9db28c01d = {
     "title": [
         {
             "text": "\u6293\u53d6\u7684\u62db\u8058\u4fe1\u606f\u6570\u91cf\u5728\u5168\u56fd\u5404\u5730\u7684\u5206\u5e03",
@@ -35,7 +35,7 @@ var option_7cc0640a627d457a8d24be7067e4cb84 = {
             }
         }
     },
-    "series_id": 8055080,
+    "series_id": 7328573,
     "tooltip": {
         "trigger": "item",
         "triggerOn": "mousemove|click",
@@ -51,3509 +51,6 @@ var option_7cc0640a627d457a8d24be7067e4cb84 = {
         "borderWidth": 0
     },
     "series": [
-        {
-            "type": "scatter",
-            "coordinateSystem": "geo",
-            "symbol": "circle",
-            "symbolSize": 15,
-            "data": [
-                {
-                    "name": "\u4e91\u6d6e",
-                    "value": [
-                        112.02,
-                        22.93,
-                        32
-                    ]
-                }
-            ],
-            "label": {
-                "normal": {
-                    "show": false,
-                    "position": "top",
-                    "textStyle": {
-                        "fontSize": 12
-                    }
-                },
-                "emphasis": {
-                    "show": true,
-                    "textStyle": {
-                        "fontSize": 12
-                    }
-                }
-            }
-        },
-        {
-            "type": "scatter",
-            "coordinateSystem": "geo",
-            "symbol": "circle",
-            "symbolSize": 15,
-            "data": [
-                {
-                    "name": "\u6c5f\u95e8",
-                    "value": [
-                        113.06,
-                        22.61,
-                        124
-                    ]
-                }
-            ],
-            "label": {
-                "normal": {
-                    "show": false,
-                    "position": "top",
-                    "textStyle": {
-                        "fontSize": 12
-                    }
-                },
-                "emphasis": {
-                    "show": true,
-                    "textStyle": {
-                        "fontSize": 12
-                    }
-                }
-            }
-        },
-        {
-            "type": "scatter",
-            "coordinateSystem": "geo",
-            "symbol": "circle",
-            "symbolSize": 15,
-            "data": [
-                {
-                    "name": "\u5609\u5174",
-                    "value": [
-                        120.76,
-                        30.77,
-                        608
-                    ]
-                }
-            ],
-            "label": {
-                "normal": {
-                    "show": false,
-                    "position": "top",
-                    "textStyle": {
-                        "fontSize": 12
-                    }
-                },
-                "emphasis": {
-                    "show": true,
-                    "textStyle": {
-                        "fontSize": 12
-                    }
-                }
-            }
-        },
-        {
-            "type": "scatter",
-            "coordinateSystem": "geo",
-            "symbol": "circle",
-            "symbolSize": 15,
-            "data": [
-                {
-                    "name": "\u4e0a\u6d77",
-                    "value": [
-                        121.473701,
-                        31.230416,
-                        13568
-                    ]
-                }
-            ],
-            "label": {
-                "normal": {
-                    "show": false,
-                    "position": "top",
-                    "textStyle": {
-                        "fontSize": 12
-                    }
-                },
-                "emphasis": {
-                    "show": true,
-                    "textStyle": {
-                        "fontSize": 12
-                    }
-                }
-            }
-        },
-        {
-            "type": "scatter",
-            "coordinateSystem": "geo",
-            "symbol": "circle",
-            "symbolSize": 15,
-            "data": [
-                {
-                    "name": "\u76d0\u57ce",
-                    "value": [
-                        120.13,
-                        33.38,
-                        76
-                    ]
-                }
-            ],
-            "label": {
-                "normal": {
-                    "show": false,
-                    "position": "top",
-                    "textStyle": {
-                        "fontSize": 12
-                    }
-                },
-                "emphasis": {
-                    "show": true,
-                    "textStyle": {
-                        "fontSize": 12
-                    }
-                }
-            }
-        },
-        {
-            "type": "scatter",
-            "coordinateSystem": "geo",
-            "symbol": "circle",
-            "symbolSize": 15,
-            "data": [
-                {
-                    "name": "\u7ee5\u5316",
-                    "value": [
-                        126.59,
-                        46.38,
-                        68
-                    ]
-                }
-            ],
-            "label": {
-                "normal": {
-                    "show": false,
-                    "position": "top",
-                    "textStyle": {
-                        "fontSize": 12
-                    }
-                },
-                "emphasis": {
-                    "show": true,
-                    "textStyle": {
-                        "fontSize": 12
-                    }
-                }
-            }
-        },
-        {
-            "type": "scatter",
-            "coordinateSystem": "geo",
-            "symbol": "circle",
-            "symbolSize": 15,
-            "data": [
-                {
-                    "name": "\u4fe1\u9633",
-                    "value": [
-                        114.04,
-                        32.07,
-                        62
-                    ]
-                }
-            ],
-            "label": {
-                "normal": {
-                    "show": false,
-                    "position": "top",
-                    "textStyle": {
-                        "fontSize": 12
-                    }
-                },
-                "emphasis": {
-                    "show": true,
-                    "textStyle": {
-                        "fontSize": 12
-                    }
-                }
-            }
-        },
-        {
-            "type": "scatter",
-            "coordinateSystem": "geo",
-            "symbol": "circle",
-            "symbolSize": 15,
-            "data": [
-                {
-                    "name": "\u8d35\u9633",
-                    "value": [
-                        106.71,
-                        26.57,
-                        760
-                    ]
-                }
-            ],
-            "label": {
-                "normal": {
-                    "show": false,
-                    "position": "top",
-                    "textStyle": {
-                        "fontSize": 12
-                    }
-                },
-                "emphasis": {
-                    "show": true,
-                    "textStyle": {
-                        "fontSize": 12
-                    }
-                }
-            }
-        },
-        {
-            "type": "scatter",
-            "coordinateSystem": "geo",
-            "symbol": "circle",
-            "symbolSize": 15,
-            "data": [
-                {
-                    "name": "\u5b89\u5e86",
-                    "value": [
-                        117.02,
-                        30.31,
-                        68
-                    ]
-                }
-            ],
-            "label": {
-                "normal": {
-                    "show": false,
-                    "position": "top",
-                    "textStyle": {
-                        "fontSize": 12
-                    }
-                },
-                "emphasis": {
-                    "show": true,
-                    "textStyle": {
-                        "fontSize": 12
-                    }
-                }
-            }
-        },
-        {
-            "type": "scatter",
-            "coordinateSystem": "geo",
-            "symbol": "circle",
-            "symbolSize": 15,
-            "data": [
-                {
-                    "name": "\u5e7f\u5dde",
-                    "value": [
-                        113.23,
-                        23.16,
-                        7164
-                    ]
-                }
-            ],
-            "label": {
-                "normal": {
-                    "show": false,
-                    "position": "top",
-                    "textStyle": {
-                        "fontSize": 12
-                    }
-                },
-                "emphasis": {
-                    "show": true,
-                    "textStyle": {
-                        "fontSize": 12
-                    }
-                }
-            }
-        },
-        {
-            "type": "scatter",
-            "coordinateSystem": "geo",
-            "symbol": "circle",
-            "symbolSize": 15,
-            "data": [
-                {
-                    "name": "\u5609\u5cea\u5173",
-                    "value": [
-                        98.289152,
-                        39.77313,
-                        38
-                    ]
-                }
-            ],
-            "label": {
-                "normal": {
-                    "show": false,
-                    "position": "top",
-                    "textStyle": {
-                        "fontSize": 12
-                    }
-                },
-                "emphasis": {
-                    "show": true,
-                    "textStyle": {
-                        "fontSize": 12
-                    }
-                }
-            }
-        },
-        {
-            "type": "scatter",
-            "coordinateSystem": "geo",
-            "symbol": "circle",
-            "symbolSize": 15,
-            "data": [
-                {
-                    "name": "\u901a\u5316",
-                    "value": [
-                        125.56,
-                        41.43,
-                        32
-                    ]
-                }
-            ],
-            "label": {
-                "normal": {
-                    "show": false,
-                    "position": "top",
-                    "textStyle": {
-                        "fontSize": 12
-                    }
-                },
-                "emphasis": {
-                    "show": true,
-                    "textStyle": {
-                        "fontSize": 12
-                    }
-                }
-            }
-        },
-        {
-            "type": "scatter",
-            "coordinateSystem": "geo",
-            "symbol": "circle",
-            "symbolSize": 15,
-            "data": [
-                {
-                    "name": "\u6e56\u5dde",
-                    "value": [
-                        120.1,
-                        30.86,
-                        148
-                    ]
-                }
-            ],
-            "label": {
-                "normal": {
-                    "show": false,
-                    "position": "top",
-                    "textStyle": {
-                        "fontSize": 12
-                    }
-                },
-                "emphasis": {
-                    "show": true,
-                    "textStyle": {
-                        "fontSize": 12
-                    }
-                }
-            }
-        },
-        {
-            "type": "scatter",
-            "coordinateSystem": "geo",
-            "symbol": "circle",
-            "symbolSize": 15,
-            "data": [
-                {
-                    "name": "\u5170\u5dde",
-                    "value": [
-                        103.73,
-                        36.03,
-                        186
-                    ]
-                }
-            ],
-            "label": {
-                "normal": {
-                    "show": false,
-                    "position": "top",
-                    "textStyle": {
-                        "fontSize": 12
-                    }
-                },
-                "emphasis": {
-                    "show": true,
-                    "textStyle": {
-                        "fontSize": 12
-                    }
-                }
-            }
-        },
-        {
-            "type": "scatter",
-            "coordinateSystem": "geo",
-            "symbol": "circle",
-            "symbolSize": 15,
-            "data": [
-                {
-                    "name": "\u6b66\u5a01",
-                    "value": [
-                        102.39,
-                        37.56,
-                        62
-                    ]
-                }
-            ],
-            "label": {
-                "normal": {
-                    "show": false,
-                    "position": "top",
-                    "textStyle": {
-                        "fontSize": 12
-                    }
-                },
-                "emphasis": {
-                    "show": true,
-                    "textStyle": {
-                        "fontSize": 12
-                    }
-                }
-            }
-        },
-        {
-            "type": "scatter",
-            "coordinateSystem": "geo",
-            "symbol": "circle",
-            "symbolSize": 15,
-            "data": [
-                {
-                    "name": "\u9547\u6c5f",
-                    "value": [
-                        119.44,
-                        32.2,
-                        330
-                    ]
-                }
-            ],
-            "label": {
-                "normal": {
-                    "show": false,
-                    "position": "top",
-                    "textStyle": {
-                        "fontSize": 12
-                    }
-                },
-                "emphasis": {
-                    "show": true,
-                    "textStyle": {
-                        "fontSize": 12
-                    }
-                }
-            }
-        },
-        {
-            "type": "scatter",
-            "coordinateSystem": "geo",
-            "symbol": "circle",
-            "symbolSize": 15,
-            "data": [
-                {
-                    "name": "\u94f6\u5ddd",
-                    "value": [
-                        106.27,
-                        38.47,
-                        374
-                    ]
-                }
-            ],
-            "label": {
-                "normal": {
-                    "show": false,
-                    "position": "top",
-                    "textStyle": {
-                        "fontSize": 12
-                    }
-                },
-                "emphasis": {
-                    "show": true,
-                    "textStyle": {
-                        "fontSize": 12
-                    }
-                }
-            }
-        },
-        {
-            "type": "scatter",
-            "coordinateSystem": "geo",
-            "symbol": "circle",
-            "symbolSize": 15,
-            "data": [
-                {
-                    "name": "\u90af\u90f8",
-                    "value": [
-                        114.47,
-                        36.6,
-                        128
-                    ]
-                }
-            ],
-            "label": {
-                "normal": {
-                    "show": false,
-                    "position": "top",
-                    "textStyle": {
-                        "fontSize": 12
-                    }
-                },
-                "emphasis": {
-                    "show": true,
-                    "textStyle": {
-                        "fontSize": 12
-                    }
-                }
-            }
-        },
-        {
-            "type": "scatter",
-            "coordinateSystem": "geo",
-            "symbol": "circle",
-            "symbolSize": 15,
-            "data": [
-                {
-                    "name": "\u4fdd\u5b9a",
-                    "value": [
-                        115.48,
-                        38.85,
-                        315
-                    ]
-                }
-            ],
-            "label": {
-                "normal": {
-                    "show": false,
-                    "position": "top",
-                    "textStyle": {
-                        "fontSize": 12
-                    }
-                },
-                "emphasis": {
-                    "show": true,
-                    "textStyle": {
-                        "fontSize": 12
-                    }
-                }
-            }
-        },
-        {
-            "type": "scatter",
-            "coordinateSystem": "geo",
-            "symbol": "circle",
-            "symbolSize": 15,
-            "data": [
-                {
-                    "name": "\u5357\u5b81",
-                    "value": [
-                        108.33,
-                        22.84,
-                        660
-                    ]
-                }
-            ],
-            "label": {
-                "normal": {
-                    "show": false,
-                    "position": "top",
-                    "textStyle": {
-                        "fontSize": 12
-                    }
-                },
-                "emphasis": {
-                    "show": true,
-                    "textStyle": {
-                        "fontSize": 12
-                    }
-                }
-            }
-        },
-        {
-            "type": "scatter",
-            "coordinateSystem": "geo",
-            "symbol": "circle",
-            "symbolSize": 15,
-            "data": [
-                {
-                    "name": "\u6e05\u8fdc",
-                    "value": [
-                        113.01,
-                        23.7,
-                        296
-                    ]
-                }
-            ],
-            "label": {
-                "normal": {
-                    "show": false,
-                    "position": "top",
-                    "textStyle": {
-                        "fontSize": 12
-                    }
-                },
-                "emphasis": {
-                    "show": true,
-                    "textStyle": {
-                        "fontSize": 12
-                    }
-                }
-            }
-        },
-        {
-            "type": "scatter",
-            "coordinateSystem": "geo",
-            "symbol": "circle",
-            "symbolSize": 15,
-            "data": [
-                {
-                    "name": "\u821f\u5c71",
-                    "value": [
-                        122.207216,
-                        29.985295,
-                        70
-                    ]
-                }
-            ],
-            "label": {
-                "normal": {
-                    "show": false,
-                    "position": "top",
-                    "textStyle": {
-                        "fontSize": 12
-                    }
-                },
-                "emphasis": {
-                    "show": true,
-                    "textStyle": {
-                        "fontSize": 12
-                    }
-                }
-            }
-        },
-        {
-            "type": "scatter",
-            "coordinateSystem": "geo",
-            "symbol": "circle",
-            "symbolSize": 15,
-            "data": [
-                {
-                    "name": "\u9042\u5b81",
-                    "value": [
-                        105.33,
-                        30.31,
-                        38
-                    ]
-                }
-            ],
-            "label": {
-                "normal": {
-                    "show": false,
-                    "position": "top",
-                    "textStyle": {
-                        "fontSize": 12
-                    }
-                },
-                "emphasis": {
-                    "show": true,
-                    "textStyle": {
-                        "fontSize": 12
-                    }
-                }
-            }
-        },
-        {
-            "type": "scatter",
-            "coordinateSystem": "geo",
-            "symbol": "circle",
-            "symbolSize": 15,
-            "data": [
-                {
-                    "name": "\u629a\u5dde",
-                    "value": [
-                        116.35,
-                        28,
-                        90
-                    ]
-                }
-            ],
-            "label": {
-                "normal": {
-                    "show": false,
-                    "position": "top",
-                    "textStyle": {
-                        "fontSize": 12
-                    }
-                },
-                "emphasis": {
-                    "show": true,
-                    "textStyle": {
-                        "fontSize": 12
-                    }
-                }
-            }
-        },
-        {
-            "type": "scatter",
-            "coordinateSystem": "geo",
-            "symbol": "circle",
-            "symbolSize": 15,
-            "data": [
-                {
-                    "name": "\u6d77\u53e3",
-                    "value": [
-                        110.35,
-                        20.02,
-                        310
-                    ]
-                }
-            ],
-            "label": {
-                "normal": {
-                    "show": false,
-                    "position": "top",
-                    "textStyle": {
-                        "fontSize": 12
-                    }
-                },
-                "emphasis": {
-                    "show": true,
-                    "textStyle": {
-                        "fontSize": 12
-                    }
-                }
-            }
-        },
-        {
-            "type": "scatter",
-            "coordinateSystem": "geo",
-            "symbol": "circle",
-            "symbolSize": 15,
-            "data": [
-                {
-                    "name": "\u5317\u6d77",
-                    "value": [
-                        109.12,
-                        21.49,
-                        30
-                    ]
-                }
-            ],
-            "label": {
-                "normal": {
-                    "show": false,
-                    "position": "top",
-                    "textStyle": {
-                        "fontSize": 12
-                    }
-                },
-                "emphasis": {
-                    "show": true,
-                    "textStyle": {
-                        "fontSize": 12
-                    }
-                }
-            }
-        },
-        {
-            "type": "scatter",
-            "coordinateSystem": "geo",
-            "symbol": "circle",
-            "symbolSize": 15,
-            "data": [
-                {
-                    "name": "\u9752\u5c9b",
-                    "value": [
-                        120.33,
-                        36.07,
-                        2511
-                    ]
-                }
-            ],
-            "label": {
-                "normal": {
-                    "show": false,
-                    "position": "top",
-                    "textStyle": {
-                        "fontSize": 12
-                    }
-                },
-                "emphasis": {
-                    "show": true,
-                    "textStyle": {
-                        "fontSize": 12
-                    }
-                }
-            }
-        },
-        {
-            "type": "scatter",
-            "coordinateSystem": "geo",
-            "symbol": "circle",
-            "symbolSize": 15,
-            "data": [
-                {
-                    "name": "\u5f90\u5dde",
-                    "value": [
-                        117.2,
-                        34.26,
-                        204
-                    ]
-                }
-            ],
-            "label": {
-                "normal": {
-                    "show": false,
-                    "position": "top",
-                    "textStyle": {
-                        "fontSize": 12
-                    }
-                },
-                "emphasis": {
-                    "show": true,
-                    "textStyle": {
-                        "fontSize": 12
-                    }
-                }
-            }
-        },
-        {
-            "type": "scatter",
-            "coordinateSystem": "geo",
-            "symbol": "circle",
-            "symbolSize": 15,
-            "data": [
-                {
-                    "name": "\u4e1c\u8425",
-                    "value": [
-                        118.49,
-                        37.46,
-                        70
-                    ]
-                }
-            ],
-            "label": {
-                "normal": {
-                    "show": false,
-                    "position": "top",
-                    "textStyle": {
-                        "fontSize": 12
-                    }
-                },
-                "emphasis": {
-                    "show": true,
-                    "textStyle": {
-                        "fontSize": 12
-                    }
-                }
-            }
-        },
-        {
-            "type": "scatter",
-            "coordinateSystem": "geo",
-            "symbol": "circle",
-            "symbolSize": 15,
-            "data": [
-                {
-                    "name": "\u8386\u7530",
-                    "value": [
-                        119.01,
-                        24.26,
-                        72
-                    ]
-                }
-            ],
-            "label": {
-                "normal": {
-                    "show": false,
-                    "position": "top",
-                    "textStyle": {
-                        "fontSize": 12
-                    }
-                },
-                "emphasis": {
-                    "show": true,
-                    "textStyle": {
-                        "fontSize": 12
-                    }
-                }
-            }
-        },
-        {
-            "type": "scatter",
-            "coordinateSystem": "geo",
-            "symbol": "circle",
-            "symbolSize": 15,
-            "data": [
-                {
-                    "name": "\u9075\u4e49",
-                    "value": [
-                        106.9,
-                        27.7,
-                        114
-                    ]
-                }
-            ],
-            "label": {
-                "normal": {
-                    "show": false,
-                    "position": "top",
-                    "textStyle": {
-                        "fontSize": 12
-                    }
-                },
-                "emphasis": {
-                    "show": true,
-                    "textStyle": {
-                        "fontSize": 12
-                    }
-                }
-            }
-        },
-        {
-            "type": "scatter",
-            "coordinateSystem": "geo",
-            "symbol": "circle",
-            "symbolSize": 15,
-            "data": [
-                {
-                    "name": "\u5927\u7406",
-                    "value": [
-                        100.13,
-                        25.34,
-                        40
-                    ]
-                }
-            ],
-            "label": {
-                "normal": {
-                    "show": false,
-                    "position": "top",
-                    "textStyle": {
-                        "fontSize": 12
-                    }
-                },
-                "emphasis": {
-                    "show": true,
-                    "textStyle": {
-                        "fontSize": 12
-                    }
-                }
-            }
-        },
-        {
-            "type": "scatter",
-            "coordinateSystem": "geo",
-            "symbol": "circle",
-            "symbolSize": 15,
-            "data": [
-                {
-                    "name": "\u4eb3\u5dde",
-                    "value": [
-                        115.47,
-                        33.52,
-                        40
-                    ]
-                }
-            ],
-            "label": {
-                "normal": {
-                    "show": false,
-                    "position": "top",
-                    "textStyle": {
-                        "fontSize": 12
-                    }
-                },
-                "emphasis": {
-                    "show": true,
-                    "textStyle": {
-                        "fontSize": 12
-                    }
-                }
-            }
-        },
-        {
-            "type": "scatter",
-            "coordinateSystem": "geo",
-            "symbol": "circle",
-            "symbolSize": 15,
-            "data": [
-                {
-                    "name": "\u4e34\u6c82",
-                    "value": [
-                        118.35,
-                        35.05,
-                        288
-                    ]
-                }
-            ],
-            "label": {
-                "normal": {
-                    "show": false,
-                    "position": "top",
-                    "textStyle": {
-                        "fontSize": 12
-                    }
-                },
-                "emphasis": {
-                    "show": true,
-                    "textStyle": {
-                        "fontSize": 12
-                    }
-                }
-            }
-        },
-        {
-            "type": "scatter",
-            "coordinateSystem": "geo",
-            "symbol": "circle",
-            "symbolSize": 15,
-            "data": [
-                {
-                    "name": "\u5f00\u5c01",
-                    "value": [
-                        114.35,
-                        34.79,
-                        117
-                    ]
-                }
-            ],
-            "label": {
-                "normal": {
-                    "show": false,
-                    "position": "top",
-                    "textStyle": {
-                        "fontSize": 12
-                    }
-                },
-                "emphasis": {
-                    "show": true,
-                    "textStyle": {
-                        "fontSize": 12
-                    }
-                }
-            }
-        },
-        {
-            "type": "scatter",
-            "coordinateSystem": "geo",
-            "symbol": "circle",
-            "symbolSize": 15,
-            "data": [
-                {
-                    "name": "\u8861\u9633",
-                    "value": [
-                        112.37,
-                        26.53,
-                        102
-                    ]
-                }
-            ],
-            "label": {
-                "normal": {
-                    "show": false,
-                    "position": "top",
-                    "textStyle": {
-                        "fontSize": 12
-                    }
-                },
-                "emphasis": {
-                    "show": true,
-                    "textStyle": {
-                        "fontSize": 12
-                    }
-                }
-            }
-        },
-        {
-            "type": "scatter",
-            "coordinateSystem": "geo",
-            "symbol": "circle",
-            "symbolSize": 15,
-            "data": [
-                {
-                    "name": "\u5357\u5145",
-                    "value": [
-                        106.110698,
-                        30.837793,
-                        190
-                    ]
-                }
-            ],
-            "label": {
-                "normal": {
-                    "show": false,
-                    "position": "top",
-                    "textStyle": {
-                        "fontSize": 12
-                    }
-                },
-                "emphasis": {
-                    "show": true,
-                    "textStyle": {
-                        "fontSize": 12
-                    }
-                }
-            }
-        },
-        {
-            "type": "scatter",
-            "coordinateSystem": "geo",
-            "symbol": "circle",
-            "symbolSize": 15,
-            "data": [
-                {
-                    "name": "\u5eca\u574a",
-                    "value": [
-                        116.7,
-                        39.53,
-                        444
-                    ]
-                }
-            ],
-            "label": {
-                "normal": {
-                    "show": false,
-                    "position": "top",
-                    "textStyle": {
-                        "fontSize": 12
-                    }
-                },
-                "emphasis": {
-                    "show": true,
-                    "textStyle": {
-                        "fontSize": 12
-                    }
-                }
-            }
-        },
-        {
-            "type": "scatter",
-            "coordinateSystem": "geo",
-            "symbol": "circle",
-            "symbolSize": 15,
-            "data": [
-                {
-                    "name": "\u8d64\u5cf0",
-                    "value": [
-                        118.87,
-                        42.28,
-                        36
-                    ]
-                }
-            ],
-            "label": {
-                "normal": {
-                    "show": false,
-                    "position": "top",
-                    "textStyle": {
-                        "fontSize": 12
-                    }
-                },
-                "emphasis": {
-                    "show": true,
-                    "textStyle": {
-                        "fontSize": 12
-                    }
-                }
-            }
-        },
-        {
-            "type": "scatter",
-            "coordinateSystem": "geo",
-            "symbol": "circle",
-            "symbolSize": 15,
-            "data": [
-                {
-                    "name": "\u82cf\u5dde",
-                    "value": [
-                        120.62,
-                        31.32,
-                        3710
-                    ]
-                }
-            ],
-            "label": {
-                "normal": {
-                    "show": false,
-                    "position": "top",
-                    "textStyle": {
-                        "fontSize": 12
-                    }
-                },
-                "emphasis": {
-                    "show": true,
-                    "textStyle": {
-                        "fontSize": 12
-                    }
-                }
-            }
-        },
-        {
-            "type": "scatter",
-            "coordinateSystem": "geo",
-            "symbol": "circle",
-            "symbolSize": 15,
-            "data": [
-                {
-                    "name": "\u6c88\u9633",
-                    "value": [
-                        123.38,
-                        41.8,
-                        6160
-                    ]
-                }
-            ],
-            "label": {
-                "normal": {
-                    "show": false,
-                    "position": "top",
-                    "textStyle": {
-                        "fontSize": 12
-                    }
-                },
-                "emphasis": {
-                    "show": true,
-                    "textStyle": {
-                        "fontSize": 12
-                    }
-                }
-            }
-        },
-        {
-            "type": "scatter",
-            "coordinateSystem": "geo",
-            "symbol": "circle",
-            "symbolSize": 15,
-            "data": [
-                {
-                    "name": "\u7126\u4f5c",
-                    "value": [
-                        113.21,
-                        35.24,
-                        66
-                    ]
-                }
-            ],
-            "label": {
-                "normal": {
-                    "show": false,
-                    "position": "top",
-                    "textStyle": {
-                        "fontSize": 12
-                    }
-                },
-                "emphasis": {
-                    "show": true,
-                    "textStyle": {
-                        "fontSize": 12
-                    }
-                }
-            }
-        },
-        {
-            "type": "scatter",
-            "coordinateSystem": "geo",
-            "symbol": "circle",
-            "symbolSize": 15,
-            "data": [
-                {
-                    "name": "\u5a01\u6d77",
-                    "value": [
-                        122.1,
-                        37.5,
-                        195
-                    ]
-                }
-            ],
-            "label": {
-                "normal": {
-                    "show": false,
-                    "position": "top",
-                    "textStyle": {
-                        "fontSize": 12
-                    }
-                },
-                "emphasis": {
-                    "show": true,
-                    "textStyle": {
-                        "fontSize": 12
-                    }
-                }
-            }
-        },
-        {
-            "type": "scatter",
-            "coordinateSystem": "geo",
-            "symbol": "circle",
-            "symbolSize": 15,
-            "data": [
-                {
-                    "name": "\u7389\u6eaa",
-                    "value": [
-                        102.52,
-                        24.35,
-                        3038
-                    ]
-                }
-            ],
-            "label": {
-                "normal": {
-                    "show": false,
-                    "position": "top",
-                    "textStyle": {
-                        "fontSize": 12
-                    }
-                },
-                "emphasis": {
-                    "show": true,
-                    "textStyle": {
-                        "fontSize": 12
-                    }
-                }
-            }
-        },
-        {
-            "type": "scatter",
-            "coordinateSystem": "geo",
-            "symbol": "circle",
-            "symbolSize": 15,
-            "data": [
-                {
-                    "name": "\u90f4\u5dde",
-                    "value": [
-                        113.02,
-                        25.46,
-                        114
-                    ]
-                }
-            ],
-            "label": {
-                "normal": {
-                    "show": false,
-                    "position": "top",
-                    "textStyle": {
-                        "fontSize": 12
-                    }
-                },
-                "emphasis": {
-                    "show": true,
-                    "textStyle": {
-                        "fontSize": 12
-                    }
-                }
-            }
-        },
-        {
-            "type": "scatter",
-            "coordinateSystem": "geo",
-            "symbol": "circle",
-            "symbolSize": 15,
-            "data": [
-                {
-                    "name": "\u6cf8\u5dde",
-                    "value": [
-                        105.39,
-                        28.91,
-                        39
-                    ]
-                }
-            ],
-            "label": {
-                "normal": {
-                    "show": false,
-                    "position": "top",
-                    "textStyle": {
-                        "fontSize": 12
-                    }
-                },
-                "emphasis": {
-                    "show": true,
-                    "textStyle": {
-                        "fontSize": 12
-                    }
-                }
-            }
-        },
-        {
-            "type": "scatter",
-            "coordinateSystem": "geo",
-            "symbol": "circle",
-            "symbolSize": 15,
-            "data": [
-                {
-                    "name": "\u5546\u4e18",
-                    "value": [
-                        115.38,
-                        34.26,
-                        64
-                    ]
-                }
-            ],
-            "label": {
-                "normal": {
-                    "show": false,
-                    "position": "top",
-                    "textStyle": {
-                        "fontSize": 12
-                    }
-                },
-                "emphasis": {
-                    "show": true,
-                    "textStyle": {
-                        "fontSize": 12
-                    }
-                }
-            }
-        },
-        {
-            "type": "scatter",
-            "coordinateSystem": "geo",
-            "symbol": "circle",
-            "symbolSize": 15,
-            "data": [
-                {
-                    "name": "\u6000\u5316",
-                    "value": [
-                        109.58,
-                        27.33,
-                        231
-                    ]
-                }
-            ],
-            "label": {
-                "normal": {
-                    "show": false,
-                    "position": "top",
-                    "textStyle": {
-                        "fontSize": 12
-                    }
-                },
-                "emphasis": {
-                    "show": true,
-                    "textStyle": {
-                        "fontSize": 12
-                    }
-                }
-            }
-        },
-        {
-            "type": "scatter",
-            "coordinateSystem": "geo",
-            "symbol": "circle",
-            "symbolSize": 15,
-            "data": [
-                {
-                    "name": "\u897f\u5b81",
-                    "value": [
-                        101.74,
-                        36.56,
-                        68
-                    ]
-                }
-            ],
-            "label": {
-                "normal": {
-                    "show": false,
-                    "position": "top",
-                    "textStyle": {
-                        "fontSize": 12
-                    }
-                },
-                "emphasis": {
-                    "show": true,
-                    "textStyle": {
-                        "fontSize": 12
-                    }
-                }
-            }
-        },
-        {
-            "type": "scatter",
-            "coordinateSystem": "geo",
-            "symbol": "circle",
-            "symbolSize": 15,
-            "data": [
-                {
-                    "name": "\u6210\u90fd",
-                    "value": [
-                        104.06,
-                        30.67,
-                        34510
-                    ]
-                }
-            ],
-            "label": {
-                "normal": {
-                    "show": false,
-                    "position": "top",
-                    "textStyle": {
-                        "fontSize": 12
-                    }
-                },
-                "emphasis": {
-                    "show": true,
-                    "textStyle": {
-                        "fontSize": 12
-                    }
-                }
-            }
-        },
-        {
-            "type": "scatter",
-            "coordinateSystem": "geo",
-            "symbol": "circle",
-            "symbolSize": 15,
-            "data": [
-                {
-                    "name": "\u5929\u6d25",
-                    "value": [
-                        117.200983,
-                        39.084158,
-                        2546
-                    ]
-                }
-            ],
-            "label": {
-                "normal": {
-                    "show": false,
-                    "position": "top",
-                    "textStyle": {
-                        "fontSize": 12
-                    }
-                },
-                "emphasis": {
-                    "show": true,
-                    "textStyle": {
-                        "fontSize": 12
-                    }
-                }
-            }
-        },
-        {
-            "type": "scatter",
-            "coordinateSystem": "geo",
-            "symbol": "circle",
-            "symbolSize": 15,
-            "data": [
-                {
-                    "name": "\u6dc4\u535a",
-                    "value": [
-                        118.05,
-                        36.78,
-                        160
-                    ]
-                }
-            ],
-            "label": {
-                "normal": {
-                    "show": false,
-                    "position": "top",
-                    "textStyle": {
-                        "fontSize": 12
-                    }
-                },
-                "emphasis": {
-                    "show": true,
-                    "textStyle": {
-                        "fontSize": 12
-                    }
-                }
-            }
-        },
-        {
-            "type": "scatter",
-            "coordinateSystem": "geo",
-            "symbol": "circle",
-            "symbolSize": 15,
-            "data": [
-                {
-                    "name": "\u5341\u5830",
-                    "value": [
-                        110.47,
-                        32.4,
-                        74
-                    ]
-                }
-            ],
-            "label": {
-                "normal": {
-                    "show": false,
-                    "position": "top",
-                    "textStyle": {
-                        "fontSize": 12
-                    }
-                },
-                "emphasis": {
-                    "show": true,
-                    "textStyle": {
-                        "fontSize": 12
-                    }
-                }
-            }
-        },
-        {
-            "type": "scatter",
-            "coordinateSystem": "geo",
-            "symbol": "circle",
-            "symbolSize": 15,
-            "data": [
-                {
-                    "name": "\u6cf0\u5dde",
-                    "value": [
-                        119.9,
-                        32.49,
-                        96
-                    ]
-                }
-            ],
-            "label": {
-                "normal": {
-                    "show": false,
-                    "position": "top",
-                    "textStyle": {
-                        "fontSize": 12
-                    }
-                },
-                "emphasis": {
-                    "show": true,
-                    "textStyle": {
-                        "fontSize": 12
-                    }
-                }
-            }
-        },
-        {
-            "type": "scatter",
-            "coordinateSystem": "geo",
-            "symbol": "circle",
-            "symbolSize": 15,
-            "data": [
-                {
-                    "name": "\u4e1c\u839e",
-                    "value": [
-                        113.75,
-                        23.04,
-                        2480
-                    ]
-                }
-            ],
-            "label": {
-                "normal": {
-                    "show": false,
-                    "position": "top",
-                    "textStyle": {
-                        "fontSize": 12
-                    }
-                },
-                "emphasis": {
-                    "show": true,
-                    "textStyle": {
-                        "fontSize": 12
-                    }
-                }
-            }
-        },
-        {
-            "type": "scatter",
-            "coordinateSystem": "geo",
-            "symbol": "circle",
-            "symbolSize": 15,
-            "data": [
-                {
-                    "name": "\u90a2\u53f0",
-                    "value": [
-                        114.48,
-                        37.05,
-                        132
-                    ]
-                }
-            ],
-            "label": {
-                "normal": {
-                    "show": false,
-                    "position": "top",
-                    "textStyle": {
-                        "fontSize": 12
-                    }
-                },
-                "emphasis": {
-                    "show": true,
-                    "textStyle": {
-                        "fontSize": 12
-                    }
-                }
-            }
-        },
-        {
-            "type": "scatter",
-            "coordinateSystem": "geo",
-            "symbol": "circle",
-            "symbolSize": 15,
-            "data": [
-                {
-                    "name": "\u8087\u5e86",
-                    "value": [
-                        112.44,
-                        23.05,
-                        99
-                    ]
-                }
-            ],
-            "label": {
-                "normal": {
-                    "show": false,
-                    "position": "top",
-                    "textStyle": {
-                        "fontSize": 12
-                    }
-                },
-                "emphasis": {
-                    "show": true,
-                    "textStyle": {
-                        "fontSize": 12
-                    }
-                }
-            }
-        },
-        {
-            "type": "scatter",
-            "coordinateSystem": "geo",
-            "symbol": "circle",
-            "symbolSize": 15,
-            "data": [
-                {
-                    "name": "\u66f2\u9756",
-                    "value": [
-                        103.79,
-                        25.51,
-                        40
-                    ]
-                }
-            ],
-            "label": {
-                "normal": {
-                    "show": false,
-                    "position": "top",
-                    "textStyle": {
-                        "fontSize": 12
-                    }
-                },
-                "emphasis": {
-                    "show": true,
-                    "textStyle": {
-                        "fontSize": 12
-                    }
-                }
-            }
-        },
-        {
-            "type": "scatter",
-            "coordinateSystem": "geo",
-            "symbol": "circle",
-            "symbolSize": 15,
-            "data": [
-                {
-                    "name": "\u8fde\u4e91\u6e2f",
-                    "value": [
-                        119.16,
-                        34.59,
-                        37
-                    ]
-                }
-            ],
-            "label": {
-                "normal": {
-                    "show": false,
-                    "position": "top",
-                    "textStyle": {
-                        "fontSize": 12
-                    }
-                },
-                "emphasis": {
-                    "show": true,
-                    "textStyle": {
-                        "fontSize": 12
-                    }
-                }
-            }
-        },
-        {
-            "type": "scatter",
-            "coordinateSystem": "geo",
-            "symbol": "circle",
-            "symbolSize": 15,
-            "data": [
-                {
-                    "name": "\u6d4e\u6e90",
-                    "value": [
-                        112.35,
-                        35.04,
-                        37
-                    ]
-                }
-            ],
-            "label": {
-                "normal": {
-                    "show": false,
-                    "position": "top",
-                    "textStyle": {
-                        "fontSize": 12
-                    }
-                },
-                "emphasis": {
-                    "show": true,
-                    "textStyle": {
-                        "fontSize": 12
-                    }
-                }
-            }
-        },
-        {
-            "type": "scatter",
-            "coordinateSystem": "geo",
-            "symbol": "circle",
-            "symbolSize": 15,
-            "data": [
-                {
-                    "name": "\u94a6\u5dde",
-                    "value": [
-                        108.37,
-                        21.57,
-                        40
-                    ]
-                }
-            ],
-            "label": {
-                "normal": {
-                    "show": false,
-                    "position": "top",
-                    "textStyle": {
-                        "fontSize": 12
-                    }
-                },
-                "emphasis": {
-                    "show": true,
-                    "textStyle": {
-                        "fontSize": 12
-                    }
-                }
-            }
-        },
-        {
-            "type": "scatter",
-            "coordinateSystem": "geo",
-            "symbol": "circle",
-            "symbolSize": 15,
-            "data": [
-                {
-                    "name": "\u54c8\u5c14\u6ee8",
-                    "value": [
-                        126.63,
-                        45.75,
-                        8880
-                    ]
-                }
-            ],
-            "label": {
-                "normal": {
-                    "show": false,
-                    "position": "top",
-                    "textStyle": {
-                        "fontSize": 12
-                    }
-                },
-                "emphasis": {
-                    "show": true,
-                    "textStyle": {
-                        "fontSize": 12
-                    }
-                }
-            }
-        },
-        {
-            "type": "scatter",
-            "coordinateSystem": "geo",
-            "symbol": "circle",
-            "symbolSize": 15,
-            "data": [
-                {
-                    "name": "\u5b9d\u9e21",
-                    "value": [
-                        107.15,
-                        34.38,
-                        992
-                    ]
-                }
-            ],
-            "label": {
-                "normal": {
-                    "show": false,
-                    "position": "top",
-                    "textStyle": {
-                        "fontSize": 12
-                    }
-                },
-                "emphasis": {
-                    "show": true,
-                    "textStyle": {
-                        "fontSize": 12
-                    }
-                }
-            }
-        },
-        {
-            "type": "scatter",
-            "coordinateSystem": "geo",
-            "symbol": "circle",
-            "symbolSize": 15,
-            "data": [
-                {
-                    "name": "\u682a\u6d32",
-                    "value": [
-                        113.16,
-                        27.83,
-                        198
-                    ]
-                }
-            ],
-            "label": {
-                "normal": {
-                    "show": false,
-                    "position": "top",
-                    "textStyle": {
-                        "fontSize": 12
-                    }
-                },
-                "emphasis": {
-                    "show": true,
-                    "textStyle": {
-                        "fontSize": 12
-                    }
-                }
-            }
-        },
-        {
-            "type": "scatter",
-            "coordinateSystem": "geo",
-            "symbol": "circle",
-            "symbolSize": 15,
-            "data": [
-                {
-                    "name": "\u60e0\u5dde",
-                    "value": [
-                        114.4,
-                        23.09,
-                        456
-                    ]
-                }
-            ],
-            "label": {
-                "normal": {
-                    "show": false,
-                    "position": "top",
-                    "textStyle": {
-                        "fontSize": 12
-                    }
-                },
-                "emphasis": {
-                    "show": true,
-                    "textStyle": {
-                        "fontSize": 12
-                    }
-                }
-            }
-        },
-        {
-            "type": "scatter",
-            "coordinateSystem": "geo",
-            "symbol": "circle",
-            "symbolSize": 15,
-            "data": [
-                {
-                    "name": "\u65e0\u9521",
-                    "value": [
-                        120.29,
-                        31.59,
-                        1560
-                    ]
-                }
-            ],
-            "label": {
-                "normal": {
-                    "show": false,
-                    "position": "top",
-                    "textStyle": {
-                        "fontSize": 12
-                    }
-                },
-                "emphasis": {
-                    "show": true,
-                    "textStyle": {
-                        "fontSize": 12
-                    }
-                }
-            }
-        },
-        {
-            "type": "scatter",
-            "coordinateSystem": "geo",
-            "symbol": "circle",
-            "symbolSize": 15,
-            "data": [
-                {
-                    "name": "\u8fd0\u57ce",
-                    "value": [
-                        110.59,
-                        35.02,
-                        37
-                    ]
-                }
-            ],
-            "label": {
-                "normal": {
-                    "show": false,
-                    "position": "top",
-                    "textStyle": {
-                        "fontSize": 12
-                    }
-                },
-                "emphasis": {
-                    "show": true,
-                    "textStyle": {
-                        "fontSize": 12
-                    }
-                }
-            }
-        },
-        {
-            "type": "scatter",
-            "coordinateSystem": "geo",
-            "symbol": "circle",
-            "symbolSize": 15,
-            "data": [
-                {
-                    "name": "\u5e38\u5dde",
-                    "value": [
-                        119.95,
-                        31.79,
-                        1056
-                    ]
-                }
-            ],
-            "label": {
-                "normal": {
-                    "show": false,
-                    "position": "top",
-                    "textStyle": {
-                        "fontSize": 12
-                    }
-                },
-                "emphasis": {
-                    "show": true,
-                    "textStyle": {
-                        "fontSize": 12
-                    }
-                }
-            }
-        },
-        {
-            "type": "scatter",
-            "coordinateSystem": "geo",
-            "symbol": "circle",
-            "symbolSize": 15,
-            "data": [
-                {
-                    "name": "\u6986\u6797",
-                    "value": [
-                        109.47,
-                        38.18,
-                        111
-                    ]
-                }
-            ],
-            "label": {
-                "normal": {
-                    "show": false,
-                    "position": "top",
-                    "textStyle": {
-                        "fontSize": 12
-                    }
-                },
-                "emphasis": {
-                    "show": true,
-                    "textStyle": {
-                        "fontSize": 12
-                    }
-                }
-            }
-        },
-        {
-            "type": "scatter",
-            "coordinateSystem": "geo",
-            "symbol": "circle",
-            "symbolSize": 15,
-            "data": [
-                {
-                    "name": "\u7ecd\u5174",
-                    "value": [
-                        120.58,
-                        30.01,
-                        155
-                    ]
-                }
-            ],
-            "label": {
-                "normal": {
-                    "show": false,
-                    "position": "top",
-                    "textStyle": {
-                        "fontSize": 12
-                    }
-                },
-                "emphasis": {
-                    "show": true,
-                    "textStyle": {
-                        "fontSize": 12
-                    }
-                }
-            }
-        },
-        {
-            "type": "scatter",
-            "coordinateSystem": "geo",
-            "symbol": "circle",
-            "symbolSize": 15,
-            "data": [
-                {
-                    "name": "\u6ca7\u5dde",
-                    "value": [
-                        116.83,
-                        38.33,
-                        120
-                    ]
-                }
-            ],
-            "label": {
-                "normal": {
-                    "show": false,
-                    "position": "top",
-                    "textStyle": {
-                        "fontSize": 12
-                    }
-                },
-                "emphasis": {
-                    "show": true,
-                    "textStyle": {
-                        "fontSize": 12
-                    }
-                }
-            }
-        },
-        {
-            "type": "scatter",
-            "coordinateSystem": "geo",
-            "symbol": "circle",
-            "symbolSize": 15,
-            "data": [
-                {
-                    "name": "\u5927\u540c",
-                    "value": [
-                        113.3,
-                        40.12,
-                        156
-                    ]
-                }
-            ],
-            "label": {
-                "normal": {
-                    "show": false,
-                    "position": "top",
-                    "textStyle": {
-                        "fontSize": 12
-                    }
-                },
-                "emphasis": {
-                    "show": true,
-                    "textStyle": {
-                        "fontSize": 12
-                    }
-                }
-            }
-        },
-        {
-            "type": "scatter",
-            "coordinateSystem": "geo",
-            "symbol": "circle",
-            "symbolSize": 15,
-            "data": [
-                {
-                    "name": "\u76d8\u9526",
-                    "value": [
-                        122.070714,
-                        41.119997,
-                        34
-                    ]
-                }
-            ],
-            "label": {
-                "normal": {
-                    "show": false,
-                    "position": "top",
-                    "textStyle": {
-                        "fontSize": 12
-                    }
-                },
-                "emphasis": {
-                    "show": true,
-                    "textStyle": {
-                        "fontSize": 12
-                    }
-                }
-            }
-        },
-        {
-            "type": "scatter",
-            "coordinateSystem": "geo",
-            "symbol": "circle",
-            "symbolSize": 15,
-            "data": [
-                {
-                    "name": "\u957f\u6625",
-                    "value": [
-                        125.35,
-                        43.88,
-                        768
-                    ]
-                }
-            ],
-            "label": {
-                "normal": {
-                    "show": false,
-                    "position": "top",
-                    "textStyle": {
-                        "fontSize": 12
-                    }
-                },
-                "emphasis": {
-                    "show": true,
-                    "textStyle": {
-                        "fontSize": 12
-                    }
-                }
-            }
-        },
-        {
-            "type": "scatter",
-            "coordinateSystem": "geo",
-            "symbol": "circle",
-            "symbolSize": 15,
-            "data": [
-                {
-                    "name": "\u6500\u679d\u82b1",
-                    "value": [
-                        101.718637,
-                        26.582347,
-                        38
-                    ]
-                }
-            ],
-            "label": {
-                "normal": {
-                    "show": false,
-                    "position": "top",
-                    "textStyle": {
-                        "fontSize": 12
-                    }
-                },
-                "emphasis": {
-                    "show": true,
-                    "textStyle": {
-                        "fontSize": 12
-                    }
-                }
-            }
-        },
-        {
-            "type": "scatter",
-            "coordinateSystem": "geo",
-            "symbol": "circle",
-            "symbolSize": 15,
-            "data": [
-                {
-                    "name": "\u6f33\u5dde",
-                    "value": [
-                        117.39,
-                        24.31,
-                        198
-                    ]
-                }
-            ],
-            "label": {
-                "normal": {
-                    "show": false,
-                    "position": "top",
-                    "textStyle": {
-                        "fontSize": 12
-                    }
-                },
-                "emphasis": {
-                    "show": true,
-                    "textStyle": {
-                        "fontSize": 12
-                    }
-                }
-            }
-        },
-        {
-            "type": "scatter",
-            "coordinateSystem": "geo",
-            "symbol": "circle",
-            "symbolSize": 15,
-            "data": [
-                {
-                    "name": "\u4e50\u5c71",
-                    "value": [
-                        103.44,
-                        29.36,
-                        31
-                    ]
-                }
-            ],
-            "label": {
-                "normal": {
-                    "show": false,
-                    "position": "top",
-                    "textStyle": {
-                        "fontSize": 12
-                    }
-                },
-                "emphasis": {
-                    "show": true,
-                    "textStyle": {
-                        "fontSize": 12
-                    }
-                }
-            }
-        },
-        {
-            "type": "scatter",
-            "coordinateSystem": "geo",
-            "symbol": "circle",
-            "symbolSize": 15,
-            "data": [
-                {
-                    "name": "\u4e0a\u9976",
-                    "value": [
-                        117.58,
-                        25.27,
-                        37
-                    ]
-                }
-            ],
-            "label": {
-                "normal": {
-                    "show": false,
-                    "position": "top",
-                    "textStyle": {
-                        "fontSize": 12
-                    }
-                },
-                "emphasis": {
-                    "show": true,
-                    "textStyle": {
-                        "fontSize": 12
-                    }
-                }
-            }
-        },
-        {
-            "type": "scatter",
-            "coordinateSystem": "geo",
-            "symbol": "circle",
-            "symbolSize": 15,
-            "data": [
-                {
-                    "name": "\u901a\u8fbd",
-                    "value": [
-                        122.16,
-                        43.37,
-                        76
-                    ]
-                }
-            ],
-            "label": {
-                "normal": {
-                    "show": false,
-                    "position": "top",
-                    "textStyle": {
-                        "fontSize": 12
-                    }
-                },
-                "emphasis": {
-                    "show": true,
-                    "textStyle": {
-                        "fontSize": 12
-                    }
-                }
-            }
-        },
-        {
-            "type": "scatter",
-            "coordinateSystem": "geo",
-            "symbol": "circle",
-            "symbolSize": 15,
-            "data": [
-                {
-                    "name": "\u804a\u57ce",
-                    "value": [
-                        115.97,
-                        36.45,
-                        74
-                    ]
-                }
-            ],
-            "label": {
-                "normal": {
-                    "show": false,
-                    "position": "top",
-                    "textStyle": {
-                        "fontSize": 12
-                    }
-                },
-                "emphasis": {
-                    "show": true,
-                    "textStyle": {
-                        "fontSize": 12
-                    }
-                }
-            }
-        },
-        {
-            "type": "scatter",
-            "coordinateSystem": "geo",
-            "symbol": "circle",
-            "symbolSize": 15,
-            "data": [
-                {
-                    "name": "\u6d4e\u5357",
-                    "value": [
-                        117,
-                        36.65,
-                        6930
-                    ]
-                }
-            ],
-            "label": {
-                "normal": {
-                    "show": false,
-                    "position": "top",
-                    "textStyle": {
-                        "fontSize": 12
-                    }
-                },
-                "emphasis": {
-                    "show": true,
-                    "textStyle": {
-                        "fontSize": 12
-                    }
-                }
-            }
-        },
-        {
-            "type": "scatter",
-            "coordinateSystem": "geo",
-            "symbol": "circle",
-            "symbolSize": 15,
-            "data": [
-                {
-                    "name": "\u968f\u5dde",
-                    "value": [
-                        113.22,
-                        31.42,
-                        31
-                    ]
-                }
-            ],
-            "label": {
-                "normal": {
-                    "show": false,
-                    "position": "top",
-                    "textStyle": {
-                        "fontSize": 12
-                    }
-                },
-                "emphasis": {
-                    "show": true,
-                    "textStyle": {
-                        "fontSize": 12
-                    }
-                }
-            }
-        },
-        {
-            "type": "scatter",
-            "coordinateSystem": "geo",
-            "symbol": "circle",
-            "symbolSize": 15,
-            "data": [
-                {
-                    "name": "\u6b66\u6c49",
-                    "value": [
-                        114.31,
-                        30.52,
-                        5920
-                    ]
-                }
-            ],
-            "label": {
-                "normal": {
-                    "show": false,
-                    "position": "top",
-                    "textStyle": {
-                        "fontSize": 12
-                    }
-                },
-                "emphasis": {
-                    "show": true,
-                    "textStyle": {
-                        "fontSize": 12
-                    }
-                }
-            }
-        },
-        {
-            "type": "scatter",
-            "coordinateSystem": "geo",
-            "symbol": "circle",
-            "symbolSize": 15,
-            "data": [
-                {
-                    "name": "\u6d1b\u9633",
-                    "value": [
-                        112.44,
-                        34.7,
-                        180
-                    ]
-                }
-            ],
-            "label": {
-                "normal": {
-                    "show": false,
-                    "position": "top",
-                    "textStyle": {
-                        "fontSize": 12
-                    }
-                },
-                "emphasis": {
-                    "show": true,
-                    "textStyle": {
-                        "fontSize": 12
-                    }
-                }
-            }
-        },
-        {
-            "type": "scatter",
-            "coordinateSystem": "geo",
-            "symbol": "circle",
-            "symbolSize": 15,
-            "data": [
-                {
-                    "name": "\u6c49\u4e2d",
-                    "value": [
-                        107.01,
-                        33.04,
-                        33
-                    ]
-                }
-            ],
-            "label": {
-                "normal": {
-                    "show": false,
-                    "position": "top",
-                    "textStyle": {
-                        "fontSize": 12
-                    }
-                },
-                "emphasis": {
-                    "show": true,
-                    "textStyle": {
-                        "fontSize": 12
-                    }
-                }
-            }
-        },
-        {
-            "type": "scatter",
-            "coordinateSystem": "geo",
-            "symbol": "circle",
-            "symbolSize": 15,
-            "data": [
-                {
-                    "name": "\u54b8\u9633",
-                    "value": [
-                        108.72,
-                        34.36,
-                        120
-                    ]
-                }
-            ],
-            "label": {
-                "normal": {
-                    "show": false,
-                    "position": "top",
-                    "textStyle": {
-                        "fontSize": 12
-                    }
-                },
-                "emphasis": {
-                    "show": true,
-                    "textStyle": {
-                        "fontSize": 12
-                    }
-                }
-            }
-        },
-        {
-            "type": "scatter",
-            "coordinateSystem": "geo",
-            "symbol": "circle",
-            "symbolSize": 15,
-            "data": [
-                {
-                    "name": "\u6dee\u5b89",
-                    "value": [
-                        119.15,
-                        33.5,
-                        35
-                    ]
-                }
-            ],
-            "label": {
-                "normal": {
-                    "show": false,
-                    "position": "top",
-                    "textStyle": {
-                        "fontSize": 12
-                    }
-                },
-                "emphasis": {
-                    "show": true,
-                    "textStyle": {
-                        "fontSize": 12
-                    }
-                }
-            }
-        },
-        {
-            "type": "scatter",
-            "coordinateSystem": "geo",
-            "symbol": "circle",
-            "symbolSize": 15,
-            "data": [
-                {
-                    "name": "\u73e0\u6d77",
-                    "value": [
-                        113.52,
-                        22.3,
-                        960
-                    ]
-                }
-            ],
-            "label": {
-                "normal": {
-                    "show": false,
-                    "position": "top",
-                    "textStyle": {
-                        "fontSize": 12
-                    }
-                },
-                "emphasis": {
-                    "show": true,
-                    "textStyle": {
-                        "fontSize": 12
-                    }
-                }
-            }
-        },
-        {
-            "type": "scatter",
-            "coordinateSystem": "geo",
-            "symbol": "circle",
-            "symbolSize": 15,
-            "data": [
-                {
-                    "name": "\u9ec4\u77f3",
-                    "value": [
-                        115.06,
-                        30.12,
-                        39
-                    ]
-                }
-            ],
-            "label": {
-                "normal": {
-                    "show": false,
-                    "position": "top",
-                    "textStyle": {
-                        "fontSize": 12
-                    }
-                },
-                "emphasis": {
-                    "show": true,
-                    "textStyle": {
-                        "fontSize": 12
-                    }
-                }
-            }
-        },
-        {
-            "type": "scatter",
-            "coordinateSystem": "geo",
-            "symbol": "circle",
-            "symbolSize": 15,
-            "data": [
-                {
-                    "name": "\u7ef5\u9633",
-                    "value": [
-                        104.73,
-                        31.48,
-                        114
-                    ]
-                }
-            ],
-            "label": {
-                "normal": {
-                    "show": false,
-                    "position": "top",
-                    "textStyle": {
-                        "fontSize": 12
-                    }
-                },
-                "emphasis": {
-                    "show": true,
-                    "textStyle": {
-                        "fontSize": 12
-                    }
-                }
-            }
-        },
-        {
-            "type": "scatter",
-            "coordinateSystem": "geo",
-            "symbol": "circle",
-            "symbolSize": 15,
-            "data": [
-                {
-                    "name": "\u957f\u6c99",
-                    "value": [
-                        113,
-                        28.21,
-                        4800
-                    ]
-                }
-            ],
-            "label": {
-                "normal": {
-                    "show": false,
-                    "position": "top",
-                    "textStyle": {
-                        "fontSize": 12
-                    }
-                },
-                "emphasis": {
-                    "show": true,
-                    "textStyle": {
-                        "fontSize": 12
-                    }
-                }
-            }
-        },
-        {
-            "type": "scatter",
-            "coordinateSystem": "geo",
-            "symbol": "circle",
-            "symbolSize": 15,
-            "data": [
-                {
-                    "name": "\u6f4d\u574a",
-                    "value": [
-                        119.1,
-                        36.62,
-                        7524
-                    ]
-                }
-            ],
-            "label": {
-                "normal": {
-                    "show": false,
-                    "position": "top",
-                    "textStyle": {
-                        "fontSize": 12
-                    }
-                },
-                "emphasis": {
-                    "show": true,
-                    "textStyle": {
-                        "fontSize": 12
-                    }
-                }
-            }
-        },
-        {
-            "type": "scatter",
-            "coordinateSystem": "geo",
-            "symbol": "circle",
-            "symbolSize": 15,
-            "data": [
-                {
-                    "name": "\u6cf0\u5b89",
-                    "value": [
-                        117.13,
-                        36.18,
-                        80
-                    ]
-                }
-            ],
-            "label": {
-                "normal": {
-                    "show": false,
-                    "position": "top",
-                    "textStyle": {
-                        "fontSize": 12
-                    }
-                },
-                "emphasis": {
-                    "show": true,
-                    "textStyle": {
-                        "fontSize": 12
-                    }
-                }
-            }
-        },
-        {
-            "type": "scatter",
-            "coordinateSystem": "geo",
-            "symbol": "circle",
-            "symbolSize": 15,
-            "data": [
-                {
-                    "name": "\u5b89\u9633",
-                    "value": [
-                        114.35,
-                        36.1,
-                        124
-                    ]
-                }
-            ],
-            "label": {
-                "normal": {
-                    "show": false,
-                    "position": "top",
-                    "textStyle": {
-                        "fontSize": 12
-                    }
-                },
-                "emphasis": {
-                    "show": true,
-                    "textStyle": {
-                        "fontSize": 12
-                    }
-                }
-            }
-        },
-        {
-            "type": "scatter",
-            "coordinateSystem": "geo",
-            "symbol": "circle",
-            "symbolSize": 15,
-            "data": [
-                {
-                    "name": "\u547c\u548c\u6d69\u7279",
-                    "value": [
-                        111.65,
-                        40.82,
-                        7848
-                    ]
-                }
-            ],
-            "label": {
-                "normal": {
-                    "show": false,
-                    "position": "top",
-                    "textStyle": {
-                        "fontSize": 12
-                    }
-                },
-                "emphasis": {
-                    "show": true,
-                    "textStyle": {
-                        "fontSize": 12
-                    }
-                }
-            }
-        },
-        {
-            "type": "scatter",
-            "coordinateSystem": "geo",
-            "symbol": "circle",
-            "symbolSize": 15,
-            "data": [
-                {
-                    "name": "\u91cd\u5e86",
-                    "value": [
-                        106.551556,
-                        29.563009,
-                        1914
-                    ]
-                }
-            ],
-            "label": {
-                "normal": {
-                    "show": false,
-                    "position": "top",
-                    "textStyle": {
-                        "fontSize": 12
-                    }
-                },
-                "emphasis": {
-                    "show": true,
-                    "textStyle": {
-                        "fontSize": 12
-                    }
-                }
-            }
-        },
-        {
-            "type": "scatter",
-            "coordinateSystem": "geo",
-            "symbol": "circle",
-            "symbolSize": 15,
-            "data": [
-                {
-                    "name": "\u6e29\u5dde",
-                    "value": [
-                        120.65,
-                        28.01,
-                        928
-                    ]
-                }
-            ],
-            "label": {
-                "normal": {
-                    "show": false,
-                    "position": "top",
-                    "textStyle": {
-                        "fontSize": 12
-                    }
-                },
-                "emphasis": {
-                    "show": true,
-                    "textStyle": {
-                        "fontSize": 12
-                    }
-                }
-            }
-        },
-        {
-            "type": "scatter",
-            "coordinateSystem": "geo",
-            "symbol": "circle",
-            "symbolSize": 15,
-            "data": [
-                {
-                    "name": "\u9999\u6e2f",
-                    "value": [
-                        114.173355,
-                        22.320048,
-                        31
-                    ]
-                }
-            ],
-            "label": {
-                "normal": {
-                    "show": false,
-                    "position": "top",
-                    "textStyle": {
-                        "fontSize": 12
-                    }
-                },
-                "emphasis": {
-                    "show": true,
-                    "textStyle": {
-                        "fontSize": 12
-                    }
-                }
-            }
-        },
-        {
-            "type": "scatter",
-            "coordinateSystem": "geo",
-            "symbol": "circle",
-            "symbolSize": 15,
-            "data": [
-                {
-                    "name": "\u664b\u57ce",
-                    "value": [
-                        112.51,
-                        35.3,
-                        36
-                    ]
-                }
-            ],
-            "label": {
-                "normal": {
-                    "show": false,
-                    "position": "top",
-                    "textStyle": {
-                        "fontSize": 12
-                    }
-                },
-                "emphasis": {
-                    "show": true,
-                    "textStyle": {
-                        "fontSize": 12
-                    }
-                }
-            }
-        },
-        {
-            "type": "scatter",
-            "coordinateSystem": "geo",
-            "symbol": "circle",
-            "symbolSize": 15,
-            "data": [
-                {
-                    "name": "\u798f\u5dde",
-                    "value": [
-                        119.3,
-                        26.08,
-                        5611
-                    ]
-                }
-            ],
-            "label": {
-                "normal": {
-                    "show": false,
-                    "position": "top",
-                    "textStyle": {
-                        "fontSize": 12
-                    }
-                },
-                "emphasis": {
-                    "show": true,
-                    "textStyle": {
-                        "fontSize": 12
-                    }
-                }
-            }
-        },
-        {
-            "type": "scatter",
-            "coordinateSystem": "geo",
-            "symbol": "circle",
-            "symbolSize": 15,
-            "data": [
-                {
-                    "name": "\u4e2d\u5c71",
-                    "value": [
-                        113.38,
-                        22.52,
-                        660
-                    ]
-                }
-            ],
-            "label": {
-                "normal": {
-                    "show": false,
-                    "position": "top",
-                    "textStyle": {
-                        "fontSize": 12
-                    }
-                },
-                "emphasis": {
-                    "show": true,
-                    "textStyle": {
-                        "fontSize": 12
-                    }
-                }
-            }
-        },
-        {
-            "type": "scatter",
-            "coordinateSystem": "geo",
-            "symbol": "circle",
-            "symbolSize": 15,
-            "data": [
-                {
-                    "name": "\u8944\u9633",
-                    "value": [
-                        112.2,
-                        32.08,
-                        36
-                    ]
-                }
-            ],
-            "label": {
-                "normal": {
-                    "show": false,
-                    "position": "top",
-                    "textStyle": {
-                        "fontSize": 12
-                    }
-                },
-                "emphasis": {
-                    "show": true,
-                    "textStyle": {
-                        "fontSize": 12
-                    }
-                }
-            }
-        },
-        {
-            "type": "scatter",
-            "coordinateSystem": "geo",
-            "symbol": "circle",
-            "symbolSize": 15,
-            "data": [
-                {
-                    "name": "\u5468\u53e3",
-                    "value": [
-                        114.38,
-                        33.37,
-                        72
-                    ]
-                }
-            ],
-            "label": {
-                "normal": {
-                    "show": false,
-                    "position": "top",
-                    "textStyle": {
-                        "fontSize": 12
-                    }
-                },
-                "emphasis": {
-                    "show": true,
-                    "textStyle": {
-                        "fontSize": 12
-                    }
-                }
-            }
-        },
-        {
-            "type": "scatter",
-            "coordinateSystem": "geo",
-            "symbol": "circle",
-            "symbolSize": 15,
-            "data": [
-                {
-                    "name": "\u63ed\u9633",
-                    "value": [
-                        116.35,
-                        23.55,
-                        64
-                    ]
-                }
-            ],
-            "label": {
-                "normal": {
-                    "show": false,
-                    "position": "top",
-                    "textStyle": {
-                        "fontSize": 12
-                    }
-                },
-                "emphasis": {
-                    "show": true,
-                    "textStyle": {
-                        "fontSize": 12
-                    }
-                }
-            }
-        },
-        {
-            "type": "scatter",
-            "coordinateSystem": "geo",
-            "symbol": "circle",
-            "symbolSize": 15,
-            "data": [
-                {
-                    "name": "\u8861\u6c34",
-                    "value": [
-                        115.72,
-                        37.72,
-                        70
-                    ]
-                }
-            ],
-            "label": {
-                "normal": {
-                    "show": false,
-                    "position": "top",
-                    "textStyle": {
-                        "fontSize": 12
-                    }
-                },
-                "emphasis": {
-                    "show": true,
-                    "textStyle": {
-                        "fontSize": 12
-                    }
-                }
-            }
-        },
-        {
-            "type": "scatter",
-            "coordinateSystem": "geo",
-            "symbol": "circle",
-            "symbolSize": 15,
-            "data": [
-                {
-                    "name": "\u5357\u4eac",
-                    "value": [
-                        118.78,
-                        32.04,
-                        6448
-                    ]
-                }
-            ],
-            "label": {
-                "normal": {
-                    "show": false,
-                    "position": "top",
-                    "textStyle": {
-                        "fontSize": 12
-                    }
-                },
-                "emphasis": {
-                    "show": true,
-                    "textStyle": {
-                        "fontSize": 12
-                    }
-                }
-            }
-        },
-        {
-            "type": "scatter",
-            "coordinateSystem": "geo",
-            "symbol": "circle",
-            "symbolSize": 15,
-            "data": [
-                {
-                    "name": "\u70df\u53f0",
-                    "value": [
-                        121.39,
-                        37.52,
-                        360
-                    ]
-                }
-            ],
-            "label": {
-                "normal": {
-                    "show": false,
-                    "position": "top",
-                    "textStyle": {
-                        "fontSize": 12
-                    }
-                },
-                "emphasis": {
-                    "show": true,
-                    "textStyle": {
-                        "fontSize": 12
-                    }
-                }
-            }
-        },
-        {
-            "type": "scatter",
-            "coordinateSystem": "geo",
-            "symbol": "circle",
-            "symbolSize": 15,
-            "data": [
-                {
-                    "name": "\u9526\u5dde",
-                    "value": [
-                        121.15,
-                        41.13,
-                        31
-                    ]
-                }
-            ],
-            "label": {
-                "normal": {
-                    "show": false,
-                    "position": "top",
-                    "textStyle": {
-                        "fontSize": 12
-                    }
-                },
-                "emphasis": {
-                    "show": true,
-                    "textStyle": {
-                        "fontSize": 12
-                    }
-                }
-            }
-        },
-        {
-            "type": "scatter",
-            "coordinateSystem": "geo",
-            "symbol": "circle",
-            "symbolSize": 15,
-            "data": [
-                {
-                    "name": "\u5409\u6797",
-                    "value": [
-                        125.32599,
-                        43.896536,
-                        31
-                    ]
-                }
-            ],
-            "label": {
-                "normal": {
-                    "show": false,
-                    "position": "top",
-                    "textStyle": {
-                        "fontSize": 12
-                    }
-                },
-                "emphasis": {
-                    "show": true,
-                    "textStyle": {
-                        "fontSize": 12
-                    }
-                }
-            }
-        },
-        {
-            "type": "scatter",
-            "coordinateSystem": "geo",
-            "symbol": "circle",
-            "symbolSize": 15,
-            "data": [
-                {
-                    "name": "\u4e09\u4e9a",
-                    "value": [
-                        109.511909,
-                        18.252847,
-                        80
-                    ]
-                }
-            ],
-            "label": {
-                "normal": {
-                    "show": false,
-                    "position": "top",
-                    "textStyle": {
-                        "fontSize": 12
-                    }
-                },
-                "emphasis": {
-                    "show": true,
-                    "textStyle": {
-                        "fontSize": 12
-                    }
-                }
-            }
-        },
-        {
-            "type": "scatter",
-            "coordinateSystem": "geo",
-            "symbol": "circle",
-            "symbolSize": 15,
-            "data": [
-                {
-                    "name": "\u4e4c\u9c81\u6728\u9f50",
-                    "value": [
-                        87.68,
-                        43.77,
-                        4992
-                    ]
-                }
-            ],
-            "label": {
-                "normal": {
-                    "show": false,
-                    "position": "top",
-                    "textStyle": {
-                        "fontSize": 12
-                    }
-                },
-                "emphasis": {
-                    "show": true,
-                    "textStyle": {
-                        "fontSize": 12
-                    }
-                }
-            }
-        },
-        {
-            "type": "scatter",
-            "coordinateSystem": "geo",
-            "symbol": "circle",
-            "symbolSize": 15,
-            "data": [
-                {
-                    "name": "\u5b9c\u5bbe",
-                    "value": [
-                        104.56,
-                        29.77,
-                        34
-                    ]
-                }
-            ],
-            "label": {
-                "normal": {
-                    "show": false,
-                    "position": "top",
-                    "textStyle": {
-                        "fontSize": 12
-                    }
-                },
-                "emphasis": {
-                    "show": true,
-                    "textStyle": {
-                        "fontSize": 12
-                    }
-                }
-            }
-        },
-        {
-            "type": "scatter",
-            "coordinateSystem": "geo",
-            "symbol": "circle",
-            "symbolSize": 15,
-            "data": [
-                {
-                    "name": "\u53f0\u5dde",
-                    "value": [
-                        121.420757,
-                        28.656386,
-                        429
-                    ]
-                }
-            ],
-            "label": {
-                "normal": {
-                    "show": false,
-                    "position": "top",
-                    "textStyle": {
-                        "fontSize": 12
-                    }
-                },
-                "emphasis": {
-                    "show": true,
-                    "textStyle": {
-                        "fontSize": 12
-                    }
-                }
-            }
-        },
         {
             "type": "scatter",
             "coordinateSystem": "geo",
@@ -3592,724 +89,11 @@ var option_7cc0640a627d457a8d24be7067e4cb84 = {
             "symbolSize": 15,
             "data": [
                 {
-                    "name": "\u6f2f\u6cb3",
+                    "name": "\u6cf0\u5b89",
                     "value": [
-                        114.02,
-                        33.33,
-                        36
-                    ]
-                }
-            ],
-            "label": {
-                "normal": {
-                    "show": false,
-                    "position": "top",
-                    "textStyle": {
-                        "fontSize": 12
-                    }
-                },
-                "emphasis": {
-                    "show": true,
-                    "textStyle": {
-                        "fontSize": 12
-                    }
-                }
-            }
-        },
-        {
-            "type": "scatter",
-            "coordinateSystem": "geo",
-            "symbol": "circle",
-            "symbolSize": 15,
-            "data": [
-                {
-                    "name": "\u9e70\u6f6d",
-                    "value": [
-                        117.03,
-                        28.14,
-                        35
-                    ]
-                }
-            ],
-            "label": {
-                "normal": {
-                    "show": false,
-                    "position": "top",
-                    "textStyle": {
-                        "fontSize": 12
-                    }
-                },
-                "emphasis": {
-                    "show": true,
-                    "textStyle": {
-                        "fontSize": 12
-                    }
-                }
-            }
-        },
-        {
-            "type": "scatter",
-            "coordinateSystem": "geo",
-            "symbol": "circle",
-            "symbolSize": 15,
-            "data": [
-                {
-                    "name": "\u897f\u5b89",
-                    "value": [
-                        108.95,
-                        34.27,
-                        12635
-                    ]
-                }
-            ],
-            "label": {
-                "normal": {
-                    "show": false,
-                    "position": "top",
-                    "textStyle": {
-                        "fontSize": 12
-                    }
-                },
-                "emphasis": {
-                    "show": true,
-                    "textStyle": {
-                        "fontSize": 12
-                    }
-                }
-            }
-        },
-        {
-            "type": "scatter",
-            "coordinateSystem": "geo",
-            "symbol": "circle",
-            "symbolSize": 15,
-            "data": [
-                {
-                    "name": "\u5b9c\u660c",
-                    "value": [
-                        111.3,
-                        30.7,
-                        160
-                    ]
-                }
-            ],
-            "label": {
-                "normal": {
-                    "show": false,
-                    "position": "top",
-                    "textStyle": {
-                        "fontSize": 12
-                    }
-                },
-                "emphasis": {
-                    "show": true,
-                    "textStyle": {
-                        "fontSize": 12
-                    }
-                }
-            }
-        },
-        {
-            "type": "scatter",
-            "coordinateSystem": "geo",
-            "symbol": "circle",
-            "symbolSize": 15,
-            "data": [
-                {
-                    "name": "\u8302\u540d",
-                    "value": [
-                        110.88,
-                        21.68,
-                        37
-                    ]
-                }
-            ],
-            "label": {
-                "normal": {
-                    "show": false,
-                    "position": "top",
-                    "textStyle": {
-                        "fontSize": 12
-                    }
-                },
-                "emphasis": {
-                    "show": true,
-                    "textStyle": {
-                        "fontSize": 12
-                    }
-                }
-            }
-        },
-        {
-            "type": "scatter",
-            "coordinateSystem": "geo",
-            "symbol": "circle",
-            "symbolSize": 15,
-            "data": [
-                {
-                    "name": "\u8d63\u5dde",
-                    "value": [
-                        114.56,
-                        28.52,
-                        120
-                    ]
-                }
-            ],
-            "label": {
-                "normal": {
-                    "show": false,
-                    "position": "top",
-                    "textStyle": {
-                        "fontSize": 12
-                    }
-                },
-                "emphasis": {
-                    "show": true,
-                    "textStyle": {
-                        "fontSize": 12
-                    }
-                }
-            }
-        },
-        {
-            "type": "scatter",
-            "coordinateSystem": "geo",
-            "symbol": "circle",
-            "symbolSize": 15,
-            "data": [
-                {
-                    "name": "\u516d\u5b89",
-                    "value": [
-                        116.28,
-                        31.44,
-                        70
-                    ]
-                }
-            ],
-            "label": {
-                "normal": {
-                    "show": false,
-                    "position": "top",
-                    "textStyle": {
-                        "fontSize": 12
-                    }
-                },
-                "emphasis": {
-                    "show": true,
-                    "textStyle": {
-                        "fontSize": 12
-                    }
-                }
-            }
-        },
-        {
-            "type": "scatter",
-            "coordinateSystem": "geo",
-            "symbol": "circle",
-            "symbolSize": 15,
-            "data": [
-                {
-                    "name": "\u9f99\u5ca9",
-                    "value": [
-                        117.01,
-                        25.06,
-                        33
-                    ]
-                }
-            ],
-            "label": {
-                "normal": {
-                    "show": false,
-                    "position": "top",
-                    "textStyle": {
-                        "fontSize": 12
-                    }
-                },
-                "emphasis": {
-                    "show": true,
-                    "textStyle": {
-                        "fontSize": 12
-                    }
-                }
-            }
-        },
-        {
-            "type": "scatter",
-            "coordinateSystem": "geo",
-            "symbol": "circle",
-            "symbolSize": 15,
-            "data": [
-                {
-                    "name": "\u94dc\u4ec1",
-                    "value": [
-                        109.12,
-                        27.43,
-                        34
-                    ]
-                }
-            ],
-            "label": {
-                "normal": {
-                    "show": false,
-                    "position": "top",
-                    "textStyle": {
-                        "fontSize": 12
-                    }
-                },
-                "emphasis": {
-                    "show": true,
-                    "textStyle": {
-                        "fontSize": 12
-                    }
-                }
-            }
-        },
-        {
-            "type": "scatter",
-            "coordinateSystem": "geo",
-            "symbol": "circle",
-            "symbolSize": 15,
-            "data": [
-                {
-                    "name": "\u4e5d\u6c5f",
-                    "value": [
-                        115.97,
-                        29.71,
-                        36
-                    ]
-                }
-            ],
-            "label": {
-                "normal": {
-                    "show": false,
-                    "position": "top",
-                    "textStyle": {
-                        "fontSize": 12
-                    }
-                },
-                "emphasis": {
-                    "show": true,
-                    "textStyle": {
-                        "fontSize": 12
-                    }
-                }
-            }
-        },
-        {
-            "type": "scatter",
-            "coordinateSystem": "geo",
-            "symbol": "circle",
-            "symbolSize": 15,
-            "data": [
-                {
-                    "name": "\u664b\u4e2d",
-                    "value": [
-                        112.75,
-                        37.68,
-                        120
-                    ]
-                }
-            ],
-            "label": {
-                "normal": {
-                    "show": false,
-                    "position": "top",
-                    "textStyle": {
-                        "fontSize": 12
-                    }
-                },
-                "emphasis": {
-                    "show": true,
-                    "textStyle": {
-                        "fontSize": 12
-                    }
-                }
-            }
-        },
-        {
-            "type": "scatter",
-            "coordinateSystem": "geo",
-            "symbol": "circle",
-            "symbolSize": 15,
-            "data": [
-                {
-                    "name": "\u65b0\u4e61",
-                    "value": [
-                        113.52,
-                        35.18,
-                        38
-                    ]
-                }
-            ],
-            "label": {
-                "normal": {
-                    "show": false,
-                    "position": "top",
-                    "textStyle": {
-                        "fontSize": 12
-                    }
-                },
-                "emphasis": {
-                    "show": true,
-                    "textStyle": {
-                        "fontSize": 12
-                    }
-                }
-            }
-        },
-        {
-            "type": "scatter",
-            "coordinateSystem": "geo",
-            "symbol": "circle",
-            "symbolSize": 15,
-            "data": [
-                {
-                    "name": "\u6ee8\u5dde",
-                    "value": [
-                        118.03,
-                        37.36,
-                        144
-                    ]
-                }
-            ],
-            "label": {
-                "normal": {
-                    "show": false,
-                    "position": "top",
-                    "textStyle": {
-                        "fontSize": 12
-                    }
-                },
-                "emphasis": {
-                    "show": true,
-                    "textStyle": {
-                        "fontSize": 12
-                    }
-                }
-            }
-        },
-        {
-            "type": "scatter",
-            "coordinateSystem": "geo",
-            "symbol": "circle",
-            "symbolSize": 15,
-            "data": [
-                {
-                    "name": "\u8346\u95e8",
-                    "value": [
-                        112.12,
-                        31.02,
-                        36
-                    ]
-                }
-            ],
-            "label": {
-                "normal": {
-                    "show": false,
-                    "position": "top",
-                    "textStyle": {
-                        "fontSize": 12
-                    }
-                },
-                "emphasis": {
-                    "show": true,
-                    "textStyle": {
-                        "fontSize": 12
-                    }
-                }
-            }
-        },
-        {
-            "type": "scatter",
-            "coordinateSystem": "geo",
-            "symbol": "circle",
-            "symbolSize": 15,
-            "data": [
-                {
-                    "name": "\u6ec1\u5dde",
-                    "value": [
-                        118.18,
-                        32.18,
-                        105
-                    ]
-                }
-            ],
-            "label": {
-                "normal": {
-                    "show": false,
-                    "position": "top",
-                    "textStyle": {
-                        "fontSize": 12
-                    }
-                },
-                "emphasis": {
-                    "show": true,
-                    "textStyle": {
-                        "fontSize": 12
-                    }
-                }
-            }
-        },
-        {
-            "type": "scatter",
-            "coordinateSystem": "geo",
-            "symbol": "circle",
-            "symbolSize": 15,
-            "data": [
-                {
-                    "name": "\u9633\u6c5f",
-                    "value": [
-                        111.95,
-                        21.85,
-                        96
-                    ]
-                }
-            ],
-            "label": {
-                "normal": {
-                    "show": false,
-                    "position": "top",
-                    "textStyle": {
-                        "fontSize": 12
-                    }
-                },
-                "emphasis": {
-                    "show": true,
-                    "textStyle": {
-                        "fontSize": 12
-                    }
-                }
-            }
-        },
-        {
-            "type": "scatter",
-            "coordinateSystem": "geo",
-            "symbol": "circle",
-            "symbolSize": 15,
-            "data": [
-                {
-                    "name": "\u5ef6\u5b89",
-                    "value": [
-                        109.47,
-                        36.6,
-                        60
-                    ]
-                }
-            ],
-            "label": {
-                "normal": {
-                    "show": false,
-                    "position": "top",
-                    "textStyle": {
-                        "fontSize": 12
-                    }
-                },
-                "emphasis": {
-                    "show": true,
-                    "textStyle": {
-                        "fontSize": 12
-                    }
-                }
-            }
-        },
-        {
-            "type": "scatter",
-            "coordinateSystem": "geo",
-            "symbol": "circle",
-            "symbolSize": 15,
-            "data": [
-                {
-                    "name": "\u5357\u9633",
-                    "value": [
-                        112.32,
-                        33,
-                        90
-                    ]
-                }
-            ],
-            "label": {
-                "normal": {
-                    "show": false,
-                    "position": "top",
-                    "textStyle": {
-                        "fontSize": 12
-                    }
-                },
-                "emphasis": {
-                    "show": true,
-                    "textStyle": {
-                        "fontSize": 12
-                    }
-                }
-            }
-        },
-        {
-            "type": "scatter",
-            "coordinateSystem": "geo",
-            "symbol": "circle",
-            "symbolSize": 15,
-            "data": [
-                {
-                    "name": "\u53a6\u95e8",
-                    "value": [
-                        118.1,
-                        24.46,
-                        3729
-                    ]
-                }
-            ],
-            "label": {
-                "normal": {
-                    "show": false,
-                    "position": "top",
-                    "textStyle": {
-                        "fontSize": 12
-                    }
-                },
-                "emphasis": {
-                    "show": true,
-                    "textStyle": {
-                        "fontSize": 12
-                    }
-                }
-            }
-        },
-        {
-            "type": "scatter",
-            "coordinateSystem": "geo",
-            "symbol": "circle",
-            "symbolSize": 15,
-            "data": [
-                {
-                    "name": "\u83cf\u6cfd",
-                    "value": [
-                        115.480656,
-                        35.23375,
-                        38
-                    ]
-                }
-            ],
-            "label": {
-                "normal": {
-                    "show": false,
-                    "position": "top",
-                    "textStyle": {
-                        "fontSize": 12
-                    }
-                },
-                "emphasis": {
-                    "show": true,
-                    "textStyle": {
-                        "fontSize": 12
-                    }
-                }
-            }
-        },
-        {
-            "type": "scatter",
-            "coordinateSystem": "geo",
-            "symbol": "circle",
-            "symbolSize": 15,
-            "data": [
-                {
-                    "name": "\u5b81\u6ce2",
-                    "value": [
-                        121.56,
-                        29.86,
-                        2556
-                    ]
-                }
-            ],
-            "label": {
-                "normal": {
-                    "show": false,
-                    "position": "top",
-                    "textStyle": {
-                        "fontSize": 12
-                    }
-                },
-                "emphasis": {
-                    "show": true,
-                    "textStyle": {
-                        "fontSize": 12
-                    }
-                }
-            }
-        },
-        {
-            "type": "scatter",
-            "coordinateSystem": "geo",
-            "symbol": "circle",
-            "symbolSize": 15,
-            "data": [
-                {
-                    "name": "\u6df1\u5733",
-                    "value": [
-                        114.07,
-                        22.62,
-                        13920
-                    ]
-                }
-            ],
-            "label": {
-                "normal": {
-                    "show": false,
-                    "position": "top",
-                    "textStyle": {
-                        "fontSize": 12
-                    }
-                },
-                "emphasis": {
-                    "show": true,
-                    "textStyle": {
-                        "fontSize": 12
-                    }
-                }
-            }
-        },
-        {
-            "type": "scatter",
-            "coordinateSystem": "geo",
-            "symbol": "circle",
-            "symbolSize": 15,
-            "data": [
-                {
-                    "name": "\u829c\u6e56",
-                    "value": [
-                        118.38,
-                        31.33,
-                        132
-                    ]
-                }
-            ],
-            "label": {
-                "normal": {
-                    "show": false,
-                    "position": "top",
-                    "textStyle": {
-                        "fontSize": 12
-                    }
-                },
-                "emphasis": {
-                    "show": true,
-                    "textStyle": {
-                        "fontSize": 12
-                    }
-                }
-            }
-        },
-        {
-            "type": "scatter",
-            "coordinateSystem": "geo",
-            "symbol": "circle",
-            "symbolSize": 15,
-            "data": [
-                {
-                    "name": "\u5317\u4eac",
-                    "value": [
-                        116.407526,
-                        39.90403,
-                        27370
+                        117.13,
+                        36.18,
+                        74
                     ]
                 }
             ],
@@ -4340,7 +124,7 @@ var option_7cc0640a627d457a8d24be7067e4cb84 = {
                     "value": [
                         113.62,
                         24.84,
-                        38
+                        36
                     ]
                 }
             ],
@@ -4367,11 +151,11 @@ var option_7cc0640a627d457a8d24be7067e4cb84 = {
             "symbolSize": 15,
             "data": [
                 {
-                    "name": "\u90b5\u9633",
+                    "name": "\u5609\u5cea\u5173",
                     "value": [
-                        111.28,
-                        27.14,
-                        39
+                        98.289152,
+                        39.77313,
+                        31
                     ]
                 }
             ],
@@ -4398,259 +182,11 @@ var option_7cc0640a627d457a8d24be7067e4cb84 = {
             "symbolSize": 15,
             "data": [
                 {
-                    "name": "\u957f\u6cbb",
+                    "name": "\u5357\u901a",
                     "value": [
-                        113.08,
-                        36.18,
-                        40
-                    ]
-                }
-            ],
-            "label": {
-                "normal": {
-                    "show": false,
-                    "position": "top",
-                    "textStyle": {
-                        "fontSize": 12
-                    }
-                },
-                "emphasis": {
-                    "show": true,
-                    "textStyle": {
-                        "fontSize": 12
-                    }
-                }
-            }
-        },
-        {
-            "type": "scatter",
-            "coordinateSystem": "geo",
-            "symbol": "circle",
-            "symbolSize": 15,
-            "data": [
-                {
-                    "name": "\u5fb7\u5dde",
-                    "value": [
-                        116.29,
-                        37.45,
-                        32
-                    ]
-                }
-            ],
-            "label": {
-                "normal": {
-                    "show": false,
-                    "position": "top",
-                    "textStyle": {
-                        "fontSize": 12
-                    }
-                },
-                "emphasis": {
-                    "show": true,
-                    "textStyle": {
-                        "fontSize": 12
-                    }
-                }
-            }
-        },
-        {
-            "type": "scatter",
-            "coordinateSystem": "geo",
-            "symbol": "circle",
-            "symbolSize": 15,
-            "data": [
-                {
-                    "name": "\u65e5\u7167",
-                    "value": [
-                        119.46,
-                        35.42,
-                        124
-                    ]
-                }
-            ],
-            "label": {
-                "normal": {
-                    "show": false,
-                    "position": "top",
-                    "textStyle": {
-                        "fontSize": 12
-                    }
-                },
-                "emphasis": {
-                    "show": true,
-                    "textStyle": {
-                        "fontSize": 12
-                    }
-                }
-            }
-        },
-        {
-            "type": "scatter",
-            "coordinateSystem": "geo",
-            "symbol": "circle",
-            "symbolSize": 15,
-            "data": [
-                {
-                    "name": "\u626c\u5dde",
-                    "value": [
-                        119.42,
-                        32.39,
-                        238
-                    ]
-                }
-            ],
-            "label": {
-                "normal": {
-                    "show": false,
-                    "position": "top",
-                    "textStyle": {
-                        "fontSize": 12
-                    }
-                },
-                "emphasis": {
-                    "show": true,
-                    "textStyle": {
-                        "fontSize": 12
-                    }
-                }
-            }
-        },
-        {
-            "type": "scatter",
-            "coordinateSystem": "geo",
-            "symbol": "circle",
-            "symbolSize": 15,
-            "data": [
-                {
-                    "name": "\u67f3\u5dde",
-                    "value": [
-                        109.4,
-                        24.33,
-                        68
-                    ]
-                }
-            ],
-            "label": {
-                "normal": {
-                    "show": false,
-                    "position": "top",
-                    "textStyle": {
-                        "fontSize": 12
-                    }
-                },
-                "emphasis": {
-                    "show": true,
-                    "textStyle": {
-                        "fontSize": 12
-                    }
-                }
-            }
-        },
-        {
-            "type": "scatter",
-            "coordinateSystem": "geo",
-            "symbol": "circle",
-            "symbolSize": 15,
-            "data": [
-                {
-                    "name": "\u5510\u5c71",
-                    "value": [
-                        118.02,
-                        39.63,
-                        124
-                    ]
-                }
-            ],
-            "label": {
-                "normal": {
-                    "show": false,
-                    "position": "top",
-                    "textStyle": {
-                        "fontSize": 12
-                    }
-                },
-                "emphasis": {
-                    "show": true,
-                    "textStyle": {
-                        "fontSize": 12
-                    }
-                }
-            }
-        },
-        {
-            "type": "scatter",
-            "coordinateSystem": "geo",
-            "symbol": "circle",
-            "symbolSize": 15,
-            "data": [
-                {
-                    "name": "\u9ec4\u5188",
-                    "value": [
-                        114.87,
-                        30.45,
-                        37
-                    ]
-                }
-            ],
-            "label": {
-                "normal": {
-                    "show": false,
-                    "position": "top",
-                    "textStyle": {
-                        "fontSize": 12
-                    }
-                },
-                "emphasis": {
-                    "show": true,
-                    "textStyle": {
-                        "fontSize": 12
-                    }
-                }
-            }
-        },
-        {
-            "type": "scatter",
-            "coordinateSystem": "geo",
-            "symbol": "circle",
-            "symbolSize": 15,
-            "data": [
-                {
-                    "name": "\u5408\u80a5",
-                    "value": [
-                        117.27,
-                        31.86,
-                        2590
-                    ]
-                }
-            ],
-            "label": {
-                "normal": {
-                    "show": false,
-                    "position": "top",
-                    "textStyle": {
-                        "fontSize": 12
-                    }
-                },
-                "emphasis": {
-                    "show": true,
-                    "textStyle": {
-                        "fontSize": 12
-                    }
-                }
-            }
-        },
-        {
-            "type": "scatter",
-            "coordinateSystem": "geo",
-            "symbol": "circle",
-            "symbolSize": 15,
-            "data": [
-                {
-                    "name": "\u6606\u660e",
-                    "value": [
-                        102.73,
-                        25.04,
-                        14289
+                        121.05,
+                        32.08,
+                        384
                     ]
                 }
             ],
@@ -4708,347 +244,6 @@ var option_7cc0640a627d457a8d24be7067e4cb84 = {
             "symbolSize": 15,
             "data": [
                 {
-                    "name": "\u6cc9\u5dde",
-                    "value": [
-                        118.58,
-                        24.93,
-                        918
-                    ]
-                }
-            ],
-            "label": {
-                "normal": {
-                    "show": false,
-                    "position": "top",
-                    "textStyle": {
-                        "fontSize": 12
-                    }
-                },
-                "emphasis": {
-                    "show": true,
-                    "textStyle": {
-                        "fontSize": 12
-                    }
-                }
-            }
-        },
-        {
-            "type": "scatter",
-            "coordinateSystem": "geo",
-            "symbol": "circle",
-            "symbolSize": 15,
-            "data": [
-                {
-                    "name": "\u62c9\u8428",
-                    "value": [
-                        91.11,
-                        29.97,
-                        38
-                    ]
-                }
-            ],
-            "label": {
-                "normal": {
-                    "show": false,
-                    "position": "top",
-                    "textStyle": {
-                        "fontSize": 12
-                    }
-                },
-                "emphasis": {
-                    "show": true,
-                    "textStyle": {
-                        "fontSize": 12
-                    }
-                }
-            }
-        },
-        {
-            "type": "scatter",
-            "coordinateSystem": "geo",
-            "symbol": "circle",
-            "symbolSize": 15,
-            "data": [
-                {
-                    "name": "\u5f20\u5bb6\u53e3",
-                    "value": [
-                        114.87,
-                        40.82,
-                        66
-                    ]
-                }
-            ],
-            "label": {
-                "normal": {
-                    "show": false,
-                    "position": "top",
-                    "textStyle": {
-                        "fontSize": 12
-                    }
-                },
-                "emphasis": {
-                    "show": true,
-                    "textStyle": {
-                        "fontSize": 12
-                    }
-                }
-            }
-        },
-        {
-            "type": "scatter",
-            "coordinateSystem": "geo",
-            "symbol": "circle",
-            "symbolSize": 15,
-            "data": [
-                {
-                    "name": "\u79e6\u7687\u5c9b",
-                    "value": [
-                        119.57,
-                        39.95,
-                        72
-                    ]
-                }
-            ],
-            "label": {
-                "normal": {
-                    "show": false,
-                    "position": "top",
-                    "textStyle": {
-                        "fontSize": 12
-                    }
-                },
-                "emphasis": {
-                    "show": true,
-                    "textStyle": {
-                        "fontSize": 12
-                    }
-                }
-            }
-        },
-        {
-            "type": "scatter",
-            "coordinateSystem": "geo",
-            "symbol": "circle",
-            "symbolSize": 15,
-            "data": [
-                {
-                    "name": "\u868c\u57e0",
-                    "value": [
-                        117.21,
-                        32.56,
-                        64
-                    ]
-                }
-            ],
-            "label": {
-                "normal": {
-                    "show": false,
-                    "position": "top",
-                    "textStyle": {
-                        "fontSize": 12
-                    }
-                },
-                "emphasis": {
-                    "show": true,
-                    "textStyle": {
-                        "fontSize": 12
-                    }
-                }
-            }
-        },
-        {
-            "type": "scatter",
-            "coordinateSystem": "geo",
-            "symbol": "circle",
-            "symbolSize": 15,
-            "data": [
-                {
-                    "name": "\u961c\u9633",
-                    "value": [
-                        115.48,
-                        32.54,
-                        120
-                    ]
-                }
-            ],
-            "label": {
-                "normal": {
-                    "show": false,
-                    "position": "top",
-                    "textStyle": {
-                        "fontSize": 12
-                    }
-                },
-                "emphasis": {
-                    "show": true,
-                    "textStyle": {
-                        "fontSize": 12
-                    }
-                }
-            }
-        },
-        {
-            "type": "scatter",
-            "coordinateSystem": "geo",
-            "symbol": "circle",
-            "symbolSize": 15,
-            "data": [
-                {
-                    "name": "\u676d\u5dde",
-                    "value": [
-                        120.19,
-                        30.26,
-                        14174
-                    ]
-                }
-            ],
-            "label": {
-                "normal": {
-                    "show": false,
-                    "position": "top",
-                    "textStyle": {
-                        "fontSize": 12
-                    }
-                },
-                "emphasis": {
-                    "show": true,
-                    "textStyle": {
-                        "fontSize": 12
-                    }
-                }
-            }
-        },
-        {
-            "type": "scatter",
-            "coordinateSystem": "geo",
-            "symbol": "circle",
-            "symbolSize": 15,
-            "data": [
-                {
-                    "name": "\u5415\u6881",
-                    "value": [
-                        111.13,
-                        37.52,
-                        432
-                    ]
-                }
-            ],
-            "label": {
-                "normal": {
-                    "show": false,
-                    "position": "top",
-                    "textStyle": {
-                        "fontSize": 12
-                    }
-                },
-                "emphasis": {
-                    "show": true,
-                    "textStyle": {
-                        "fontSize": 12
-                    }
-                }
-            }
-        },
-        {
-            "type": "scatter",
-            "coordinateSystem": "geo",
-            "symbol": "circle",
-            "symbolSize": 15,
-            "data": [
-                {
-                    "name": "\u592a\u539f",
-                    "value": [
-                        112.53,
-                        37.87,
-                        11016
-                    ]
-                }
-            ],
-            "label": {
-                "normal": {
-                    "show": false,
-                    "position": "top",
-                    "textStyle": {
-                        "fontSize": 12
-                    }
-                },
-                "emphasis": {
-                    "show": true,
-                    "textStyle": {
-                        "fontSize": 12
-                    }
-                }
-            }
-        },
-        {
-            "type": "scatter",
-            "coordinateSystem": "geo",
-            "symbol": "circle",
-            "symbolSize": 15,
-            "data": [
-                {
-                    "name": "\u9ec4\u5c71",
-                    "value": [
-                        118.18,
-                        29.43,
-                        78
-                    ]
-                }
-            ],
-            "label": {
-                "normal": {
-                    "show": false,
-                    "position": "top",
-                    "textStyle": {
-                        "fontSize": 12
-                    }
-                },
-                "emphasis": {
-                    "show": true,
-                    "textStyle": {
-                        "fontSize": 12
-                    }
-                }
-            }
-        },
-        {
-            "type": "scatter",
-            "coordinateSystem": "geo",
-            "symbol": "circle",
-            "symbolSize": 15,
-            "data": [
-                {
-                    "name": "\u8bb8\u660c",
-                    "value": [
-                        113.49,
-                        34.01,
-                        31
-                    ]
-                }
-            ],
-            "label": {
-                "normal": {
-                    "show": false,
-                    "position": "top",
-                    "textStyle": {
-                        "fontSize": 12
-                    }
-                },
-                "emphasis": {
-                    "show": true,
-                    "textStyle": {
-                        "fontSize": 12
-                    }
-                }
-            }
-        },
-        {
-            "type": "scatter",
-            "coordinateSystem": "geo",
-            "symbol": "circle",
-            "symbolSize": 15,
-            "data": [
-                {
                     "name": "\u6d4e\u5b81",
                     "value": [
                         116.59,
@@ -5080,11 +275,11 @@ var option_7cc0640a627d457a8d24be7067e4cb84 = {
             "symbolSize": 15,
             "data": [
                 {
-                    "name": "\u54b8\u5b81",
+                    "name": "\u9999\u6e2f",
                     "value": [
-                        114.17,
-                        29.53,
-                        132
+                        114.173355,
+                        22.320048,
+                        38
                     ]
                 }
             ],
@@ -5111,11 +306,11 @@ var option_7cc0640a627d457a8d24be7067e4cb84 = {
             "symbolSize": 15,
             "data": [
                 {
-                    "name": "\u77f3\u5bb6\u5e84",
+                    "name": "\u5317\u6d77",
                     "value": [
-                        114.48,
-                        38.03,
-                        1683
+                        109.12,
+                        21.49,
+                        36
                     ]
                 }
             ],
@@ -5142,11 +337,11 @@ var option_7cc0640a627d457a8d24be7067e4cb84 = {
             "symbolSize": 15,
             "data": [
                 {
-                    "name": "\u6842\u6797",
+                    "name": "\u4e09\u4e9a",
                     "value": [
-                        110.28,
-                        25.29,
-                        128
+                        109.511909,
+                        18.252847,
+                        80
                     ]
                 }
             ],
@@ -5173,11 +368,11 @@ var option_7cc0640a627d457a8d24be7067e4cb84 = {
             "symbolSize": 15,
             "data": [
                 {
-                    "name": "\u5cb3\u9633",
+                    "name": "\u516d\u5b89",
                     "value": [
-                        113.09,
-                        29.37,
-                        33
+                        116.28,
+                        31.44,
+                        74
                     ]
                 }
             ],
@@ -5204,11 +399,11 @@ var option_7cc0640a627d457a8d24be7067e4cb84 = {
             "symbolSize": 15,
             "data": [
                 {
-                    "name": "\u6c55\u5c3e",
+                    "name": "\u6cc9\u5dde",
                     "value": [
-                        115.375279,
-                        22.786211,
-                        34
+                        118.58,
+                        24.93,
+                        945
                     ]
                 }
             ],
@@ -5235,11 +430,135 @@ var option_7cc0640a627d457a8d24be7067e4cb84 = {
             "symbolSize": 15,
             "data": [
                 {
-                    "name": "\u4e3d\u6c34",
+                    "name": "\u5609\u5174",
                     "value": [
-                        119.92,
-                        28.45,
-                        33
+                        120.76,
+                        30.77,
+                        741
+                    ]
+                }
+            ],
+            "label": {
+                "normal": {
+                    "show": false,
+                    "position": "top",
+                    "textStyle": {
+                        "fontSize": 12
+                    }
+                },
+                "emphasis": {
+                    "show": true,
+                    "textStyle": {
+                        "fontSize": 12
+                    }
+                }
+            }
+        },
+        {
+            "type": "scatter",
+            "coordinateSystem": "geo",
+            "symbol": "circle",
+            "symbolSize": 15,
+            "data": [
+                {
+                    "name": "\u9ec4\u5c71",
+                    "value": [
+                        118.18,
+                        29.43,
+                        66
+                    ]
+                }
+            ],
+            "label": {
+                "normal": {
+                    "show": false,
+                    "position": "top",
+                    "textStyle": {
+                        "fontSize": 12
+                    }
+                },
+                "emphasis": {
+                    "show": true,
+                    "textStyle": {
+                        "fontSize": 12
+                    }
+                }
+            }
+        },
+        {
+            "type": "scatter",
+            "coordinateSystem": "geo",
+            "symbol": "circle",
+            "symbolSize": 15,
+            "data": [
+                {
+                    "name": "\u6d1b\u9633",
+                    "value": [
+                        112.44,
+                        34.7,
+                        150
+                    ]
+                }
+            ],
+            "label": {
+                "normal": {
+                    "show": false,
+                    "position": "top",
+                    "textStyle": {
+                        "fontSize": 12
+                    }
+                },
+                "emphasis": {
+                    "show": true,
+                    "textStyle": {
+                        "fontSize": 12
+                    }
+                }
+            }
+        },
+        {
+            "type": "scatter",
+            "coordinateSystem": "geo",
+            "symbol": "circle",
+            "symbolSize": 15,
+            "data": [
+                {
+                    "name": "\u957f\u6c99",
+                    "value": [
+                        113,
+                        28.21,
+                        3720
+                    ]
+                }
+            ],
+            "label": {
+                "normal": {
+                    "show": false,
+                    "position": "top",
+                    "textStyle": {
+                        "fontSize": 12
+                    }
+                },
+                "emphasis": {
+                    "show": true,
+                    "textStyle": {
+                        "fontSize": 12
+                    }
+                }
+            }
+        },
+        {
+            "type": "scatter",
+            "coordinateSystem": "geo",
+            "symbol": "circle",
+            "symbolSize": 15,
+            "data": [
+                {
+                    "name": "\u4e1c\u8425",
+                    "value": [
+                        118.49,
+                        37.46,
+                        64
                     ]
                 }
             ],
@@ -5270,7 +589,7 @@ var option_7cc0640a627d457a8d24be7067e4cb84 = {
                     "value": [
                         113.65,
                         34.76,
-                        4522
+                        4389
                     ]
                 }
             ],
@@ -5297,11 +616,11 @@ var option_7cc0640a627d457a8d24be7067e4cb84 = {
             "symbolSize": 15,
             "data": [
                 {
-                    "name": "\u5357\u901a",
+                    "name": "\u8d63\u5dde",
                     "value": [
-                        121.05,
-                        32.08,
-                        456
+                        114.56,
+                        28.52,
+                        160
                     ]
                 }
             ],
@@ -5328,11 +647,73 @@ var option_7cc0640a627d457a8d24be7067e4cb84 = {
             "symbolSize": 15,
             "data": [
                 {
-                    "name": "\u5357\u660c",
+                    "name": "\u5b9c\u660c",
                     "value": [
-                        115.89,
-                        28.68,
-                        1920
+                        111.3,
+                        30.7,
+                        185
+                    ]
+                }
+            ],
+            "label": {
+                "normal": {
+                    "show": false,
+                    "position": "top",
+                    "textStyle": {
+                        "fontSize": 12
+                    }
+                },
+                "emphasis": {
+                    "show": true,
+                    "textStyle": {
+                        "fontSize": 12
+                    }
+                }
+            }
+        },
+        {
+            "type": "scatter",
+            "coordinateSystem": "geo",
+            "symbol": "circle",
+            "symbolSize": 15,
+            "data": [
+                {
+                    "name": "\u629a\u5dde",
+                    "value": [
+                        116.35,
+                        28,
+                        117
+                    ]
+                }
+            ],
+            "label": {
+                "normal": {
+                    "show": false,
+                    "position": "top",
+                    "textStyle": {
+                        "fontSize": 12
+                    }
+                },
+                "emphasis": {
+                    "show": true,
+                    "textStyle": {
+                        "fontSize": 12
+                    }
+                }
+            }
+        },
+        {
+            "type": "scatter",
+            "coordinateSystem": "geo",
+            "symbol": "circle",
+            "symbolSize": 15,
+            "data": [
+                {
+                    "name": "\u5357\u5b81",
+                    "value": [
+                        108.33,
+                        22.84,
+                        836
                     ]
                 }
             ],
@@ -5363,7 +744,7 @@ var option_7cc0640a627d457a8d24be7067e4cb84 = {
                     "value": [
                         116.69,
                         23.39,
-                        108
+                        93
                     ]
                 }
             ],
@@ -5390,11 +771,11 @@ var option_7cc0640a627d457a8d24be7067e4cb84 = {
             "symbolSize": 15,
             "data": [
                 {
-                    "name": "\u4f5b\u5c71",
+                    "name": "\u5ef6\u5b89",
                     "value": [
-                        113.11,
-                        23.05,
-                        3480
+                        109.47,
+                        36.6,
+                        62
                     ]
                 }
             ],
@@ -5421,11 +802,2026 @@ var option_7cc0640a627d457a8d24be7067e4cb84 = {
             "symbolSize": 15,
             "data": [
                 {
-                    "name": "\u5b5d\u611f",
+                    "name": "\u5929\u6d25",
                     "value": [
-                        113.54,
-                        30.56,
-                        78
+                        117.200983,
+                        39.084158,
+                        2412
+                    ]
+                }
+            ],
+            "label": {
+                "normal": {
+                    "show": false,
+                    "position": "top",
+                    "textStyle": {
+                        "fontSize": 12
+                    }
+                },
+                "emphasis": {
+                    "show": true,
+                    "textStyle": {
+                        "fontSize": 12
+                    }
+                }
+            }
+        },
+        {
+            "type": "scatter",
+            "coordinateSystem": "geo",
+            "symbol": "circle",
+            "symbolSize": 15,
+            "data": [
+                {
+                    "name": "\u6ca7\u5dde",
+                    "value": [
+                        116.83,
+                        38.33,
+                        128
+                    ]
+                }
+            ],
+            "label": {
+                "normal": {
+                    "show": false,
+                    "position": "top",
+                    "textStyle": {
+                        "fontSize": 12
+                    }
+                },
+                "emphasis": {
+                    "show": true,
+                    "textStyle": {
+                        "fontSize": 12
+                    }
+                }
+            }
+        },
+        {
+            "type": "scatter",
+            "coordinateSystem": "geo",
+            "symbol": "circle",
+            "symbolSize": 15,
+            "data": [
+                {
+                    "name": "\u9f99\u5ca9",
+                    "value": [
+                        117.01,
+                        25.06,
+                        37
+                    ]
+                }
+            ],
+            "label": {
+                "normal": {
+                    "show": false,
+                    "position": "top",
+                    "textStyle": {
+                        "fontSize": 12
+                    }
+                },
+                "emphasis": {
+                    "show": true,
+                    "textStyle": {
+                        "fontSize": 12
+                    }
+                }
+            }
+        },
+        {
+            "type": "scatter",
+            "coordinateSystem": "geo",
+            "symbol": "circle",
+            "symbolSize": 15,
+            "data": [
+                {
+                    "name": "\u53a6\u95e8",
+                    "value": [
+                        118.1,
+                        24.46,
+                        4181
+                    ]
+                }
+            ],
+            "label": {
+                "normal": {
+                    "show": false,
+                    "position": "top",
+                    "textStyle": {
+                        "fontSize": 12
+                    }
+                },
+                "emphasis": {
+                    "show": true,
+                    "textStyle": {
+                        "fontSize": 12
+                    }
+                }
+            }
+        },
+        {
+            "type": "scatter",
+            "coordinateSystem": "geo",
+            "symbol": "circle",
+            "symbolSize": 15,
+            "data": [
+                {
+                    "name": "\u897f\u5b89",
+                    "value": [
+                        108.95,
+                        34.27,
+                        12274
+                    ]
+                }
+            ],
+            "label": {
+                "normal": {
+                    "show": false,
+                    "position": "top",
+                    "textStyle": {
+                        "fontSize": 12
+                    }
+                },
+                "emphasis": {
+                    "show": true,
+                    "textStyle": {
+                        "fontSize": 12
+                    }
+                }
+            }
+        },
+        {
+            "type": "scatter",
+            "coordinateSystem": "geo",
+            "symbol": "circle",
+            "symbolSize": 15,
+            "data": [
+                {
+                    "name": "\u5468\u53e3",
+                    "value": [
+                        114.38,
+                        33.37,
+                        64
+                    ]
+                }
+            ],
+            "label": {
+                "normal": {
+                    "show": false,
+                    "position": "top",
+                    "textStyle": {
+                        "fontSize": 12
+                    }
+                },
+                "emphasis": {
+                    "show": true,
+                    "textStyle": {
+                        "fontSize": 12
+                    }
+                }
+            }
+        },
+        {
+            "type": "scatter",
+            "coordinateSystem": "geo",
+            "symbol": "circle",
+            "symbolSize": 15,
+            "data": [
+                {
+                    "name": "\u6f4d\u574a",
+                    "value": [
+                        119.1,
+                        36.62,
+                        7128
+                    ]
+                }
+            ],
+            "label": {
+                "normal": {
+                    "show": false,
+                    "position": "top",
+                    "textStyle": {
+                        "fontSize": 12
+                    }
+                },
+                "emphasis": {
+                    "show": true,
+                    "textStyle": {
+                        "fontSize": 12
+                    }
+                }
+            }
+        },
+        {
+            "type": "scatter",
+            "coordinateSystem": "geo",
+            "symbol": "circle",
+            "symbolSize": 15,
+            "data": [
+                {
+                    "name": "\u6e05\u8fdc",
+                    "value": [
+                        113.01,
+                        23.7,
+                        320
+                    ]
+                }
+            ],
+            "label": {
+                "normal": {
+                    "show": false,
+                    "position": "top",
+                    "textStyle": {
+                        "fontSize": 12
+                    }
+                },
+                "emphasis": {
+                    "show": true,
+                    "textStyle": {
+                        "fontSize": 12
+                    }
+                }
+            }
+        },
+        {
+            "type": "scatter",
+            "coordinateSystem": "geo",
+            "symbol": "circle",
+            "symbolSize": 15,
+            "data": [
+                {
+                    "name": "\u6df1\u5733",
+                    "value": [
+                        114.07,
+                        22.62,
+                        12876
+                    ]
+                }
+            ],
+            "label": {
+                "normal": {
+                    "show": false,
+                    "position": "top",
+                    "textStyle": {
+                        "fontSize": 12
+                    }
+                },
+                "emphasis": {
+                    "show": true,
+                    "textStyle": {
+                        "fontSize": 12
+                    }
+                }
+            }
+        },
+        {
+            "type": "scatter",
+            "coordinateSystem": "geo",
+            "symbol": "circle",
+            "symbolSize": 15,
+            "data": [
+                {
+                    "name": "\u5357\u9633",
+                    "value": [
+                        112.32,
+                        33,
+                        117
+                    ]
+                }
+            ],
+            "label": {
+                "normal": {
+                    "show": false,
+                    "position": "top",
+                    "textStyle": {
+                        "fontSize": 12
+                    }
+                },
+                "emphasis": {
+                    "show": true,
+                    "textStyle": {
+                        "fontSize": 12
+                    }
+                }
+            }
+        },
+        {
+            "type": "scatter",
+            "coordinateSystem": "geo",
+            "symbol": "circle",
+            "symbolSize": 15,
+            "data": [
+                {
+                    "name": "\u5b9c\u5bbe",
+                    "value": [
+                        104.56,
+                        29.77,
+                        38
+                    ]
+                }
+            ],
+            "label": {
+                "normal": {
+                    "show": false,
+                    "position": "top",
+                    "textStyle": {
+                        "fontSize": 12
+                    }
+                },
+                "emphasis": {
+                    "show": true,
+                    "textStyle": {
+                        "fontSize": 12
+                    }
+                }
+            }
+        },
+        {
+            "type": "scatter",
+            "coordinateSystem": "geo",
+            "symbol": "circle",
+            "symbolSize": 15,
+            "data": [
+                {
+                    "name": "\u77f3\u5bb6\u5e84",
+                    "value": [
+                        114.48,
+                        38.03,
+                        1989
+                    ]
+                }
+            ],
+            "label": {
+                "normal": {
+                    "show": false,
+                    "position": "top",
+                    "textStyle": {
+                        "fontSize": 12
+                    }
+                },
+                "emphasis": {
+                    "show": true,
+                    "textStyle": {
+                        "fontSize": 12
+                    }
+                }
+            }
+        },
+        {
+            "type": "scatter",
+            "coordinateSystem": "geo",
+            "symbol": "circle",
+            "symbolSize": 15,
+            "data": [
+                {
+                    "name": "\u664b\u57ce",
+                    "value": [
+                        112.51,
+                        35.3,
+                        33
+                    ]
+                }
+            ],
+            "label": {
+                "normal": {
+                    "show": false,
+                    "position": "top",
+                    "textStyle": {
+                        "fontSize": 12
+                    }
+                },
+                "emphasis": {
+                    "show": true,
+                    "textStyle": {
+                        "fontSize": 12
+                    }
+                }
+            }
+        },
+        {
+            "type": "scatter",
+            "coordinateSystem": "geo",
+            "symbol": "circle",
+            "symbolSize": 15,
+            "data": [
+                {
+                    "name": "\u6d4e\u5357",
+                    "value": [
+                        117,
+                        36.65,
+                        7350
+                    ]
+                }
+            ],
+            "label": {
+                "normal": {
+                    "show": false,
+                    "position": "top",
+                    "textStyle": {
+                        "fontSize": 12
+                    }
+                },
+                "emphasis": {
+                    "show": true,
+                    "textStyle": {
+                        "fontSize": 12
+                    }
+                }
+            }
+        },
+        {
+            "type": "scatter",
+            "coordinateSystem": "geo",
+            "symbol": "circle",
+            "symbolSize": 15,
+            "data": [
+                {
+                    "name": "\u4e5d\u6c5f",
+                    "value": [
+                        115.97,
+                        29.71,
+                        31
+                    ]
+                }
+            ],
+            "label": {
+                "normal": {
+                    "show": false,
+                    "position": "top",
+                    "textStyle": {
+                        "fontSize": 12
+                    }
+                },
+                "emphasis": {
+                    "show": true,
+                    "textStyle": {
+                        "fontSize": 12
+                    }
+                }
+            }
+        },
+        {
+            "type": "scatter",
+            "coordinateSystem": "geo",
+            "symbol": "circle",
+            "symbolSize": 15,
+            "data": [
+                {
+                    "name": "\u4e34\u6c82",
+                    "value": [
+                        118.35,
+                        35.05,
+                        342
+                    ]
+                }
+            ],
+            "label": {
+                "normal": {
+                    "show": false,
+                    "position": "top",
+                    "textStyle": {
+                        "fontSize": 12
+                    }
+                },
+                "emphasis": {
+                    "show": true,
+                    "textStyle": {
+                        "fontSize": 12
+                    }
+                }
+            }
+        },
+        {
+            "type": "scatter",
+            "coordinateSystem": "geo",
+            "symbol": "circle",
+            "symbolSize": 15,
+            "data": [
+                {
+                    "name": "\u4e2d\u5c71",
+                    "value": [
+                        113.38,
+                        22.52,
+                        814
+                    ]
+                }
+            ],
+            "label": {
+                "normal": {
+                    "show": false,
+                    "position": "top",
+                    "textStyle": {
+                        "fontSize": 12
+                    }
+                },
+                "emphasis": {
+                    "show": true,
+                    "textStyle": {
+                        "fontSize": 12
+                    }
+                }
+            }
+        },
+        {
+            "type": "scatter",
+            "coordinateSystem": "geo",
+            "symbol": "circle",
+            "symbolSize": 15,
+            "data": [
+                {
+                    "name": "\u626c\u5dde",
+                    "value": [
+                        119.42,
+                        32.39,
+                        252
+                    ]
+                }
+            ],
+            "label": {
+                "normal": {
+                    "show": false,
+                    "position": "top",
+                    "textStyle": {
+                        "fontSize": 12
+                    }
+                },
+                "emphasis": {
+                    "show": true,
+                    "textStyle": {
+                        "fontSize": 12
+                    }
+                }
+            }
+        },
+        {
+            "type": "scatter",
+            "coordinateSystem": "geo",
+            "symbol": "circle",
+            "symbolSize": 15,
+            "data": [
+                {
+                    "name": "\u5e38\u5dde",
+                    "value": [
+                        119.95,
+                        31.79,
+                        992
+                    ]
+                }
+            ],
+            "label": {
+                "normal": {
+                    "show": false,
+                    "position": "top",
+                    "textStyle": {
+                        "fontSize": 12
+                    }
+                },
+                "emphasis": {
+                    "show": true,
+                    "textStyle": {
+                        "fontSize": 12
+                    }
+                }
+            }
+        },
+        {
+            "type": "scatter",
+            "coordinateSystem": "geo",
+            "symbol": "circle",
+            "symbolSize": 15,
+            "data": [
+                {
+                    "name": "\u76d8\u9526",
+                    "value": [
+                        122.070714,
+                        41.119997,
+                        30
+                    ]
+                }
+            ],
+            "label": {
+                "normal": {
+                    "show": false,
+                    "position": "top",
+                    "textStyle": {
+                        "fontSize": 12
+                    }
+                },
+                "emphasis": {
+                    "show": true,
+                    "textStyle": {
+                        "fontSize": 12
+                    }
+                }
+            }
+        },
+        {
+            "type": "scatter",
+            "coordinateSystem": "geo",
+            "symbol": "circle",
+            "symbolSize": 15,
+            "data": [
+                {
+                    "name": "\u7389\u6eaa",
+                    "value": [
+                        102.52,
+                        24.35,
+                        3920
+                    ]
+                }
+            ],
+            "label": {
+                "normal": {
+                    "show": false,
+                    "position": "top",
+                    "textStyle": {
+                        "fontSize": 12
+                    }
+                },
+                "emphasis": {
+                    "show": true,
+                    "textStyle": {
+                        "fontSize": 12
+                    }
+                }
+            }
+        },
+        {
+            "type": "scatter",
+            "coordinateSystem": "geo",
+            "symbol": "circle",
+            "symbolSize": 15,
+            "data": [
+                {
+                    "name": "\u957f\u6cbb",
+                    "value": [
+                        113.08,
+                        36.18,
+                        37
+                    ]
+                }
+            ],
+            "label": {
+                "normal": {
+                    "show": false,
+                    "position": "top",
+                    "textStyle": {
+                        "fontSize": 12
+                    }
+                },
+                "emphasis": {
+                    "show": true,
+                    "textStyle": {
+                        "fontSize": 12
+                    }
+                }
+            }
+        },
+        {
+            "type": "scatter",
+            "coordinateSystem": "geo",
+            "symbol": "circle",
+            "symbolSize": 15,
+            "data": [
+                {
+                    "name": "\u90a2\u53f0",
+                    "value": [
+                        114.48,
+                        37.05,
+                        144
+                    ]
+                }
+            ],
+            "label": {
+                "normal": {
+                    "show": false,
+                    "position": "top",
+                    "textStyle": {
+                        "fontSize": 12
+                    }
+                },
+                "emphasis": {
+                    "show": true,
+                    "textStyle": {
+                        "fontSize": 12
+                    }
+                }
+            }
+        },
+        {
+            "type": "scatter",
+            "coordinateSystem": "geo",
+            "symbol": "circle",
+            "symbolSize": 15,
+            "data": [
+                {
+                    "name": "\u592a\u539f",
+                    "value": [
+                        112.53,
+                        37.87,
+                        12960
+                    ]
+                }
+            ],
+            "label": {
+                "normal": {
+                    "show": false,
+                    "position": "top",
+                    "textStyle": {
+                        "fontSize": 12
+                    }
+                },
+                "emphasis": {
+                    "show": true,
+                    "textStyle": {
+                        "fontSize": 12
+                    }
+                }
+            }
+        },
+        {
+            "type": "scatter",
+            "coordinateSystem": "geo",
+            "symbol": "circle",
+            "symbolSize": 15,
+            "data": [
+                {
+                    "name": "\u4e4c\u9c81\u6728\u9f50",
+                    "value": [
+                        87.68,
+                        43.77,
+                        4608
+                    ]
+                }
+            ],
+            "label": {
+                "normal": {
+                    "show": false,
+                    "position": "top",
+                    "textStyle": {
+                        "fontSize": 12
+                    }
+                },
+                "emphasis": {
+                    "show": true,
+                    "textStyle": {
+                        "fontSize": 12
+                    }
+                }
+            }
+        },
+        {
+            "type": "scatter",
+            "coordinateSystem": "geo",
+            "symbol": "circle",
+            "symbolSize": 15,
+            "data": [
+                {
+                    "name": "\u957f\u6625",
+                    "value": [
+                        125.35,
+                        43.88,
+                        864
+                    ]
+                }
+            ],
+            "label": {
+                "normal": {
+                    "show": false,
+                    "position": "top",
+                    "textStyle": {
+                        "fontSize": 12
+                    }
+                },
+                "emphasis": {
+                    "show": true,
+                    "textStyle": {
+                        "fontSize": 12
+                    }
+                }
+            }
+        },
+        {
+            "type": "scatter",
+            "coordinateSystem": "geo",
+            "symbol": "circle",
+            "symbolSize": 15,
+            "data": [
+                {
+                    "name": "\u6c55\u5c3e",
+                    "value": [
+                        115.375279,
+                        22.786211,
+                        37
+                    ]
+                }
+            ],
+            "label": {
+                "normal": {
+                    "show": false,
+                    "position": "top",
+                    "textStyle": {
+                        "fontSize": 12
+                    }
+                },
+                "emphasis": {
+                    "show": true,
+                    "textStyle": {
+                        "fontSize": 12
+                    }
+                }
+            }
+        },
+        {
+            "type": "scatter",
+            "coordinateSystem": "geo",
+            "symbol": "circle",
+            "symbolSize": 15,
+            "data": [
+                {
+                    "name": "\u682a\u6d32",
+                    "value": [
+                        113.16,
+                        27.83,
+                        240
+                    ]
+                }
+            ],
+            "label": {
+                "normal": {
+                    "show": false,
+                    "position": "top",
+                    "textStyle": {
+                        "fontSize": 12
+                    }
+                },
+                "emphasis": {
+                    "show": true,
+                    "textStyle": {
+                        "fontSize": 12
+                    }
+                }
+            }
+        },
+        {
+            "type": "scatter",
+            "coordinateSystem": "geo",
+            "symbol": "circle",
+            "symbolSize": 15,
+            "data": [
+                {
+                    "name": "\u6e56\u5dde",
+                    "value": [
+                        120.1,
+                        30.86,
+                        120
+                    ]
+                }
+            ],
+            "label": {
+                "normal": {
+                    "show": false,
+                    "position": "top",
+                    "textStyle": {
+                        "fontSize": 12
+                    }
+                },
+                "emphasis": {
+                    "show": true,
+                    "textStyle": {
+                        "fontSize": 12
+                    }
+                }
+            }
+        },
+        {
+            "type": "scatter",
+            "coordinateSystem": "geo",
+            "symbol": "circle",
+            "symbolSize": 15,
+            "data": [
+                {
+                    "name": "\u8302\u540d",
+                    "value": [
+                        110.88,
+                        21.68,
+                        40
+                    ]
+                }
+            ],
+            "label": {
+                "normal": {
+                    "show": false,
+                    "position": "top",
+                    "textStyle": {
+                        "fontSize": 12
+                    }
+                },
+                "emphasis": {
+                    "show": true,
+                    "textStyle": {
+                        "fontSize": 12
+                    }
+                }
+            }
+        },
+        {
+            "type": "scatter",
+            "coordinateSystem": "geo",
+            "symbol": "circle",
+            "symbolSize": 15,
+            "data": [
+                {
+                    "name": "\u6f2f\u6cb3",
+                    "value": [
+                        114.02,
+                        33.33,
+                        30
+                    ]
+                }
+            ],
+            "label": {
+                "normal": {
+                    "show": false,
+                    "position": "top",
+                    "textStyle": {
+                        "fontSize": 12
+                    }
+                },
+                "emphasis": {
+                    "show": true,
+                    "textStyle": {
+                        "fontSize": 12
+                    }
+                }
+            }
+        },
+        {
+            "type": "scatter",
+            "coordinateSystem": "geo",
+            "symbol": "circle",
+            "symbolSize": 15,
+            "data": [
+                {
+                    "name": "\u9075\u4e49",
+                    "value": [
+                        106.9,
+                        27.7,
+                        111
+                    ]
+                }
+            ],
+            "label": {
+                "normal": {
+                    "show": false,
+                    "position": "top",
+                    "textStyle": {
+                        "fontSize": 12
+                    }
+                },
+                "emphasis": {
+                    "show": true,
+                    "textStyle": {
+                        "fontSize": 12
+                    }
+                }
+            }
+        },
+        {
+            "type": "scatter",
+            "coordinateSystem": "geo",
+            "symbol": "circle",
+            "symbolSize": 15,
+            "data": [
+                {
+                    "name": "\u6210\u90fd",
+                    "value": [
+                        104.06,
+                        30.67,
+                        29580
+                    ]
+                }
+            ],
+            "label": {
+                "normal": {
+                    "show": false,
+                    "position": "top",
+                    "textStyle": {
+                        "fontSize": 12
+                    }
+                },
+                "emphasis": {
+                    "show": true,
+                    "textStyle": {
+                        "fontSize": 12
+                    }
+                }
+            }
+        },
+        {
+            "type": "scatter",
+            "coordinateSystem": "geo",
+            "symbol": "circle",
+            "symbolSize": 15,
+            "data": [
+                {
+                    "name": "\u65e5\u7167",
+                    "value": [
+                        119.46,
+                        35.42,
+                        124
+                    ]
+                }
+            ],
+            "label": {
+                "normal": {
+                    "show": false,
+                    "position": "top",
+                    "textStyle": {
+                        "fontSize": 12
+                    }
+                },
+                "emphasis": {
+                    "show": true,
+                    "textStyle": {
+                        "fontSize": 12
+                    }
+                }
+            }
+        },
+        {
+            "type": "scatter",
+            "coordinateSystem": "geo",
+            "symbol": "circle",
+            "symbolSize": 15,
+            "data": [
+                {
+                    "name": "\u829c\u6e56",
+                    "value": [
+                        118.38,
+                        31.33,
+                        152
+                    ]
+                }
+            ],
+            "label": {
+                "normal": {
+                    "show": false,
+                    "position": "top",
+                    "textStyle": {
+                        "fontSize": 12
+                    }
+                },
+                "emphasis": {
+                    "show": true,
+                    "textStyle": {
+                        "fontSize": 12
+                    }
+                }
+            }
+        },
+        {
+            "type": "scatter",
+            "coordinateSystem": "geo",
+            "symbol": "circle",
+            "symbolSize": 15,
+            "data": [
+                {
+                    "name": "\u5317\u4eac",
+                    "value": [
+                        116.407526,
+                        39.90403,
+                        27370
+                    ]
+                }
+            ],
+            "label": {
+                "normal": {
+                    "show": false,
+                    "position": "top",
+                    "textStyle": {
+                        "fontSize": 12
+                    }
+                },
+                "emphasis": {
+                    "show": true,
+                    "textStyle": {
+                        "fontSize": 12
+                    }
+                }
+            }
+        },
+        {
+            "type": "scatter",
+            "coordinateSystem": "geo",
+            "symbol": "circle",
+            "symbolSize": 15,
+            "data": [
+                {
+                    "name": "\u54c8\u5c14\u6ee8",
+                    "value": [
+                        126.63,
+                        45.75,
+                        8880
+                    ]
+                }
+            ],
+            "label": {
+                "normal": {
+                    "show": false,
+                    "position": "top",
+                    "textStyle": {
+                        "fontSize": 12
+                    }
+                },
+                "emphasis": {
+                    "show": true,
+                    "textStyle": {
+                        "fontSize": 12
+                    }
+                }
+            }
+        },
+        {
+            "type": "scatter",
+            "coordinateSystem": "geo",
+            "symbol": "circle",
+            "symbolSize": 15,
+            "data": [
+                {
+                    "name": "\u901a\u8fbd",
+                    "value": [
+                        122.16,
+                        43.37,
+                        60
+                    ]
+                }
+            ],
+            "label": {
+                "normal": {
+                    "show": false,
+                    "position": "top",
+                    "textStyle": {
+                        "fontSize": 12
+                    }
+                },
+                "emphasis": {
+                    "show": true,
+                    "textStyle": {
+                        "fontSize": 12
+                    }
+                }
+            }
+        },
+        {
+            "type": "scatter",
+            "coordinateSystem": "geo",
+            "symbol": "circle",
+            "symbolSize": 15,
+            "data": [
+                {
+                    "name": "\u8bb8\u660c",
+                    "value": [
+                        113.49,
+                        34.01,
+                        37
+                    ]
+                }
+            ],
+            "label": {
+                "normal": {
+                    "show": false,
+                    "position": "top",
+                    "textStyle": {
+                        "fontSize": 12
+                    }
+                },
+                "emphasis": {
+                    "show": true,
+                    "textStyle": {
+                        "fontSize": 12
+                    }
+                }
+            }
+        },
+        {
+            "type": "scatter",
+            "coordinateSystem": "geo",
+            "symbol": "circle",
+            "symbolSize": 15,
+            "data": [
+                {
+                    "name": "\u8d35\u9633",
+                    "value": [
+                        106.71,
+                        26.57,
+                        680
+                    ]
+                }
+            ],
+            "label": {
+                "normal": {
+                    "show": false,
+                    "position": "top",
+                    "textStyle": {
+                        "fontSize": 12
+                    }
+                },
+                "emphasis": {
+                    "show": true,
+                    "textStyle": {
+                        "fontSize": 12
+                    }
+                }
+            }
+        },
+        {
+            "type": "scatter",
+            "coordinateSystem": "geo",
+            "symbol": "circle",
+            "symbolSize": 15,
+            "data": [
+                {
+                    "name": "\u9526\u5dde",
+                    "value": [
+                        121.15,
+                        41.13,
+                        40
+                    ]
+                }
+            ],
+            "label": {
+                "normal": {
+                    "show": false,
+                    "position": "top",
+                    "textStyle": {
+                        "fontSize": 12
+                    }
+                },
+                "emphasis": {
+                    "show": true,
+                    "textStyle": {
+                        "fontSize": 12
+                    }
+                }
+            }
+        },
+        {
+            "type": "scatter",
+            "coordinateSystem": "geo",
+            "symbol": "circle",
+            "symbolSize": 15,
+            "data": [
+                {
+                    "name": "\u6500\u679d\u82b1",
+                    "value": [
+                        101.718637,
+                        26.582347,
+                        36
+                    ]
+                }
+            ],
+            "label": {
+                "normal": {
+                    "show": false,
+                    "position": "top",
+                    "textStyle": {
+                        "fontSize": 12
+                    }
+                },
+                "emphasis": {
+                    "show": true,
+                    "textStyle": {
+                        "fontSize": 12
+                    }
+                }
+            }
+        },
+        {
+            "type": "scatter",
+            "coordinateSystem": "geo",
+            "symbol": "circle",
+            "symbolSize": 15,
+            "data": [
+                {
+                    "name": "\u5b9d\u9e21",
+                    "value": [
+                        107.15,
+                        34.38,
+                        1056
+                    ]
+                }
+            ],
+            "label": {
+                "normal": {
+                    "show": false,
+                    "position": "top",
+                    "textStyle": {
+                        "fontSize": 12
+                    }
+                },
+                "emphasis": {
+                    "show": true,
+                    "textStyle": {
+                        "fontSize": 12
+                    }
+                }
+            }
+        },
+        {
+            "type": "scatter",
+            "coordinateSystem": "geo",
+            "symbol": "circle",
+            "symbolSize": 15,
+            "data": [
+                {
+                    "name": "\u4eb3\u5dde",
+                    "value": [
+                        115.47,
+                        33.52,
+                        39
+                    ]
+                }
+            ],
+            "label": {
+                "normal": {
+                    "show": false,
+                    "position": "top",
+                    "textStyle": {
+                        "fontSize": 12
+                    }
+                },
+                "emphasis": {
+                    "show": true,
+                    "textStyle": {
+                        "fontSize": 12
+                    }
+                }
+            }
+        },
+        {
+            "type": "scatter",
+            "coordinateSystem": "geo",
+            "symbol": "circle",
+            "symbolSize": 15,
+            "data": [
+                {
+                    "name": "\u6d77\u53e3",
+                    "value": [
+                        110.35,
+                        20.02,
+                        300
+                    ]
+                }
+            ],
+            "label": {
+                "normal": {
+                    "show": false,
+                    "position": "top",
+                    "textStyle": {
+                        "fontSize": 12
+                    }
+                },
+                "emphasis": {
+                    "show": true,
+                    "textStyle": {
+                        "fontSize": 12
+                    }
+                }
+            }
+        },
+        {
+            "type": "scatter",
+            "coordinateSystem": "geo",
+            "symbol": "circle",
+            "symbolSize": 15,
+            "data": [
+                {
+                    "name": "\u6dc4\u535a",
+                    "value": [
+                        118.05,
+                        36.78,
+                        185
+                    ]
+                }
+            ],
+            "label": {
+                "normal": {
+                    "show": false,
+                    "position": "top",
+                    "textStyle": {
+                        "fontSize": 12
+                    }
+                },
+                "emphasis": {
+                    "show": true,
+                    "textStyle": {
+                        "fontSize": 12
+                    }
+                }
+            }
+        },
+        {
+            "type": "scatter",
+            "coordinateSystem": "geo",
+            "symbol": "circle",
+            "symbolSize": 15,
+            "data": [
+                {
+                    "name": "\u9042\u5b81",
+                    "value": [
+                        105.33,
+                        30.31,
+                        38
+                    ]
+                }
+            ],
+            "label": {
+                "normal": {
+                    "show": false,
+                    "position": "top",
+                    "textStyle": {
+                        "fontSize": 12
+                    }
+                },
+                "emphasis": {
+                    "show": true,
+                    "textStyle": {
+                        "fontSize": 12
+                    }
+                }
+            }
+        },
+        {
+            "type": "scatter",
+            "coordinateSystem": "geo",
+            "symbol": "circle",
+            "symbolSize": 15,
+            "data": [
+                {
+                    "name": "\u5357\u4eac",
+                    "value": [
+                        118.78,
+                        32.04,
+                        8112
+                    ]
+                }
+            ],
+            "label": {
+                "normal": {
+                    "show": false,
+                    "position": "top",
+                    "textStyle": {
+                        "fontSize": 12
+                    }
+                },
+                "emphasis": {
+                    "show": true,
+                    "textStyle": {
+                        "fontSize": 12
+                    }
+                }
+            }
+        },
+        {
+            "type": "scatter",
+            "coordinateSystem": "geo",
+            "symbol": "circle",
+            "symbolSize": 15,
+            "data": [
+                {
+                    "name": "\u5b81\u6ce2",
+                    "value": [
+                        121.56,
+                        29.86,
+                        2343
+                    ]
+                }
+            ],
+            "label": {
+                "normal": {
+                    "show": false,
+                    "position": "top",
+                    "textStyle": {
+                        "fontSize": 12
+                    }
+                },
+                "emphasis": {
+                    "show": true,
+                    "textStyle": {
+                        "fontSize": 12
+                    }
+                }
+            }
+        },
+        {
+            "type": "scatter",
+            "coordinateSystem": "geo",
+            "symbol": "circle",
+            "symbolSize": 15,
+            "data": [
+                {
+                    "name": "\u94f6\u5ddd",
+                    "value": [
+                        106.27,
+                        38.47,
+                        374
+                    ]
+                }
+            ],
+            "label": {
+                "normal": {
+                    "show": false,
+                    "position": "top",
+                    "textStyle": {
+                        "fontSize": 12
+                    }
+                },
+                "emphasis": {
+                    "show": true,
+                    "textStyle": {
+                        "fontSize": 12
+                    }
+                }
+            }
+        },
+        {
+            "type": "scatter",
+            "coordinateSystem": "geo",
+            "symbol": "circle",
+            "symbolSize": 15,
+            "data": [
+                {
+                    "name": "\u53f0\u5dde",
+                    "value": [
+                        121.420757,
+                        28.656386,
+                        352
+                    ]
+                }
+            ],
+            "label": {
+                "normal": {
+                    "show": false,
+                    "position": "top",
+                    "textStyle": {
+                        "fontSize": 12
+                    }
+                },
+                "emphasis": {
+                    "show": true,
+                    "textStyle": {
+                        "fontSize": 12
+                    }
+                }
+            }
+        },
+        {
+            "type": "scatter",
+            "coordinateSystem": "geo",
+            "symbol": "circle",
+            "symbolSize": 15,
+            "data": [
+                {
+                    "name": "\u6cf8\u5dde",
+                    "value": [
+                        105.39,
+                        28.91,
+                        30
+                    ]
+                }
+            ],
+            "label": {
+                "normal": {
+                    "show": false,
+                    "position": "top",
+                    "textStyle": {
+                        "fontSize": 12
+                    }
+                },
+                "emphasis": {
+                    "show": true,
+                    "textStyle": {
+                        "fontSize": 12
+                    }
+                }
+            }
+        },
+        {
+            "type": "scatter",
+            "coordinateSystem": "geo",
+            "symbol": "circle",
+            "symbolSize": 15,
+            "data": [
+                {
+                    "name": "\u54b8\u5b81",
+                    "value": [
+                        114.17,
+                        29.53,
+                        144
+                    ]
+                }
+            ],
+            "label": {
+                "normal": {
+                    "show": false,
+                    "position": "top",
+                    "textStyle": {
+                        "fontSize": 12
+                    }
+                },
+                "emphasis": {
+                    "show": true,
+                    "textStyle": {
+                        "fontSize": 12
+                    }
+                }
+            }
+        },
+        {
+            "type": "scatter",
+            "coordinateSystem": "geo",
+            "symbol": "circle",
+            "symbolSize": 15,
+            "data": [
+                {
+                    "name": "\u6c5f\u95e8",
+                    "value": [
+                        113.06,
+                        22.61,
+                        136
+                    ]
+                }
+            ],
+            "label": {
+                "normal": {
+                    "show": false,
+                    "position": "top",
+                    "textStyle": {
+                        "fontSize": 12
+                    }
+                },
+                "emphasis": {
+                    "show": true,
+                    "textStyle": {
+                        "fontSize": 12
+                    }
+                }
+            }
+        },
+        {
+            "type": "scatter",
+            "coordinateSystem": "geo",
+            "symbol": "circle",
+            "symbolSize": 15,
+            "data": [
+                {
+                    "name": "\u60e0\u5dde",
+                    "value": [
+                        114.4,
+                        23.09,
+                        360
+                    ]
+                }
+            ],
+            "label": {
+                "normal": {
+                    "show": false,
+                    "position": "top",
+                    "textStyle": {
+                        "fontSize": 12
+                    }
+                },
+                "emphasis": {
+                    "show": true,
+                    "textStyle": {
+                        "fontSize": 12
+                    }
+                }
+            }
+        },
+        {
+            "type": "scatter",
+            "coordinateSystem": "geo",
+            "symbol": "circle",
+            "symbolSize": 15,
+            "data": [
+                {
+                    "name": "\u90b5\u9633",
+                    "value": [
+                        111.28,
+                        27.14,
+                        32
+                    ]
+                }
+            ],
+            "label": {
+                "normal": {
+                    "show": false,
+                    "position": "top",
+                    "textStyle": {
+                        "fontSize": 12
+                    }
+                },
+                "emphasis": {
+                    "show": true,
+                    "textStyle": {
+                        "fontSize": 12
+                    }
+                }
+            }
+        },
+        {
+            "type": "scatter",
+            "coordinateSystem": "geo",
+            "symbol": "circle",
+            "symbolSize": 15,
+            "data": [
+                {
+                    "name": "\u5f00\u5c01",
+                    "value": [
+                        114.35,
+                        34.79,
+                        93
+                    ]
+                }
+            ],
+            "label": {
+                "normal": {
+                    "show": false,
+                    "position": "top",
+                    "textStyle": {
+                        "fontSize": 12
+                    }
+                },
+                "emphasis": {
+                    "show": true,
+                    "textStyle": {
+                        "fontSize": 12
+                    }
+                }
+            }
+        },
+        {
+            "type": "scatter",
+            "coordinateSystem": "geo",
+            "symbol": "circle",
+            "symbolSize": 15,
+            "data": [
+                {
+                    "name": "\u6986\u6797",
+                    "value": [
+                        109.47,
+                        38.18,
+                        105
+                    ]
+                }
+            ],
+            "label": {
+                "normal": {
+                    "show": false,
+                    "position": "top",
+                    "textStyle": {
+                        "fontSize": 12
+                    }
+                },
+                "emphasis": {
+                    "show": true,
+                    "textStyle": {
+                        "fontSize": 12
+                    }
+                }
+            }
+        },
+        {
+            "type": "scatter",
+            "coordinateSystem": "geo",
+            "symbol": "circle",
+            "symbolSize": 15,
+            "data": [
+                {
+                    "name": "\u62c9\u8428",
+                    "value": [
+                        91.11,
+                        29.97,
+                        30
+                    ]
+                }
+            ],
+            "label": {
+                "normal": {
+                    "show": false,
+                    "position": "top",
+                    "textStyle": {
+                        "fontSize": 12
+                    }
+                },
+                "emphasis": {
+                    "show": true,
+                    "textStyle": {
+                        "fontSize": 12
+                    }
+                }
+            }
+        },
+        {
+            "type": "scatter",
+            "coordinateSystem": "geo",
+            "symbol": "circle",
+            "symbolSize": 15,
+            "data": [
+                {
+                    "name": "\u5eca\u574a",
+                    "value": [
+                        116.7,
+                        39.53,
+                        360
+                    ]
+                }
+            ],
+            "label": {
+                "normal": {
+                    "show": false,
+                    "position": "top",
+                    "textStyle": {
+                        "fontSize": 12
+                    }
+                },
+                "emphasis": {
+                    "show": true,
+                    "textStyle": {
+                        "fontSize": 12
+                    }
+                }
+            }
+        },
+        {
+            "type": "scatter",
+            "coordinateSystem": "geo",
+            "symbol": "circle",
+            "symbolSize": 15,
+            "data": [
+                {
+                    "name": "\u65b0\u4e61",
+                    "value": [
+                        113.52,
+                        35.18,
+                        34
+                    ]
+                }
+            ],
+            "label": {
+                "normal": {
+                    "show": false,
+                    "position": "top",
+                    "textStyle": {
+                        "fontSize": 12
+                    }
+                },
+                "emphasis": {
+                    "show": true,
+                    "textStyle": {
+                        "fontSize": 12
+                    }
+                }
+            }
+        },
+        {
+            "type": "scatter",
+            "coordinateSystem": "geo",
+            "symbol": "circle",
+            "symbolSize": 15,
+            "data": [
+                {
+                    "name": "\u6b66\u6c49",
+                    "value": [
+                        114.31,
+                        30.52,
+                        4736
+                    ]
+                }
+            ],
+            "label": {
+                "normal": {
+                    "show": false,
+                    "position": "top",
+                    "textStyle": {
+                        "fontSize": 12
+                    }
+                },
+                "emphasis": {
+                    "show": true,
+                    "textStyle": {
+                        "fontSize": 12
+                    }
+                }
+            }
+        },
+        {
+            "type": "scatter",
+            "coordinateSystem": "geo",
+            "symbol": "circle",
+            "symbolSize": 15,
+            "data": [
+                {
+                    "name": "\u73e0\u6d77",
+                    "value": [
+                        113.52,
+                        22.3,
+                        1140
+                    ]
+                }
+            ],
+            "label": {
+                "normal": {
+                    "show": false,
+                    "position": "top",
+                    "textStyle": {
+                        "fontSize": 12
+                    }
+                },
+                "emphasis": {
+                    "show": true,
+                    "textStyle": {
+                        "fontSize": 12
+                    }
+                }
+            }
+        },
+        {
+            "type": "scatter",
+            "coordinateSystem": "geo",
+            "symbol": "circle",
+            "symbolSize": 15,
+            "data": [
+                {
+                    "name": "\u6b66\u5a01",
+                    "value": [
+                        102.39,
+                        37.56,
+                        60
+                    ]
+                }
+            ],
+            "label": {
+                "normal": {
+                    "show": false,
+                    "position": "top",
+                    "textStyle": {
+                        "fontSize": 12
+                    }
+                },
+                "emphasis": {
+                    "show": true,
+                    "textStyle": {
+                        "fontSize": 12
+                    }
+                }
+            }
+        },
+        {
+            "type": "scatter",
+            "coordinateSystem": "geo",
+            "symbol": "circle",
+            "symbolSize": 15,
+            "data": [
+                {
+                    "name": "\u6842\u6797",
+                    "value": [
+                        110.28,
+                        25.29,
+                        136
+                    ]
+                }
+            ],
+            "label": {
+                "normal": {
+                    "show": false,
+                    "position": "top",
+                    "textStyle": {
+                        "fontSize": 12
+                    }
+                },
+                "emphasis": {
+                    "show": true,
+                    "textStyle": {
+                        "fontSize": 12
+                    }
+                }
+            }
+        },
+        {
+            "type": "scatter",
+            "coordinateSystem": "geo",
+            "symbol": "circle",
+            "symbolSize": 15,
+            "data": [
+                {
+                    "name": "\u70df\u53f0",
+                    "value": [
+                        121.39,
+                        37.52,
+                        444
                     ]
                 }
             ],
@@ -5456,7 +2852,2611 @@ var option_7cc0640a627d457a8d24be7067e4cb84 = {
                     "value": [
                         121.62,
                         38.92,
-                        1749
+                        2067
+                    ]
+                }
+            ],
+            "label": {
+                "normal": {
+                    "show": false,
+                    "position": "top",
+                    "textStyle": {
+                        "fontSize": 12
+                    }
+                },
+                "emphasis": {
+                    "show": true,
+                    "textStyle": {
+                        "fontSize": 12
+                    }
+                }
+            }
+        },
+        {
+            "type": "scatter",
+            "coordinateSystem": "geo",
+            "symbol": "circle",
+            "symbolSize": 15,
+            "data": [
+                {
+                    "name": "\u5a01\u6d77",
+                    "value": [
+                        122.1,
+                        37.5,
+                        195
+                    ]
+                }
+            ],
+            "label": {
+                "normal": {
+                    "show": false,
+                    "position": "top",
+                    "textStyle": {
+                        "fontSize": 12
+                    }
+                },
+                "emphasis": {
+                    "show": true,
+                    "textStyle": {
+                        "fontSize": 12
+                    }
+                }
+            }
+        },
+        {
+            "type": "scatter",
+            "coordinateSystem": "geo",
+            "symbol": "circle",
+            "symbolSize": 15,
+            "data": [
+                {
+                    "name": "\u8386\u7530",
+                    "value": [
+                        119.01,
+                        24.26,
+                        78
+                    ]
+                }
+            ],
+            "label": {
+                "normal": {
+                    "show": false,
+                    "position": "top",
+                    "textStyle": {
+                        "fontSize": 12
+                    }
+                },
+                "emphasis": {
+                    "show": true,
+                    "textStyle": {
+                        "fontSize": 12
+                    }
+                }
+            }
+        },
+        {
+            "type": "scatter",
+            "coordinateSystem": "geo",
+            "symbol": "circle",
+            "symbolSize": 15,
+            "data": [
+                {
+                    "name": "\u91cd\u5e86",
+                    "value": [
+                        106.551556,
+                        29.563009,
+                        2320
+                    ]
+                }
+            ],
+            "label": {
+                "normal": {
+                    "show": false,
+                    "position": "top",
+                    "textStyle": {
+                        "fontSize": 12
+                    }
+                },
+                "emphasis": {
+                    "show": true,
+                    "textStyle": {
+                        "fontSize": 12
+                    }
+                }
+            }
+        },
+        {
+            "type": "scatter",
+            "coordinateSystem": "geo",
+            "symbol": "circle",
+            "symbolSize": 15,
+            "data": [
+                {
+                    "name": "\u5b89\u5e86",
+                    "value": [
+                        117.02,
+                        30.31,
+                        66
+                    ]
+                }
+            ],
+            "label": {
+                "normal": {
+                    "show": false,
+                    "position": "top",
+                    "textStyle": {
+                        "fontSize": 12
+                    }
+                },
+                "emphasis": {
+                    "show": true,
+                    "textStyle": {
+                        "fontSize": 12
+                    }
+                }
+            }
+        },
+        {
+            "type": "scatter",
+            "coordinateSystem": "geo",
+            "symbol": "circle",
+            "symbolSize": 15,
+            "data": [
+                {
+                    "name": "\u8fd0\u57ce",
+                    "value": [
+                        110.59,
+                        35.02,
+                        36
+                    ]
+                }
+            ],
+            "label": {
+                "normal": {
+                    "show": false,
+                    "position": "top",
+                    "textStyle": {
+                        "fontSize": 12
+                    }
+                },
+                "emphasis": {
+                    "show": true,
+                    "textStyle": {
+                        "fontSize": 12
+                    }
+                }
+            }
+        },
+        {
+            "type": "scatter",
+            "coordinateSystem": "geo",
+            "symbol": "circle",
+            "symbolSize": 15,
+            "data": [
+                {
+                    "name": "\u5927\u540c",
+                    "value": [
+                        113.3,
+                        40.12,
+                        136
+                    ]
+                }
+            ],
+            "label": {
+                "normal": {
+                    "show": false,
+                    "position": "top",
+                    "textStyle": {
+                        "fontSize": 12
+                    }
+                },
+                "emphasis": {
+                    "show": true,
+                    "textStyle": {
+                        "fontSize": 12
+                    }
+                }
+            }
+        },
+        {
+            "type": "scatter",
+            "coordinateSystem": "geo",
+            "symbol": "circle",
+            "symbolSize": 15,
+            "data": [
+                {
+                    "name": "\u54b8\u9633",
+                    "value": [
+                        108.72,
+                        34.36,
+                        144
+                    ]
+                }
+            ],
+            "label": {
+                "normal": {
+                    "show": false,
+                    "position": "top",
+                    "textStyle": {
+                        "fontSize": 12
+                    }
+                },
+                "emphasis": {
+                    "show": true,
+                    "textStyle": {
+                        "fontSize": 12
+                    }
+                }
+            }
+        },
+        {
+            "type": "scatter",
+            "coordinateSystem": "geo",
+            "symbol": "circle",
+            "symbolSize": 15,
+            "data": [
+                {
+                    "name": "\u5cb3\u9633",
+                    "value": [
+                        113.09,
+                        29.37,
+                        31
+                    ]
+                }
+            ],
+            "label": {
+                "normal": {
+                    "show": false,
+                    "position": "top",
+                    "textStyle": {
+                        "fontSize": 12
+                    }
+                },
+                "emphasis": {
+                    "show": true,
+                    "textStyle": {
+                        "fontSize": 12
+                    }
+                }
+            }
+        },
+        {
+            "type": "scatter",
+            "coordinateSystem": "geo",
+            "symbol": "circle",
+            "symbolSize": 15,
+            "data": [
+                {
+                    "name": "\u8861\u6c34",
+                    "value": [
+                        115.72,
+                        37.72,
+                        60
+                    ]
+                }
+            ],
+            "label": {
+                "normal": {
+                    "show": false,
+                    "position": "top",
+                    "textStyle": {
+                        "fontSize": 12
+                    }
+                },
+                "emphasis": {
+                    "show": true,
+                    "textStyle": {
+                        "fontSize": 12
+                    }
+                }
+            }
+        },
+        {
+            "type": "scatter",
+            "coordinateSystem": "geo",
+            "symbol": "circle",
+            "symbolSize": 15,
+            "data": [
+                {
+                    "name": "\u968f\u5dde",
+                    "value": [
+                        113.22,
+                        31.42,
+                        37
+                    ]
+                }
+            ],
+            "label": {
+                "normal": {
+                    "show": false,
+                    "position": "top",
+                    "textStyle": {
+                        "fontSize": 12
+                    }
+                },
+                "emphasis": {
+                    "show": true,
+                    "textStyle": {
+                        "fontSize": 12
+                    }
+                }
+            }
+        },
+        {
+            "type": "scatter",
+            "coordinateSystem": "geo",
+            "symbol": "circle",
+            "symbolSize": 15,
+            "data": [
+                {
+                    "name": "\u4e0a\u6d77",
+                    "value": [
+                        121.473701,
+                        31.230416,
+                        16112
+                    ]
+                }
+            ],
+            "label": {
+                "normal": {
+                    "show": false,
+                    "position": "top",
+                    "textStyle": {
+                        "fontSize": 12
+                    }
+                },
+                "emphasis": {
+                    "show": true,
+                    "textStyle": {
+                        "fontSize": 12
+                    }
+                }
+            }
+        },
+        {
+            "type": "scatter",
+            "coordinateSystem": "geo",
+            "symbol": "circle",
+            "symbolSize": 15,
+            "data": [
+                {
+                    "name": "\u5341\u5830",
+                    "value": [
+                        110.47,
+                        32.4,
+                        70
+                    ]
+                }
+            ],
+            "label": {
+                "normal": {
+                    "show": false,
+                    "position": "top",
+                    "textStyle": {
+                        "fontSize": 12
+                    }
+                },
+                "emphasis": {
+                    "show": true,
+                    "textStyle": {
+                        "fontSize": 12
+                    }
+                }
+            }
+        },
+        {
+            "type": "scatter",
+            "coordinateSystem": "geo",
+            "symbol": "circle",
+            "symbolSize": 15,
+            "data": [
+                {
+                    "name": "\u901a\u5316",
+                    "value": [
+                        125.56,
+                        41.43,
+                        35
+                    ]
+                }
+            ],
+            "label": {
+                "normal": {
+                    "show": false,
+                    "position": "top",
+                    "textStyle": {
+                        "fontSize": 12
+                    }
+                },
+                "emphasis": {
+                    "show": true,
+                    "textStyle": {
+                        "fontSize": 12
+                    }
+                }
+            }
+        },
+        {
+            "type": "scatter",
+            "coordinateSystem": "geo",
+            "symbol": "circle",
+            "symbolSize": 15,
+            "data": [
+                {
+                    "name": "\u8d64\u5cf0",
+                    "value": [
+                        118.87,
+                        42.28,
+                        40
+                    ]
+                }
+            ],
+            "label": {
+                "normal": {
+                    "show": false,
+                    "position": "top",
+                    "textStyle": {
+                        "fontSize": 12
+                    }
+                },
+                "emphasis": {
+                    "show": true,
+                    "textStyle": {
+                        "fontSize": 12
+                    }
+                }
+            }
+        },
+        {
+            "type": "scatter",
+            "coordinateSystem": "geo",
+            "symbol": "circle",
+            "symbolSize": 15,
+            "data": [
+                {
+                    "name": "\u897f\u5b81",
+                    "value": [
+                        101.74,
+                        36.56,
+                        64
+                    ]
+                }
+            ],
+            "label": {
+                "normal": {
+                    "show": false,
+                    "position": "top",
+                    "textStyle": {
+                        "fontSize": 12
+                    }
+                },
+                "emphasis": {
+                    "show": true,
+                    "textStyle": {
+                        "fontSize": 12
+                    }
+                }
+            }
+        },
+        {
+            "type": "scatter",
+            "coordinateSystem": "geo",
+            "symbol": "circle",
+            "symbolSize": 15,
+            "data": [
+                {
+                    "name": "\u5fb7\u5dde",
+                    "value": [
+                        116.29,
+                        37.45,
+                        39
+                    ]
+                }
+            ],
+            "label": {
+                "normal": {
+                    "show": false,
+                    "position": "top",
+                    "textStyle": {
+                        "fontSize": 12
+                    }
+                },
+                "emphasis": {
+                    "show": true,
+                    "textStyle": {
+                        "fontSize": 12
+                    }
+                }
+            }
+        },
+        {
+            "type": "scatter",
+            "coordinateSystem": "geo",
+            "symbol": "circle",
+            "symbolSize": 15,
+            "data": [
+                {
+                    "name": "\u6dee\u5b89",
+                    "value": [
+                        119.15,
+                        33.5,
+                        33
+                    ]
+                }
+            ],
+            "label": {
+                "normal": {
+                    "show": false,
+                    "position": "top",
+                    "textStyle": {
+                        "fontSize": 12
+                    }
+                },
+                "emphasis": {
+                    "show": true,
+                    "textStyle": {
+                        "fontSize": 12
+                    }
+                }
+            }
+        },
+        {
+            "type": "scatter",
+            "coordinateSystem": "geo",
+            "symbol": "circle",
+            "symbolSize": 15,
+            "data": [
+                {
+                    "name": "\u5408\u80a5",
+                    "value": [
+                        117.27,
+                        31.86,
+                        2590
+                    ]
+                }
+            ],
+            "label": {
+                "normal": {
+                    "show": false,
+                    "position": "top",
+                    "textStyle": {
+                        "fontSize": 12
+                    }
+                },
+                "emphasis": {
+                    "show": true,
+                    "textStyle": {
+                        "fontSize": 12
+                    }
+                }
+            }
+        },
+        {
+            "type": "scatter",
+            "coordinateSystem": "geo",
+            "symbol": "circle",
+            "symbolSize": 15,
+            "data": [
+                {
+                    "name": "\u7ecd\u5174",
+                    "value": [
+                        120.58,
+                        30.01,
+                        150
+                    ]
+                }
+            ],
+            "label": {
+                "normal": {
+                    "show": false,
+                    "position": "top",
+                    "textStyle": {
+                        "fontSize": 12
+                    }
+                },
+                "emphasis": {
+                    "show": true,
+                    "textStyle": {
+                        "fontSize": 12
+                    }
+                }
+            }
+        },
+        {
+            "type": "scatter",
+            "coordinateSystem": "geo",
+            "symbol": "circle",
+            "symbolSize": 15,
+            "data": [
+                {
+                    "name": "\u5b89\u9633",
+                    "value": [
+                        114.35,
+                        36.1,
+                        148
+                    ]
+                }
+            ],
+            "label": {
+                "normal": {
+                    "show": false,
+                    "position": "top",
+                    "textStyle": {
+                        "fontSize": 12
+                    }
+                },
+                "emphasis": {
+                    "show": true,
+                    "textStyle": {
+                        "fontSize": 12
+                    }
+                }
+            }
+        },
+        {
+            "type": "scatter",
+            "coordinateSystem": "geo",
+            "symbol": "circle",
+            "symbolSize": 15,
+            "data": [
+                {
+                    "name": "\u66f2\u9756",
+                    "value": [
+                        103.79,
+                        25.51,
+                        31
+                    ]
+                }
+            ],
+            "label": {
+                "normal": {
+                    "show": false,
+                    "position": "top",
+                    "textStyle": {
+                        "fontSize": 12
+                    }
+                },
+                "emphasis": {
+                    "show": true,
+                    "textStyle": {
+                        "fontSize": 12
+                    }
+                }
+            }
+        },
+        {
+            "type": "scatter",
+            "coordinateSystem": "geo",
+            "symbol": "circle",
+            "symbolSize": 15,
+            "data": [
+                {
+                    "name": "\u4e3d\u6c34",
+                    "value": [
+                        119.92,
+                        28.45,
+                        35
+                    ]
+                }
+            ],
+            "label": {
+                "normal": {
+                    "show": false,
+                    "position": "top",
+                    "textStyle": {
+                        "fontSize": 12
+                    }
+                },
+                "emphasis": {
+                    "show": true,
+                    "textStyle": {
+                        "fontSize": 12
+                    }
+                }
+            }
+        },
+        {
+            "type": "scatter",
+            "coordinateSystem": "geo",
+            "symbol": "circle",
+            "symbolSize": 15,
+            "data": [
+                {
+                    "name": "\u9752\u5c9b",
+                    "value": [
+                        120.33,
+                        36.07,
+                        3240
+                    ]
+                }
+            ],
+            "label": {
+                "normal": {
+                    "show": false,
+                    "position": "top",
+                    "textStyle": {
+                        "fontSize": 12
+                    }
+                },
+                "emphasis": {
+                    "show": true,
+                    "textStyle": {
+                        "fontSize": 12
+                    }
+                }
+            }
+        },
+        {
+            "type": "scatter",
+            "coordinateSystem": "geo",
+            "symbol": "circle",
+            "symbolSize": 15,
+            "data": [
+                {
+                    "name": "\u65e0\u9521",
+                    "value": [
+                        120.29,
+                        31.59,
+                        1248
+                    ]
+                }
+            ],
+            "label": {
+                "normal": {
+                    "show": false,
+                    "position": "top",
+                    "textStyle": {
+                        "fontSize": 12
+                    }
+                },
+                "emphasis": {
+                    "show": true,
+                    "textStyle": {
+                        "fontSize": 12
+                    }
+                }
+            }
+        },
+        {
+            "type": "scatter",
+            "coordinateSystem": "geo",
+            "symbol": "circle",
+            "symbolSize": 15,
+            "data": [
+                {
+                    "name": "\u8861\u9633",
+                    "value": [
+                        112.37,
+                        26.53,
+                        117
+                    ]
+                }
+            ],
+            "label": {
+                "normal": {
+                    "show": false,
+                    "position": "top",
+                    "textStyle": {
+                        "fontSize": 12
+                    }
+                },
+                "emphasis": {
+                    "show": true,
+                    "textStyle": {
+                        "fontSize": 12
+                    }
+                }
+            }
+        },
+        {
+            "type": "scatter",
+            "coordinateSystem": "geo",
+            "symbol": "circle",
+            "symbolSize": 15,
+            "data": [
+                {
+                    "name": "\u4e50\u5c71",
+                    "value": [
+                        103.44,
+                        29.36,
+                        39
+                    ]
+                }
+            ],
+            "label": {
+                "normal": {
+                    "show": false,
+                    "position": "top",
+                    "textStyle": {
+                        "fontSize": 12
+                    }
+                },
+                "emphasis": {
+                    "show": true,
+                    "textStyle": {
+                        "fontSize": 12
+                    }
+                }
+            }
+        },
+        {
+            "type": "scatter",
+            "coordinateSystem": "geo",
+            "symbol": "circle",
+            "symbolSize": 15,
+            "data": [
+                {
+                    "name": "\u6c49\u4e2d",
+                    "value": [
+                        107.01,
+                        33.04,
+                        38
+                    ]
+                }
+            ],
+            "label": {
+                "normal": {
+                    "show": false,
+                    "position": "top",
+                    "textStyle": {
+                        "fontSize": 12
+                    }
+                },
+                "emphasis": {
+                    "show": true,
+                    "textStyle": {
+                        "fontSize": 12
+                    }
+                }
+            }
+        },
+        {
+            "type": "scatter",
+            "coordinateSystem": "geo",
+            "symbol": "circle",
+            "symbolSize": 15,
+            "data": [
+                {
+                    "name": "\u8944\u9633",
+                    "value": [
+                        112.2,
+                        32.08,
+                        35
+                    ]
+                }
+            ],
+            "label": {
+                "normal": {
+                    "show": false,
+                    "position": "top",
+                    "textStyle": {
+                        "fontSize": 12
+                    }
+                },
+                "emphasis": {
+                    "show": true,
+                    "textStyle": {
+                        "fontSize": 12
+                    }
+                }
+            }
+        },
+        {
+            "type": "scatter",
+            "coordinateSystem": "geo",
+            "symbol": "circle",
+            "symbolSize": 15,
+            "data": [
+                {
+                    "name": "\u94a6\u5dde",
+                    "value": [
+                        108.37,
+                        21.57,
+                        40
+                    ]
+                }
+            ],
+            "label": {
+                "normal": {
+                    "show": false,
+                    "position": "top",
+                    "textStyle": {
+                        "fontSize": 12
+                    }
+                },
+                "emphasis": {
+                    "show": true,
+                    "textStyle": {
+                        "fontSize": 12
+                    }
+                }
+            }
+        },
+        {
+            "type": "scatter",
+            "coordinateSystem": "geo",
+            "symbol": "circle",
+            "symbolSize": 15,
+            "data": [
+                {
+                    "name": "\u9633\u6c5f",
+                    "value": [
+                        111.95,
+                        21.85,
+                        93
+                    ]
+                }
+            ],
+            "label": {
+                "normal": {
+                    "show": false,
+                    "position": "top",
+                    "textStyle": {
+                        "fontSize": 12
+                    }
+                },
+                "emphasis": {
+                    "show": true,
+                    "textStyle": {
+                        "fontSize": 12
+                    }
+                }
+            }
+        },
+        {
+            "type": "scatter",
+            "coordinateSystem": "geo",
+            "symbol": "circle",
+            "symbolSize": 15,
+            "data": [
+                {
+                    "name": "\u79e6\u7687\u5c9b",
+                    "value": [
+                        119.57,
+                        39.95,
+                        64
+                    ]
+                }
+            ],
+            "label": {
+                "normal": {
+                    "show": false,
+                    "position": "top",
+                    "textStyle": {
+                        "fontSize": 12
+                    }
+                },
+                "emphasis": {
+                    "show": true,
+                    "textStyle": {
+                        "fontSize": 12
+                    }
+                }
+            }
+        },
+        {
+            "type": "scatter",
+            "coordinateSystem": "geo",
+            "symbol": "circle",
+            "symbolSize": 15,
+            "data": [
+                {
+                    "name": "\u5510\u5c71",
+                    "value": [
+                        118.02,
+                        39.63,
+                        140
+                    ]
+                }
+            ],
+            "label": {
+                "normal": {
+                    "show": false,
+                    "position": "top",
+                    "textStyle": {
+                        "fontSize": 12
+                    }
+                },
+                "emphasis": {
+                    "show": true,
+                    "textStyle": {
+                        "fontSize": 12
+                    }
+                }
+            }
+        },
+        {
+            "type": "scatter",
+            "coordinateSystem": "geo",
+            "symbol": "circle",
+            "symbolSize": 15,
+            "data": [
+                {
+                    "name": "\u8fde\u4e91\u6e2f",
+                    "value": [
+                        119.16,
+                        34.59,
+                        38
+                    ]
+                }
+            ],
+            "label": {
+                "normal": {
+                    "show": false,
+                    "position": "top",
+                    "textStyle": {
+                        "fontSize": 12
+                    }
+                },
+                "emphasis": {
+                    "show": true,
+                    "textStyle": {
+                        "fontSize": 12
+                    }
+                }
+            }
+        },
+        {
+            "type": "scatter",
+            "coordinateSystem": "geo",
+            "symbol": "circle",
+            "symbolSize": 15,
+            "data": [
+                {
+                    "name": "\u821f\u5c71",
+                    "value": [
+                        122.207216,
+                        29.985295,
+                        80
+                    ]
+                }
+            ],
+            "label": {
+                "normal": {
+                    "show": false,
+                    "position": "top",
+                    "textStyle": {
+                        "fontSize": 12
+                    }
+                },
+                "emphasis": {
+                    "show": true,
+                    "textStyle": {
+                        "fontSize": 12
+                    }
+                }
+            }
+        },
+        {
+            "type": "scatter",
+            "coordinateSystem": "geo",
+            "symbol": "circle",
+            "symbolSize": 15,
+            "data": [
+                {
+                    "name": "\u547c\u548c\u6d69\u7279",
+                    "value": [
+                        111.65,
+                        40.82,
+                        6758
+                    ]
+                }
+            ],
+            "label": {
+                "normal": {
+                    "show": false,
+                    "position": "top",
+                    "textStyle": {
+                        "fontSize": 12
+                    }
+                },
+                "emphasis": {
+                    "show": true,
+                    "textStyle": {
+                        "fontSize": 12
+                    }
+                }
+            }
+        },
+        {
+            "type": "scatter",
+            "coordinateSystem": "geo",
+            "symbol": "circle",
+            "symbolSize": 15,
+            "data": [
+                {
+                    "name": "\u8346\u95e8",
+                    "value": [
+                        112.12,
+                        31.02,
+                        37
+                    ]
+                }
+            ],
+            "label": {
+                "normal": {
+                    "show": false,
+                    "position": "top",
+                    "textStyle": {
+                        "fontSize": 12
+                    }
+                },
+                "emphasis": {
+                    "show": true,
+                    "textStyle": {
+                        "fontSize": 12
+                    }
+                }
+            }
+        },
+        {
+            "type": "scatter",
+            "coordinateSystem": "geo",
+            "symbol": "circle",
+            "symbolSize": 15,
+            "data": [
+                {
+                    "name": "\u961c\u9633",
+                    "value": [
+                        115.48,
+                        32.54,
+                        124
+                    ]
+                }
+            ],
+            "label": {
+                "normal": {
+                    "show": false,
+                    "position": "top",
+                    "textStyle": {
+                        "fontSize": 12
+                    }
+                },
+                "emphasis": {
+                    "show": true,
+                    "textStyle": {
+                        "fontSize": 12
+                    }
+                }
+            }
+        },
+        {
+            "type": "scatter",
+            "coordinateSystem": "geo",
+            "symbol": "circle",
+            "symbolSize": 15,
+            "data": [
+                {
+                    "name": "\u7126\u4f5c",
+                    "value": [
+                        113.21,
+                        35.24,
+                        60
+                    ]
+                }
+            ],
+            "label": {
+                "normal": {
+                    "show": false,
+                    "position": "top",
+                    "textStyle": {
+                        "fontSize": 12
+                    }
+                },
+                "emphasis": {
+                    "show": true,
+                    "textStyle": {
+                        "fontSize": 12
+                    }
+                }
+            }
+        },
+        {
+            "type": "scatter",
+            "coordinateSystem": "geo",
+            "symbol": "circle",
+            "symbolSize": 15,
+            "data": [
+                {
+                    "name": "\u6c88\u9633",
+                    "value": [
+                        123.38,
+                        41.8,
+                        5808
+                    ]
+                }
+            ],
+            "label": {
+                "normal": {
+                    "show": false,
+                    "position": "top",
+                    "textStyle": {
+                        "fontSize": 12
+                    }
+                },
+                "emphasis": {
+                    "show": true,
+                    "textStyle": {
+                        "fontSize": 12
+                    }
+                }
+            }
+        },
+        {
+            "type": "scatter",
+            "coordinateSystem": "geo",
+            "symbol": "circle",
+            "symbolSize": 15,
+            "data": [
+                {
+                    "name": "\u5b5d\u611f",
+                    "value": [
+                        113.54,
+                        30.56,
+                        68
+                    ]
+                }
+            ],
+            "label": {
+                "normal": {
+                    "show": false,
+                    "position": "top",
+                    "textStyle": {
+                        "fontSize": 12
+                    }
+                },
+                "emphasis": {
+                    "show": true,
+                    "textStyle": {
+                        "fontSize": 12
+                    }
+                }
+            }
+        },
+        {
+            "type": "scatter",
+            "coordinateSystem": "geo",
+            "symbol": "circle",
+            "symbolSize": 15,
+            "data": [
+                {
+                    "name": "\u76d0\u57ce",
+                    "value": [
+                        120.13,
+                        33.38,
+                        60
+                    ]
+                }
+            ],
+            "label": {
+                "normal": {
+                    "show": false,
+                    "position": "top",
+                    "textStyle": {
+                        "fontSize": 12
+                    }
+                },
+                "emphasis": {
+                    "show": true,
+                    "textStyle": {
+                        "fontSize": 12
+                    }
+                }
+            }
+        },
+        {
+            "type": "scatter",
+            "coordinateSystem": "geo",
+            "symbol": "circle",
+            "symbolSize": 15,
+            "data": [
+                {
+                    "name": "\u7ee5\u5316",
+                    "value": [
+                        126.59,
+                        46.38,
+                        76
+                    ]
+                }
+            ],
+            "label": {
+                "normal": {
+                    "show": false,
+                    "position": "top",
+                    "textStyle": {
+                        "fontSize": 12
+                    }
+                },
+                "emphasis": {
+                    "show": true,
+                    "textStyle": {
+                        "fontSize": 12
+                    }
+                }
+            }
+        },
+        {
+            "type": "scatter",
+            "coordinateSystem": "geo",
+            "symbol": "circle",
+            "symbolSize": 15,
+            "data": [
+                {
+                    "name": "\u4e91\u6d6e",
+                    "value": [
+                        112.02,
+                        22.93,
+                        35
+                    ]
+                }
+            ],
+            "label": {
+                "normal": {
+                    "show": false,
+                    "position": "top",
+                    "textStyle": {
+                        "fontSize": 12
+                    }
+                },
+                "emphasis": {
+                    "show": true,
+                    "textStyle": {
+                        "fontSize": 12
+                    }
+                }
+            }
+        },
+        {
+            "type": "scatter",
+            "coordinateSystem": "geo",
+            "symbol": "circle",
+            "symbolSize": 15,
+            "data": [
+                {
+                    "name": "\u94dc\u4ec1",
+                    "value": [
+                        109.12,
+                        27.43,
+                        39
+                    ]
+                }
+            ],
+            "label": {
+                "normal": {
+                    "show": false,
+                    "position": "top",
+                    "textStyle": {
+                        "fontSize": 12
+                    }
+                },
+                "emphasis": {
+                    "show": true,
+                    "textStyle": {
+                        "fontSize": 12
+                    }
+                }
+            }
+        },
+        {
+            "type": "scatter",
+            "coordinateSystem": "geo",
+            "symbol": "circle",
+            "symbolSize": 15,
+            "data": [
+                {
+                    "name": "\u6ec1\u5dde",
+                    "value": [
+                        118.18,
+                        32.18,
+                        93
+                    ]
+                }
+            ],
+            "label": {
+                "normal": {
+                    "show": false,
+                    "position": "top",
+                    "textStyle": {
+                        "fontSize": 12
+                    }
+                },
+                "emphasis": {
+                    "show": true,
+                    "textStyle": {
+                        "fontSize": 12
+                    }
+                }
+            }
+        },
+        {
+            "type": "scatter",
+            "coordinateSystem": "geo",
+            "symbol": "circle",
+            "symbolSize": 15,
+            "data": [
+                {
+                    "name": "\u6606\u660e",
+                    "value": [
+                        102.73,
+                        25.04,
+                        14722
+                    ]
+                }
+            ],
+            "label": {
+                "normal": {
+                    "show": false,
+                    "position": "top",
+                    "textStyle": {
+                        "fontSize": 12
+                    }
+                },
+                "emphasis": {
+                    "show": true,
+                    "textStyle": {
+                        "fontSize": 12
+                    }
+                }
+            }
+        },
+        {
+            "type": "scatter",
+            "coordinateSystem": "geo",
+            "symbol": "circle",
+            "symbolSize": 15,
+            "data": [
+                {
+                    "name": "\u664b\u4e2d",
+                    "value": [
+                        112.75,
+                        37.68,
+                        105
+                    ]
+                }
+            ],
+            "label": {
+                "normal": {
+                    "show": false,
+                    "position": "top",
+                    "textStyle": {
+                        "fontSize": 12
+                    }
+                },
+                "emphasis": {
+                    "show": true,
+                    "textStyle": {
+                        "fontSize": 12
+                    }
+                }
+            }
+        },
+        {
+            "type": "scatter",
+            "coordinateSystem": "geo",
+            "symbol": "circle",
+            "symbolSize": 15,
+            "data": [
+                {
+                    "name": "\u5415\u6881",
+                    "value": [
+                        111.13,
+                        37.52,
+                        420
+                    ]
+                }
+            ],
+            "label": {
+                "normal": {
+                    "show": false,
+                    "position": "top",
+                    "textStyle": {
+                        "fontSize": 12
+                    }
+                },
+                "emphasis": {
+                    "show": true,
+                    "textStyle": {
+                        "fontSize": 12
+                    }
+                }
+            }
+        },
+        {
+            "type": "scatter",
+            "coordinateSystem": "geo",
+            "symbol": "circle",
+            "symbolSize": 15,
+            "data": [
+                {
+                    "name": "\u8087\u5e86",
+                    "value": [
+                        112.44,
+                        23.05,
+                        105
+                    ]
+                }
+            ],
+            "label": {
+                "normal": {
+                    "show": false,
+                    "position": "top",
+                    "textStyle": {
+                        "fontSize": 12
+                    }
+                },
+                "emphasis": {
+                    "show": true,
+                    "textStyle": {
+                        "fontSize": 12
+                    }
+                }
+            }
+        },
+        {
+            "type": "scatter",
+            "coordinateSystem": "geo",
+            "symbol": "circle",
+            "symbolSize": 15,
+            "data": [
+                {
+                    "name": "\u63ed\u9633",
+                    "value": [
+                        116.35,
+                        23.55,
+                        68
+                    ]
+                }
+            ],
+            "label": {
+                "normal": {
+                    "show": false,
+                    "position": "top",
+                    "textStyle": {
+                        "fontSize": 12
+                    }
+                },
+                "emphasis": {
+                    "show": true,
+                    "textStyle": {
+                        "fontSize": 12
+                    }
+                }
+            }
+        },
+        {
+            "type": "scatter",
+            "coordinateSystem": "geo",
+            "symbol": "circle",
+            "symbolSize": 15,
+            "data": [
+                {
+                    "name": "\u5170\u5dde",
+                    "value": [
+                        103.73,
+                        36.03,
+                        180
+                    ]
+                }
+            ],
+            "label": {
+                "normal": {
+                    "show": false,
+                    "position": "top",
+                    "textStyle": {
+                        "fontSize": 12
+                    }
+                },
+                "emphasis": {
+                    "show": true,
+                    "textStyle": {
+                        "fontSize": 12
+                    }
+                }
+            }
+        },
+        {
+            "type": "scatter",
+            "coordinateSystem": "geo",
+            "symbol": "circle",
+            "symbolSize": 15,
+            "data": [
+                {
+                    "name": "\u6e29\u5dde",
+                    "value": [
+                        120.65,
+                        28.01,
+                        1102
+                    ]
+                }
+            ],
+            "label": {
+                "normal": {
+                    "show": false,
+                    "position": "top",
+                    "textStyle": {
+                        "fontSize": 12
+                    }
+                },
+                "emphasis": {
+                    "show": true,
+                    "textStyle": {
+                        "fontSize": 12
+                    }
+                }
+            }
+        },
+        {
+            "type": "scatter",
+            "coordinateSystem": "geo",
+            "symbol": "circle",
+            "symbolSize": 15,
+            "data": [
+                {
+                    "name": "\u4f5b\u5c71",
+                    "value": [
+                        113.11,
+                        23.05,
+                        3306
+                    ]
+                }
+            ],
+            "label": {
+                "normal": {
+                    "show": false,
+                    "position": "top",
+                    "textStyle": {
+                        "fontSize": 12
+                    }
+                },
+                "emphasis": {
+                    "show": true,
+                    "textStyle": {
+                        "fontSize": 12
+                    }
+                }
+            }
+        },
+        {
+            "type": "scatter",
+            "coordinateSystem": "geo",
+            "symbol": "circle",
+            "symbolSize": 15,
+            "data": [
+                {
+                    "name": "\u5927\u7406",
+                    "value": [
+                        100.13,
+                        25.34,
+                        37
+                    ]
+                }
+            ],
+            "label": {
+                "normal": {
+                    "show": false,
+                    "position": "top",
+                    "textStyle": {
+                        "fontSize": 12
+                    }
+                },
+                "emphasis": {
+                    "show": true,
+                    "textStyle": {
+                        "fontSize": 12
+                    }
+                }
+            }
+        },
+        {
+            "type": "scatter",
+            "coordinateSystem": "geo",
+            "symbol": "circle",
+            "symbolSize": 15,
+            "data": [
+                {
+                    "name": "\u4e1c\u839e",
+                    "value": [
+                        113.75,
+                        23.04,
+                        2170
+                    ]
+                }
+            ],
+            "label": {
+                "normal": {
+                    "show": false,
+                    "position": "top",
+                    "textStyle": {
+                        "fontSize": 12
+                    }
+                },
+                "emphasis": {
+                    "show": true,
+                    "textStyle": {
+                        "fontSize": 12
+                    }
+                }
+            }
+        },
+        {
+            "type": "scatter",
+            "coordinateSystem": "geo",
+            "symbol": "circle",
+            "symbolSize": 15,
+            "data": [
+                {
+                    "name": "\u676d\u5dde",
+                    "value": [
+                        120.19,
+                        30.26,
+                        13428
+                    ]
+                }
+            ],
+            "label": {
+                "normal": {
+                    "show": false,
+                    "position": "top",
+                    "textStyle": {
+                        "fontSize": 12
+                    }
+                },
+                "emphasis": {
+                    "show": true,
+                    "textStyle": {
+                        "fontSize": 12
+                    }
+                }
+            }
+        },
+        {
+            "type": "scatter",
+            "coordinateSystem": "geo",
+            "symbol": "circle",
+            "symbolSize": 15,
+            "data": [
+                {
+                    "name": "\u6cf0\u5dde",
+                    "value": [
+                        119.9,
+                        32.49,
+                        105
+                    ]
+                }
+            ],
+            "label": {
+                "normal": {
+                    "show": false,
+                    "position": "top",
+                    "textStyle": {
+                        "fontSize": 12
+                    }
+                },
+                "emphasis": {
+                    "show": true,
+                    "textStyle": {
+                        "fontSize": 12
+                    }
+                }
+            }
+        },
+        {
+            "type": "scatter",
+            "coordinateSystem": "geo",
+            "symbol": "circle",
+            "symbolSize": 15,
+            "data": [
+                {
+                    "name": "\u6f33\u5dde",
+                    "value": [
+                        117.39,
+                        24.31,
+                        222
+                    ]
+                }
+            ],
+            "label": {
+                "normal": {
+                    "show": false,
+                    "position": "top",
+                    "textStyle": {
+                        "fontSize": 12
+                    }
+                },
+                "emphasis": {
+                    "show": true,
+                    "textStyle": {
+                        "fontSize": 12
+                    }
+                }
+            }
+        },
+        {
+            "type": "scatter",
+            "coordinateSystem": "geo",
+            "symbol": "circle",
+            "symbolSize": 15,
+            "data": [
+                {
+                    "name": "\u90f4\u5dde",
+                    "value": [
+                        113.02,
+                        25.46,
+                        102
+                    ]
+                }
+            ],
+            "label": {
+                "normal": {
+                    "show": false,
+                    "position": "top",
+                    "textStyle": {
+                        "fontSize": 12
+                    }
+                },
+                "emphasis": {
+                    "show": true,
+                    "textStyle": {
+                        "fontSize": 12
+                    }
+                }
+            }
+        },
+        {
+            "type": "scatter",
+            "coordinateSystem": "geo",
+            "symbol": "circle",
+            "symbolSize": 15,
+            "data": [
+                {
+                    "name": "\u82cf\u5dde",
+                    "value": [
+                        120.62,
+                        31.32,
+                        3498
+                    ]
+                }
+            ],
+            "label": {
+                "normal": {
+                    "show": false,
+                    "position": "top",
+                    "textStyle": {
+                        "fontSize": 12
+                    }
+                },
+                "emphasis": {
+                    "show": true,
+                    "textStyle": {
+                        "fontSize": 12
+                    }
+                }
+            }
+        },
+        {
+            "type": "scatter",
+            "coordinateSystem": "geo",
+            "symbol": "circle",
+            "symbolSize": 15,
+            "data": [
+                {
+                    "name": "\u90af\u90f8",
+                    "value": [
+                        114.47,
+                        36.6,
+                        136
+                    ]
+                }
+            ],
+            "label": {
+                "normal": {
+                    "show": false,
+                    "position": "top",
+                    "textStyle": {
+                        "fontSize": 12
+                    }
+                },
+                "emphasis": {
+                    "show": true,
+                    "textStyle": {
+                        "fontSize": 12
+                    }
+                }
+            }
+        },
+        {
+            "type": "scatter",
+            "coordinateSystem": "geo",
+            "symbol": "circle",
+            "symbolSize": 15,
+            "data": [
+                {
+                    "name": "\u6d4e\u6e90",
+                    "value": [
+                        112.35,
+                        35.04,
+                        38
+                    ]
+                }
+            ],
+            "label": {
+                "normal": {
+                    "show": false,
+                    "position": "top",
+                    "textStyle": {
+                        "fontSize": 12
+                    }
+                },
+                "emphasis": {
+                    "show": true,
+                    "textStyle": {
+                        "fontSize": 12
+                    }
+                }
+            }
+        },
+        {
+            "type": "scatter",
+            "coordinateSystem": "geo",
+            "symbol": "circle",
+            "symbolSize": 15,
+            "data": [
+                {
+                    "name": "\u4fdd\u5b9a",
+                    "value": [
+                        115.48,
+                        38.85,
+                        279
+                    ]
+                }
+            ],
+            "label": {
+                "normal": {
+                    "show": false,
+                    "position": "top",
+                    "textStyle": {
+                        "fontSize": 12
+                    }
+                },
+                "emphasis": {
+                    "show": true,
+                    "textStyle": {
+                        "fontSize": 12
+                    }
+                }
+            }
+        },
+        {
+            "type": "scatter",
+            "coordinateSystem": "geo",
+            "symbol": "circle",
+            "symbolSize": 15,
+            "data": [
+                {
+                    "name": "\u5e7f\u5dde",
+                    "value": [
+                        113.23,
+                        23.16,
+                        6766
+                    ]
+                }
+            ],
+            "label": {
+                "normal": {
+                    "show": false,
+                    "position": "top",
+                    "textStyle": {
+                        "fontSize": 12
+                    }
+                },
+                "emphasis": {
+                    "show": true,
+                    "textStyle": {
+                        "fontSize": 12
+                    }
+                }
+            }
+        },
+        {
+            "type": "scatter",
+            "coordinateSystem": "geo",
+            "symbol": "circle",
+            "symbolSize": 15,
+            "data": [
+                {
+                    "name": "\u798f\u5dde",
+                    "value": [
+                        119.3,
+                        26.08,
+                        5430
+                    ]
+                }
+            ],
+            "label": {
+                "normal": {
+                    "show": false,
+                    "position": "top",
+                    "textStyle": {
+                        "fontSize": 12
+                    }
+                },
+                "emphasis": {
+                    "show": true,
+                    "textStyle": {
+                        "fontSize": 12
+                    }
+                }
+            }
+        },
+        {
+            "type": "scatter",
+            "coordinateSystem": "geo",
+            "symbol": "circle",
+            "symbolSize": 15,
+            "data": [
+                {
+                    "name": "\u5546\u4e18",
+                    "value": [
+                        115.38,
+                        34.26,
+                        78
+                    ]
+                }
+            ],
+            "label": {
+                "normal": {
+                    "show": false,
+                    "position": "top",
+                    "textStyle": {
+                        "fontSize": 12
+                    }
+                },
+                "emphasis": {
+                    "show": true,
+                    "textStyle": {
+                        "fontSize": 12
+                    }
+                }
+            }
+        },
+        {
+            "type": "scatter",
+            "coordinateSystem": "geo",
+            "symbol": "circle",
+            "symbolSize": 15,
+            "data": [
+                {
+                    "name": "\u5357\u660c",
+                    "value": [
+                        115.89,
+                        28.68,
+                        2040
+                    ]
+                }
+            ],
+            "label": {
+                "normal": {
+                    "show": false,
+                    "position": "top",
+                    "textStyle": {
+                        "fontSize": 12
+                    }
+                },
+                "emphasis": {
+                    "show": true,
+                    "textStyle": {
+                        "fontSize": 12
+                    }
+                }
+            }
+        },
+        {
+            "type": "scatter",
+            "coordinateSystem": "geo",
+            "symbol": "circle",
+            "symbolSize": 15,
+            "data": [
+                {
+                    "name": "\u9ec4\u77f3",
+                    "value": [
+                        115.06,
+                        30.12,
+                        39
+                    ]
+                }
+            ],
+            "label": {
+                "normal": {
+                    "show": false,
+                    "position": "top",
+                    "textStyle": {
+                        "fontSize": 12
+                    }
+                },
+                "emphasis": {
+                    "show": true,
+                    "textStyle": {
+                        "fontSize": 12
+                    }
+                }
+            }
+        },
+        {
+            "type": "scatter",
+            "coordinateSystem": "geo",
+            "symbol": "circle",
+            "symbolSize": 15,
+            "data": [
+                {
+                    "name": "\u9e70\u6f6d",
+                    "value": [
+                        117.03,
+                        28.14,
+                        40
+                    ]
+                }
+            ],
+            "label": {
+                "normal": {
+                    "show": false,
+                    "position": "top",
+                    "textStyle": {
+                        "fontSize": 12
+                    }
+                },
+                "emphasis": {
+                    "show": true,
+                    "textStyle": {
+                        "fontSize": 12
+                    }
+                }
+            }
+        },
+        {
+            "type": "scatter",
+            "coordinateSystem": "geo",
+            "symbol": "circle",
+            "symbolSize": 15,
+            "data": [
+                {
+                    "name": "\u4fe1\u9633",
+                    "value": [
+                        114.04,
+                        32.07,
+                        80
+                    ]
+                }
+            ],
+            "label": {
+                "normal": {
+                    "show": false,
+                    "position": "top",
+                    "textStyle": {
+                        "fontSize": 12
+                    }
+                },
+                "emphasis": {
+                    "show": true,
+                    "textStyle": {
+                        "fontSize": 12
+                    }
+                }
+            }
+        },
+        {
+            "type": "scatter",
+            "coordinateSystem": "geo",
+            "symbol": "circle",
+            "symbolSize": 15,
+            "data": [
+                {
+                    "name": "\u9547\u6c5f",
+                    "value": [
+                        119.44,
+                        32.2,
+                        400
+                    ]
+                }
+            ],
+            "label": {
+                "normal": {
+                    "show": false,
+                    "position": "top",
+                    "textStyle": {
+                        "fontSize": 12
+                    }
+                },
+                "emphasis": {
+                    "show": true,
+                    "textStyle": {
+                        "fontSize": 12
+                    }
+                }
+            }
+        },
+        {
+            "type": "scatter",
+            "coordinateSystem": "geo",
+            "symbol": "circle",
+            "symbolSize": 15,
+            "data": [
+                {
+                    "name": "\u6000\u5316",
+                    "value": [
+                        109.58,
+                        27.33,
+                        238
+                    ]
+                }
+            ],
+            "label": {
+                "normal": {
+                    "show": false,
+                    "position": "top",
+                    "textStyle": {
+                        "fontSize": 12
+                    }
+                },
+                "emphasis": {
+                    "show": true,
+                    "textStyle": {
+                        "fontSize": 12
+                    }
+                }
+            }
+        },
+        {
+            "type": "scatter",
+            "coordinateSystem": "geo",
+            "symbol": "circle",
+            "symbolSize": 15,
+            "data": [
+                {
+                    "name": "\u7ef5\u9633",
+                    "value": [
+                        104.73,
+                        31.48,
+                        93
+                    ]
+                }
+            ],
+            "label": {
+                "normal": {
+                    "show": false,
+                    "position": "top",
+                    "textStyle": {
+                        "fontSize": 12
+                    }
+                },
+                "emphasis": {
+                    "show": true,
+                    "textStyle": {
+                        "fontSize": 12
+                    }
+                }
+            }
+        },
+        {
+            "type": "scatter",
+            "coordinateSystem": "geo",
+            "symbol": "circle",
+            "symbolSize": 15,
+            "data": [
+                {
+                    "name": "\u6ee8\u5dde",
+                    "value": [
+                        118.03,
+                        37.36,
+                        152
+                    ]
+                }
+            ],
+            "label": {
+                "normal": {
+                    "show": false,
+                    "position": "top",
+                    "textStyle": {
+                        "fontSize": 12
+                    }
+                },
+                "emphasis": {
+                    "show": true,
+                    "textStyle": {
+                        "fontSize": 12
+                    }
+                }
+            }
+        },
+        {
+            "type": "scatter",
+            "coordinateSystem": "geo",
+            "symbol": "circle",
+            "symbolSize": 15,
+            "data": [
+                {
+                    "name": "\u868c\u57e0",
+                    "value": [
+                        117.21,
+                        32.56,
+                        68
+                    ]
+                }
+            ],
+            "label": {
+                "normal": {
+                    "show": false,
+                    "position": "top",
+                    "textStyle": {
+                        "fontSize": 12
+                    }
+                },
+                "emphasis": {
+                    "show": true,
+                    "textStyle": {
+                        "fontSize": 12
+                    }
+                }
+            }
+        },
+        {
+            "type": "scatter",
+            "coordinateSystem": "geo",
+            "symbol": "circle",
+            "symbolSize": 15,
+            "data": [
+                {
+                    "name": "\u5409\u6797",
+                    "value": [
+                        125.32599,
+                        43.896536,
+                        38
+                    ]
+                }
+            ],
+            "label": {
+                "normal": {
+                    "show": false,
+                    "position": "top",
+                    "textStyle": {
+                        "fontSize": 12
+                    }
+                },
+                "emphasis": {
+                    "show": true,
+                    "textStyle": {
+                        "fontSize": 12
+                    }
+                }
+            }
+        },
+        {
+            "type": "scatter",
+            "coordinateSystem": "geo",
+            "symbol": "circle",
+            "symbolSize": 15,
+            "data": [
+                {
+                    "name": "\u4e0a\u9976",
+                    "value": [
+                        117.58,
+                        25.27,
+                        33
+                    ]
+                }
+            ],
+            "label": {
+                "normal": {
+                    "show": false,
+                    "position": "top",
+                    "textStyle": {
+                        "fontSize": 12
+                    }
+                },
+                "emphasis": {
+                    "show": true,
+                    "textStyle": {
+                        "fontSize": 12
+                    }
+                }
+            }
+        },
+        {
+            "type": "scatter",
+            "coordinateSystem": "geo",
+            "symbol": "circle",
+            "symbolSize": 15,
+            "data": [
+                {
+                    "name": "\u804a\u57ce",
+                    "value": [
+                        115.97,
+                        36.45,
+                        68
+                    ]
+                }
+            ],
+            "label": {
+                "normal": {
+                    "show": false,
+                    "position": "top",
+                    "textStyle": {
+                        "fontSize": 12
+                    }
+                },
+                "emphasis": {
+                    "show": true,
+                    "textStyle": {
+                        "fontSize": 12
+                    }
+                }
+            }
+        },
+        {
+            "type": "scatter",
+            "coordinateSystem": "geo",
+            "symbol": "circle",
+            "symbolSize": 15,
+            "data": [
+                {
+                    "name": "\u83cf\u6cfd",
+                    "value": [
+                        115.480656,
+                        35.23375,
+                        38
+                    ]
+                }
+            ],
+            "label": {
+                "normal": {
+                    "show": false,
+                    "position": "top",
+                    "textStyle": {
+                        "fontSize": 12
+                    }
+                },
+                "emphasis": {
+                    "show": true,
+                    "textStyle": {
+                        "fontSize": 12
+                    }
+                }
+            }
+        },
+        {
+            "type": "scatter",
+            "coordinateSystem": "geo",
+            "symbol": "circle",
+            "symbolSize": 15,
+            "data": [
+                {
+                    "name": "\u5f90\u5dde",
+                    "value": [
+                        117.2,
+                        34.26,
+                        192
+                    ]
+                }
+            ],
+            "label": {
+                "normal": {
+                    "show": false,
+                    "position": "top",
+                    "textStyle": {
+                        "fontSize": 12
+                    }
+                },
+                "emphasis": {
+                    "show": true,
+                    "textStyle": {
+                        "fontSize": 12
+                    }
+                }
+            }
+        },
+        {
+            "type": "scatter",
+            "coordinateSystem": "geo",
+            "symbol": "circle",
+            "symbolSize": 15,
+            "data": [
+                {
+                    "name": "\u9ec4\u5188",
+                    "value": [
+                        114.87,
+                        30.45,
+                        33
+                    ]
+                }
+            ],
+            "label": {
+                "normal": {
+                    "show": false,
+                    "position": "top",
+                    "textStyle": {
+                        "fontSize": 12
+                    }
+                },
+                "emphasis": {
+                    "show": true,
+                    "textStyle": {
+                        "fontSize": 12
+                    }
+                }
+            }
+        },
+        {
+            "type": "scatter",
+            "coordinateSystem": "geo",
+            "symbol": "circle",
+            "symbolSize": 15,
+            "data": [
+                {
+                    "name": "\u5357\u5145",
+                    "value": [
+                        106.110698,
+                        30.837793,
+                        175
+                    ]
+                }
+            ],
+            "label": {
+                "normal": {
+                    "show": false,
+                    "position": "top",
+                    "textStyle": {
+                        "fontSize": 12
+                    }
+                },
+                "emphasis": {
+                    "show": true,
+                    "textStyle": {
+                        "fontSize": 12
+                    }
+                }
+            }
+        },
+        {
+            "type": "scatter",
+            "coordinateSystem": "geo",
+            "symbol": "circle",
+            "symbolSize": 15,
+            "data": [
+                {
+                    "name": "\u5f20\u5bb6\u53e3",
+                    "value": [
+                        114.87,
+                        40.82,
+                        70
+                    ]
+                }
+            ],
+            "label": {
+                "normal": {
+                    "show": false,
+                    "position": "top",
+                    "textStyle": {
+                        "fontSize": 12
+                    }
+                },
+                "emphasis": {
+                    "show": true,
+                    "textStyle": {
+                        "fontSize": 12
+                    }
+                }
+            }
+        },
+        {
+            "type": "scatter",
+            "coordinateSystem": "geo",
+            "symbol": "circle",
+            "symbolSize": 15,
+            "data": [
+                {
+                    "name": "\u67f3\u5dde",
+                    "value": [
+                        109.4,
+                        24.33,
+                        64
                     ]
                 }
             ],
@@ -5742,4 +5742,4 @@ var option_7cc0640a627d457a8d24be7067e4cb84 = {
         "showLabel": true
     }
 };
-myChart_7cc0640a627d457a8d24be7067e4cb84.setOption(option_7cc0640a627d457a8d24be7067e4cb84);
+myChart_57b006d34e02407cbe7dadc9db28c01d.setOption(option_57b006d34e02407cbe7dadc9db28c01d);
