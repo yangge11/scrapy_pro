@@ -13,8 +13,6 @@ import traceback
 from scrapy_auto.config import parser_config
 from scrapy.linkextractors import LinkExtractor
 
-reload(sys)  # 重新加载sys
-sys.setdefaultencoding('utf8')  ##调用setdefaultencoding函数
 import time
 from collections import Counter
 import jieba
@@ -28,13 +26,13 @@ class SpiderAll(CrawlSpider):
 
     def parse_article(self, response):
         item = ArticleItem()
-        for key in parser_config['all_spider'].keys():
+        for key in list(parser_config['all_spider'].keys()):
             try:
                 item[key] = response.xpath(parser_config['all_spider'][key]).extract()[0].encode('utf-8') if len(
                     response.xpath(parser_config['all_spider'][key]).extract()) > 0 else ''
             except:
                 traceback.print_exc()
-        for key in parser_config[self.name].keys():
+        for key in list(parser_config[self.name].keys()):
             try:
                 item[key] = response.xpath(parser_config[self.name][key]).extract()[0].encode('utf-8') if len(
                     response.xpath(parser_config[self.name][key]).extract()) > 0 else ''

@@ -9,8 +9,8 @@
 # @ToUse  :
 
 # -*- coding:utf-8 -*-
-import urllib
-import urllib2
+import urllib.request, urllib.parse, urllib.error
+import urllib.request, urllib.error, urllib.parse
 import random
 from lxml import etree
 from bs4 import BeautifulSoup
@@ -22,11 +22,11 @@ import os
 
 
 def get_html(url):
-    request = urllib2.Request(url)
+    request = urllib.request.Request(url)
     request.add_header("User-Agent",
                        "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/45.0.2454.101 Safari/537.36")
-    html = urllib2.urlopen(request)
-    print html.getcode()
+    html = urllib.request.urlopen(request)
+    print(html.getcode())
     return html.read()
 
 
@@ -47,8 +47,8 @@ def fetch_kuaidaili():
                     td_port = trs[line].xpath('td[2]/text()')[0]
                     ip = td_ip + ':' + str(td_port)
                     proxys.append(ip)
-    useFullIp = testIp(map(lambda x: x.strip(), proxys))
-    print('from kuaidaili...%s' % len(useFullIp))
+    useFullIp = testIp([x.strip() for x in proxys])
+    print(('from kuaidaili...%s' % len(useFullIp)))
     return useFullIp
 
 
@@ -69,9 +69,9 @@ def fetch_kxdaili():
                     td_port = trs[line].xpath('td[2]/text()')[0]
                     ip = td_ip + ':' + str(td_port)
                     proxys.append(ip)
-    useFullIp = testIp(map(lambda x: x.strip(), proxys))
+    useFullIp = testIp([x.strip() for x in proxys])
 
-    print('from kxdaili...%s' % len(useFullIp))
+    print(('from kxdaili...%s' % len(useFullIp)))
     # print useFullIp
     return useFullIp
 
@@ -94,8 +94,8 @@ def fetch_yaoyaodaili():
                     ip = td_ip + ':' + td_port
                     proxys.append(ip)
 
-    useFullIp = testIp(map(lambda x: x.strip(), proxys))
-    print('from httpsdaili...%s' % len(useFullIp))
+    useFullIp = testIp([x.strip() for x in proxys])
+    print(('from httpsdaili...%s' % len(useFullIp)))
     return useFullIp
 
 
@@ -115,8 +115,8 @@ def fetch_xici():
                 td_port = line.xpath('td[3]/text()')[0].strip()
                 ip = td_ip + ':' + td_port
                 proxys.append(ip)
-    useFullIp = testIp(map(lambda x: x.strip(), proxys))
-    print "from xici ... %s" % len(useFullIp)
+    useFullIp = testIp([x.strip() for x in proxys])
+    print("from xici ... %s" % len(useFullIp))
     return useFullIp
 
 
@@ -137,9 +137,9 @@ def fetch_nianshao():
                     td_port = line.xpath('td[2]/text()')[0].strip()
                     ip = td_ip + ":" + td_port
                     proxys.append(ip)
-    useFullIp = testIp(map(lambda x: x.strip(), proxys))
-    print "from nianshao ... %s" % len(useFullIp)
-    print useFullIp
+    useFullIp = testIp([x.strip() for x in proxys])
+    print("from nianshao ... %s" % len(useFullIp))
+    print(useFullIp)
 
 
 # 360代理IPHTTPS高匿部分
@@ -161,8 +161,8 @@ def fetch_swei360():
                         td_port = line.xpath('td[2]/text()')[0].strip()
                         ip = td_ip + ":" + td_port
                         proxys.append(ip)
-    useFullIp = testIp(map(lambda x: x.strip(), proxys))
-    print "from swei360 ... %s" % len(useFullIp)
+    useFullIp = testIp([x.strip() for x in proxys])
+    print("from swei360 ... %s" % len(useFullIp))
     return useFullIp
 
 
@@ -183,8 +183,8 @@ def fetch_ip3366():
                     td_port = line.xpath('td[2]/text()')[0].strip()
                     ip = td_ip + ":" + td_port
                     proxys.append(ip)
-    useFullIp = testIp(map(lambda x: x.strip(), proxys))
-    print "from ip3366 ...%s" % len(useFullIp)
+    useFullIp = testIp([x.strip() for x in proxys])
+    print("from ip3366 ...%s" % len(useFullIp))
     return useFullIp
 
 
@@ -205,8 +205,8 @@ def fetch_mimiip():
                     td_port = line.xpath('td[2]/text()')[0].strip()
                     ip = td_ip + ":" + td_port
                     proxys.append(ip)
-    useFullIp = testIp(map(lambda x: x.strip(), proxys))
-    print "from mimiip ...%s" % len(useFullIp)
+    useFullIp = testIp([x.strip() for x in proxys])
+    print("from mimiip ...%s" % len(useFullIp))
     return useFullIp
 
 
@@ -227,8 +227,8 @@ def fetch_ip84():
                     td_port = line.xpath('td[2]/text()')[0].strip()
                     ip = td_ip + ":" + td_port
                     proxys.append(ip)
-    useFullIp = testIp(map(lambda x: x.strip(), proxys))
-    print "from ip84 ...%s" % len(useFullIp)
+    useFullIp = testIp([x.strip() for x in proxys])
+    print("from ip84 ...%s" % len(useFullIp))
     return useFullIp
 
 
@@ -240,9 +240,9 @@ def fetch_66ip():
     # soup = BeautifulSoup(driver.page_source,"lxml")
     soup = BeautifulSoup(get_html(startUrl))
     body = soup.body.find_all(text=re.compile('\d+\.\d+\.\d+\.\d+:\d+'))
-    body = map(lambda x: x.strip(), body)
+    body = [x.strip() for x in body]
     useFullIp = testIp(body)
-    print('from 66ip...%s' % len(useFullIp))
+    print(('from 66ip...%s' % len(useFullIp)))
     return useFullIp
 
 
@@ -250,7 +250,7 @@ def fetch_66ip():
 def testIp(ip_list):
     useFullIp = []
     for ip in ip_list:
-        response = urllib.urlopen('https://www.baidu.com/', proxies={'https//': ip})
+        response = urllib.request.urlopen('https://www.baidu.com/', proxies={'https//': ip})
         if response.getcode() == 200:
             useFullIp.append(ip)
     return useFullIp
@@ -267,7 +267,7 @@ def NEWHTTPS():
     ip8 = fetch_mimiip()
     ip9 = fetch_ip84()
     https_list = list(set(ip1 + ip2 + ip3 + ip4 + ip5 + ip6 + ip7 + ip8 + ip9))
-    print('HTTPS Proxy Ip is OK ...%s' % len(https_list))
+    print(('HTTPS Proxy Ip is OK ...%s' % len(https_list)))
     pass
 
 

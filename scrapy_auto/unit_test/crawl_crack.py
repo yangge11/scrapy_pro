@@ -32,9 +32,9 @@ def move_slider(driver):
                     traceback.print_exc()
                     continue
             # 目前只碰到3种情况：成功（请在在下方输入验证码,请点击图）；无响应（请按住滑块拖动)；失败（哎呀，失败了，请刷新）
-            if text.text.startswith(u'验证通过'):
+            if text.text.startswith('验证通过'):
                 break
-            elif text.text.startswith(u'哎呀，出错了，点击刷新再来一次'):
+            elif text.text.startswith('哎呀，出错了，点击刷新再来一次'):
                 driver.find_element_by_xpath("//span[@class='nc-lang-cnt']/a").click()
                 pass
         except Exception as e:

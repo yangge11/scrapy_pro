@@ -159,7 +159,7 @@ class ScrapyDemoDownloaderMiddleware(object):
             cookies = driver.get_cookies()
             account_cookie = {}
             for cookie in cookies:
-                if 'name' in cookie.keys() and 'value' in cookie.keys():
+                if 'name' in list(cookie.keys()) and 'value' in list(cookie.keys()):
                     account_cookie[cookie['name']] = cookie['value']
             request.meta['cookie'] = account_cookie
             response = HtmlResponse(url=driver.current_url, body=body.encode('utf-8'))

@@ -32,7 +32,7 @@ class Demo1(scrapy.Spider):
     def demo_item(self, response):
         while True:
             item = JobItem()
-            for filed in item.fields.keys():
+            for filed in list(item.fields.keys()):
                 item[filed] = 'demo'
             yield item
         pass

@@ -16,6 +16,7 @@ app = Flask(__name__)
 def index():
     return render_template('index.html')
 
+
 @app.route("/show_data")
 def education():
     return render_template('show_data.html')

@@ -63,4 +63,3 @@ if __name__ == '__main__':
                 <li class="footer-links-item">
     """
     aa = del_html_attr(page_source)
-    pass

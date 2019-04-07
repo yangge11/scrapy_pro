@@ -103,11 +103,22 @@ DEFAULT_REQUEST_HEADERS = {
 # SCHEDULER_PERSIST = True
 # REDIS_URL = '127.0.0.1:6379'
 
-LOG_LEVEL = 'ERROR'
-LOG_FILE = "g://boss.txt"
-
 MYSQL_DB_NAME = 'crawl_data'
 MYSQL_HOST = '47.105.142.45'
 MYSQL_PORT = 3306
 MYSQL_USER = 'root'
 MYSQL_PASSWORD = 'zeng!@#456'
+
+# master
+# LOG_LEVEL = 'ERROR'
+# LOG_FILE = "g://boss.txt"
+
+# dev
+# LOG_LEVEL = 'ERROR'
+# LOG_FILE = "g://boss.txt"
+
+
+
+
+
+

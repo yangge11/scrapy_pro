@@ -18,7 +18,7 @@ from twisted.enterprise import adbapi
 
 class ScrapyDemoPipeline(object):
     def process_item(self, item, spider):
-        print 123456
+        print(123456)
         # return item
 
 

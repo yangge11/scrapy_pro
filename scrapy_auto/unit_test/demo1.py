@@ -7,6 +7,8 @@
 # @File    : demo_spider.py
 # @Software: PyCharm
 # @ToUse  :
+import random
+
 from scrapy_auto.tools.common_parser import del_html_attr
 
 
@@ -54,9 +56,18 @@ def del_html_attr_test():
 
 def demo1_AI():
     while True:
-        print raw_input("").replace('吗', '').replace('？', '')
+        print(input("").replace('吗', '').replace('？', ''))
+
+
+def random_demo():
+    aa = [1, 3, 565, 12, 8, 2]
+    a_list = random.shuffle(aa)
+    for i in a_list:
+        print(i)
+    pass
 
 
 if __name__ == '__main__':
     # del_html_attr_test()
-    demo1_AI()
+    # demo1_AI()
+    random_demo()

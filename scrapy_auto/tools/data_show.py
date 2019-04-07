@@ -10,10 +10,6 @@
 import random
 import re
 import traceback
-import sys
-
-reload(sys)
-sys.setdefaultencoding('utf8')
 import matplotlib.pyplot as plt
 import pymysql
 from scrapy_auto import settings
@@ -35,7 +31,7 @@ def drawPic_search_job():
         amount = []
         for item in results:
             if len(item) > 1:
-                tags.append(item[0].decode('utf-8'))
+                tags.append(item[0])
                 amount.append(item[1] * random.randint(30, 40))
     except:
         traceback.print_exc()
@@ -46,11 +42,11 @@ def drawPic_search_job():
     plt.rcParams['font.sans-serif'] = ['FangSong']
     plt.rcParams['axes.unicode_minus'] = False
 
-    plt.barh(range(len(tags)), amount, height=0.7, color='steelblue', alpha=0.8)
-    plt.yticks(range(len(tags)), tags)
+    plt.barh(list(range(len(tags))), amount, height=0.7, color='steelblue', alpha=0.8)
+    plt.yticks(list(range(len(tags))), tags)
     plt.xlim(min(amount) - 10, max(amount) + 100)
-    plt.xlabel(u"招聘信息数量")
-    plt.title(u"各分类招聘信息数量")
+    plt.xlabel("招聘信息数量")
+    plt.title("各分类招聘信息数量")
     for x, y in enumerate(amount):
         plt.text(y + 1, x - 0.4, '%s' % y)
     plt.show()
@@ -71,7 +67,7 @@ def drawPic_education():
         # print(results)
         for item in results:
             if len(item) > 1:
-                labels.append(item[0].decode('utf-8'))
+                labels.append(item[0])
                 sizes.append(item[1])
                 explode.append(0)
     except:
@@ -84,7 +80,7 @@ def drawPic_education():
     plt.pie(sizes, colors=tuple(colors), explode=tuple(explode[:-3]), labels=tuple(labels), autopct='%1.1f%%',
             shadow=True, startangle=90)
     plt.axis('equal')
-    plt.title(u'招聘信息学历要求占比', fontsize=12)
+    plt.title('招聘信息学历要求占比', fontsize=12)
     plt.show()
 
 
@@ -108,7 +104,7 @@ def drawPic_place():
 
     # 初始化图表
     geo = Geo(
-        title=u"抓取的招聘信息数量在全国各地的分布",
+        title="抓取的招聘信息数量在全国各地的分布",
         width=1920,
         height=1080,
         title_pos="center",
@@ -118,19 +114,18 @@ def drawPic_place():
     # data = [(key, value) for key, value in dict_result.items()]
     # attr, value = geo.cast(data)
     error_citys = []
-    for key, value in dict_result.items():
+    for key, value in list(dict_result.items()):
         try:
             # 图表配置
             geo.add(
                 "",
-                [key.decode('utf-8')],
+                [key],
                 [value * random.randint(30, 40)],
                 is_visualmap=True,
                 visual_range=[0, 12000],
                 visual_text_color="#050505",
-                visual_range_text=[u"最少个数", u"最大个数"],
+                visual_range_text=["最少个数", "最大个数"],
                 symbol_size=15,
-                maptype='china',
             )
         except ValueError as e:
             traceback.print_exc()

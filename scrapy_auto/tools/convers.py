@@ -31,7 +31,7 @@ def normalize_dict(data):
         new_data = {}
         for k in data:
             data[k] = normalize_dict(data[k])
-            if type(k) == unicode:
+            if type(k) == str:
                 new_data[k.encode('utf-8')] = data[k]
             else:
                 new_data[k] = data[k]
@@ -39,7 +39,7 @@ def normalize_dict(data):
     elif type(data) == list:
         for i in range(0, len(data)):
             data[i] = normalize_dict(data[i])
-    elif type(data) == unicode:
+    elif type(data) == str:
         data = data.encode('utf-8')
     else:
         data = str(data)
