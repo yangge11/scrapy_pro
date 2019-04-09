@@ -45,16 +45,22 @@ boss直聘爬虫完成，采用定页面层级的方式减少访问次数，提�
 8. 爬虫运行状态及相应抓取数据监控
 
 #### 可能遇到的问题及解决方式
+
 q：ImportError: No module named win32api
 a：pip install pypiwin32
+
 q: error: Microsoft Visual C++ 14.0 is required. Get it with "Microsoft Visual C++ Build Tools": http://landinghub.visualstudio.com/visual-cpp-build-tools
 a：https://segmentfault.com/a/1190000014782698
+
 q: AttributeError: module 'pip' has no attribute 'main'
 a: python -m pip install --upgrade pip==9.0.3
+
 q: python进行批量的py2=>py3转换
 a: https://blog.csdn.net/u012211419/article/details/51136232
+
 q: jinja2.exceptions.TemplateSyntaxError: unexpected char '\x9d' at 734926
 a: 时间有限,暂时无太好的方式,参照:https://blog.csdn.net/qq_39241986/article/details/80680392
+
 q: distutils.errors.DistutilsError: Could not find suitable distribution for Requirement.parse('pytest-runner')
 a: pip install pytest-runner
 
