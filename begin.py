@@ -11,6 +11,15 @@
 
 from scrapy import cmdline
 
-cmdline.execute("scrapy crawl boss_spider".split())
+# cmdline.execute("scrapy crawl boss_spider".split())
 # cmdline.execute("scrapy crawl xici_spider -o proxy_list.json".split())
 # cmdline.execute("scrapy crawl demo_spider".split())
+# cmdline.execute("scrapy crawl toutiao_add_spider -o items.json".split())
+cmdline.execute("scrapy crawl toutiao_all_spider -o items.json".split())
+
+
+
+
+
+
+

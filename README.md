@@ -25,6 +25,8 @@ boss直聘爬虫完成，采用定页面层级的方式减少访问次数，提�
 增加可視化html頁面
 7. Version1.0.5. 
 重大改动：鉴于py2编码的麻烦以及py2官方维护截止到2020年元旦，本项目由py2=》py3进行转换
+8. Version1.0.6. 
+新增头条号文章抓取的增量和全量抓取,对接scrapy-splash
 
 
 #TODO:
@@ -42,7 +44,7 @@ boss直聘爬虫完成，采用定页面层级的方式减少访问次数，提�
 7. 广度优先和深度优先的抓取
 8. 爬虫运行状态及相应抓取数据监控
 
-#### windows系统可能遇到的问题及解决方式
+#### 可能遇到的问题及解决方式
 q：ImportError: No module named win32api
 a：pip install pypiwin32
 q: error: Microsoft Visual C++ 14.0 is required. Get it with "Microsoft Visual C++ Build Tools": http://landinghub.visualstudio.com/visual-cpp-build-tools
@@ -53,5 +55,19 @@ q: python进行批量的py2=>py3转换
 a: https://blog.csdn.net/u012211419/article/details/51136232
 q: jinja2.exceptions.TemplateSyntaxError: unexpected char '\x9d' at 734926
 a: 时间有限,暂时无太好的方式,参照:https://blog.csdn.net/qq_39241986/article/details/80680392
+q: distutils.errors.DistutilsError: Could not find suitable distribution for Requirement.parse('pytest-runner')
+a: pip install pytest-runner
+
+### 需求背景： 
+1. 抓取招聘网站数据，用于统计各个岗位薪资、地域分布、技能关键词排名、==》demo_spider.py
+2. 抓取头条号文章数据：
+    1）时效性：尝试5分钟进行一次目录轮巡的数据抓取，以文章url作为唯一区分标准
+    2）抓取字段内容（待定）：
+
+### 技术点
+解决js加载问题：
+无头浏览器（性能差）；scrapy-splash
+
+
 
 

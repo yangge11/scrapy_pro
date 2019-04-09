@@ -69,3 +69,7 @@ class MediaItem(scrapy.Item):
     income_pages = scrapy.Field()
     content_pages = scrapy.Field()
     account = scrapy.Field()
+
+
+class MediaAddItem(scrapy.Item):
+    title = scrapy.Field()
