@@ -22,5 +22,10 @@ def education():
     return render_template('show_data.html')
 
 
+@app.route("/test_movie")
+def test_movie():
+    return render_template('test_movie.html')
+
+
 if __name__ == '__main__':
     app.run(host='0.0.0.0', port=1080, debug=True)

@@ -65,7 +65,7 @@ class BossZhiPin(CrawlSpider):
                 new_urls.append(
                     'https://www.zhipin.com/job_detail/?query=%s&city=%s&page=1' % (search_word, city_code))
         random.shuffle(new_urls)
-        for new_url in new_urls:
+        for new_url in new_urls[:3]:
             item = JobItem()
             item['search_word'] = new_url[new_url.find('query=') + len('query='):new_url.find('&')]
             item['job_type'] = self.job_dict_mapping[item['search_word']][0] if item[
@@ -85,7 +85,7 @@ class BossZhiPin(CrawlSpider):
                                  meta={'item': response.meta['item']})
         if next_page != 'javascript:;':
             yield scrapy.Request(url=response.urljoin(next_page), callback=self.parse_job_list,
-                                 meta={'item': response.meta['item']})
+                                 meta={'item': response.meta['item']}, priority=1)
 
     def parse_job_detail(self, response):
         """

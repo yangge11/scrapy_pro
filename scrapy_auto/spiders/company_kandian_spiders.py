@@ -1,4 +1,5 @@
 import json
+import logging
 import time
 import traceback
 
@@ -7,6 +8,22 @@ from scrapy.http import HtmlResponse
 from scrapy.spiders import CrawlSpider, Rule
 from scrapy.linkextractors import LinkExtractor
 from scrapy_splash import SplashRequest
+
+script = """
+function main(splash, args)
+  splash.images_enabled = false
+  assert(splash:go(args.url))
+  assert(splash:wait(args.wait))
+  js = string.format("document.querySelector('#mainsrp-pager div.form > input').value=%d;document.querySelector('#mainsrp-pager div.form > span.btn.J_Submit').click()", args.page)
+  splash:evaljs(js)
+  assert(splash:wait(args.wait))
+  return splash:html()
+end
+"""
+demo = """
+     yield SplashRequest(url, callback=self.parse, endpoint='execute',
+                                    args={'lua_source': script, 'page': page, 'wait': 7})
+"""
 
 
 class TouTiaoSpider(CrawlSpider):
@@ -21,7 +38,12 @@ class TouTiaoSpider(CrawlSpider):
 
     def detail_article(self, response):
         # yield {'title': response.xpath("//title/text()").extract()[0]}
-        yield {'url': response._url}
+        # yield {'url': response._url}
+        try:
+            yield {'title': response.xpath("//title/text()").extract()[0], 'url': response._url}
+        except:
+            traceback.print_exc()
+            logging.error('not match detail %s' % response._url)
 
 
 class TouTiaoAddSpider(TouTiaoSpider):
@@ -47,7 +69,7 @@ class TouTiaoAddSpider(TouTiaoSpider):
 
 class ToutiaoAllSpider(TouTiaoSpider):
     name = 'toutiao_all_spider'
-    allowed_domains = ['toutiao.com']
+    allowed_domains = ['www.toutiao.com']
 
     custom_settings = {
         # 渲染服务的url
@@ -66,52 +88,108 @@ class ToutiaoAllSpider(TouTiaoSpider):
         'DUPEFILTER_CLASS': 'scrapy_splash.SplashAwareDupeFilter',
         # 使用Splash的Http缓存
         'HTTPCACHE_STORAGE': 'scrapy_splash.SplashAwareFSCacheStorage',
-        'CONCURRENT_REQUESTS': 100,
+        'CONCURRENT_REQUESTS': 3,
         # 'DOWNLOAD_DELAY': 0.1,
         'ITEM_PIPELINES': {
 
-        }
+        },
+        'LOG_LEVEL': 'INFO',
+        # 'LOG_FILE': "/Users/xiaomayi/log/toutiao_all.log",
     }
 
     rules = (
-        Rule(LinkExtractor(allow=('.*/a\d+/.*')), callback='detail_article', follow=True),
-        Rule(LinkExtractor(allow_domains=allowed_domains), callback='splash_request', follow=True),
+        # todo:文章匹配规则优化
+        Rule(LinkExtractor(allow_domains=allowed_domains, allow=('.*\d{1,}.*')),
+             callback='detail_article', follow=True),
+        Rule(LinkExtractor(allow_domains=allowed_domains), process_request='splash_request', follow=True),
     )
 
     def start_requests(self):
-        url = 'https://www.toutiao.com'
-        yield SplashRequest(url, dont_process_response=True, args={'wait': 0.5}, meta={'real_url': url})
+        url = 'https://www.toutiao.com/a6676789786306413069/'
+        yield SplashRequest(url, dont_process_response=True, args={'wait': 0.5},
+                            meta={'real_url': url})
 
     def splash_request(self, request):
-        """
-        :param request: Request对象（是一个字典；怎么取值就不说了吧！！）
-        :return: SplashRequest的请求
-        """
-        # dont_process_response=True 参数表示不更改响应对象类型（默认为：HTMLResponse；更改后为：SplashTextResponse）
-        # args={'wait': 0.5} 表示传递等待参数0.5（Splash会渲染0.5s的时间）
-        # meta 传递请求的当前请求的URL
         return SplashRequest(url=request.url, dont_process_response=True, args={'wait': 0.5},
                              meta={'real_url': request.url})
 
-    # def _requests_to_follow(self, response):
-    #     """重写的函数哈！这个函数是Rule的一个方法
-    #     :param response: 这货是啥看名字都知道了吧（这货也是个字典，然后你懂的ｄ(･∀･*)♪ﾟ）
-    #     :return: 追踪的Request
-    #     """
-    #     if not isinstance(response, HtmlResponse):
-    #         return
-    #     seen = set()
-    #     # 将Response的URL更改为我们传递下来的URL
-    #     # 需要注意哈！ 不能直接直接改！只能通过Response.replace这个魔术方法来改！（当然你改无所谓啦！反正会用报错来报复你 (`皿´) ）并且！！！
-    #     # 敲黑板！！！！划重点！！！！！注意了！！！ 这货只能赋给一个新的对象（你说变量也行，怎么说都行！(*ﾟ∀ﾟ)=3）
-    #     newresponse = response.replace(url=response.meta.get('real_url'))
-    #     for n, rule in enumerate(self._rules):
-    #         # 我要长一点不然有人看不见------------------------------------newresponse 看见没！别忘了改！！！
-    #         links = [lnk for lnk in rule.link_extractor.extract_links(newresponse)
-    #                  if lnk not in seen]
-    #         if links and rule.process_links:
-    #             links = rule.process_links(links)
-    #         for link in links:
-    #             seen.add(link)
-    #             r = self._build_request(n, link)
-    #             yield rule.process_request(r)
+    def _requests_to_follow(self, response):
+        if not isinstance(response, HtmlResponse):
+            return
+        seen = set()
+        try:
+            newresponse = response.replace(url=response.meta.get('real_url'))
+        except:
+            traceback.print_exc()
+            pass
+        for n, rule in enumerate(self._rules):
+            links = [lnk for lnk in rule.link_extractor.extract_links(newresponse)
+                     if lnk not in seen]
+            if links and rule.process_links:
+                links = rule.process_links(links)
+            logging.info('%s response urls len %s' % (newresponse._url, len(links)))
+            for link in links:
+                seen.add(link)
+                r = self._build_request(n, link)
+                yield rule.process_request(r)
+
+
+class ToutiaoAllSpider1(TouTiaoSpider):
+    name = 'toutiao_all_spider1'
+
+    custom_settings = {
+        # 渲染服务的url
+        'SPLASH_URL': 'http://localhost:8050',
+
+        # 下载器中间件
+        'DOWNLOADER_MIDDLEWARES': {
+            'scrapy_splash.SplashCookiesMiddleware': 723,
+            'scrapy_splash.SplashMiddleware': 725,
+            'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware': 810,
+        },
+        'SPIDER_MIDDLEWARES': {
+            'scrapy_splash.SplashDeduplicateArgsMiddleware': 100,
+        },
+        # 去重过滤器
+        'DUPEFILTER_CLASS': 'scrapy_splash.SplashAwareDupeFilter',
+        # 使用Splash的Http缓存
+        'HTTPCACHE_STORAGE': 'scrapy_splash.SplashAwareFSCacheStorage',
+        'CONCURRENT_REQUESTS': 3,
+        # 'DOWNLOAD_DELAY': 0.1,
+        'ITEM_PIPELINES': {
+
+        },
+        'LOG_LEVEL': 'DEBUG',
+        # 'LOG_FILE': "/Users/xiaomayi/log/toutiao_all.log",
+    }
+
+    def start_requests(self):
+        url = 'https://search.jd.com/Search?keyword=%E8%A1%A3%E6%9C%8D'
+        # url = 'https://www.toutiao.com/a6676789786306413069/'
+        # url = 'http://gaia.imilive.cn/share.html?uid=0&videoid=116682377418697098&cc=TG45624'
+        yield SplashRequest(url, dont_process_response=True, args={'wait': 15},
+                            meta={'real_url': url}, callback=self.parse)
+
+    def parse(self, response):
+
+        pass
+
+    def _requests_to_follow(self, response):
+        if not isinstance(response, HtmlResponse):
+            return
+        seen = set()
+        try:
+            newresponse = response.replace(url=response.meta.get('real_url'))
+        except:
+            traceback.print_exc()
+            pass
+        for n, rule in enumerate(self._rules):
+            links = [lnk for lnk in rule.link_extractor.extract_links(newresponse)
+                     if lnk not in seen]
+            if links and rule.process_links:
+                links = rule.process_links(links)
+            logging.info('%s response urls len %s' % (newresponse._url, len(links)))
+            for link in links:
+                seen.add(link)
+                r = self._build_request(n, link)
+                yield rule.process_request(r)
