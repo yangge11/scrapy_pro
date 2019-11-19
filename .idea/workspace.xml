@@ -2,21 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="30b239cd-8a2b-4aca-aa5a-764cca91cbf1" name="Default Changelist" comment="Default Changelist">
-      <change afterPath="$PROJECT_DIR$/.idea/deployment.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/webServers.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scrapy_auto/service/templates/test_movie.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scrapy_auto/spiders/SearchSpiders.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/begin.py" beforeDir="false" afterPath="$PROJECT_DIR$/begin.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/items.json" beforeDir="false" afterPath="$PROJECT_DIR$/items.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scrapy_auto/nohup.out" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scrapy_auto/service/service.py" beforeDir="false" afterPath="$PROJECT_DIR$/scrapy_auto/service/service.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scrapy_auto/service/templates/demo.html" beforeDir="false" afterPath="$PROJECT_DIR$/scrapy_auto/service/templates/demo.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scrapy_auto/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/scrapy_auto/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scrapy_auto/spiders/company_kandian_spiders.py" beforeDir="false" afterPath="$PROJECT_DIR$/scrapy_auto/spiders/company_kandian_spiders.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scrapy_auto/spiders/employ_spiders.py" beforeDir="false" afterPath="$PROJECT_DIR$/scrapy_auto/spiders/employ_spiders.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scrapy_auto/unit_test/demo_formate.html" beforeDir="false" afterPath="$PROJECT_DIR$/scrapy_auto/unit_test/demo_formate.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scrapy_auto/spiders/SearchSpiders.py" beforeDir="false" afterPath="$PROJECT_DIR$/scrapy_auto/spiders/SearchSpiders.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -60,8 +47,8 @@
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="336">
-                <caret line="32" column="6" lean-forward="true" selection-start-line="32" selection-start-column="6" selection-end-line="32" selection-end-column="6" />
+              <first_editor relative-caret-position="217">
+                <caret line="37" column="12" lean-forward="true" selection-start-line="37" selection-start-column="12" selection-end-line="37" selection-end-column="12" />
               </first_editor>
               <second_editor />
             </state>
@@ -168,10 +155,10 @@
         <option value="$PROJECT_DIR$/scrapy_auto/spiders/company_kandian_spiders.py" />
         <option value="$PROJECT_DIR$/scrapy_auto/service/templates/demo.html" />
         <option value="$PROJECT_DIR$/scrapy_auto/items.py" />
-        <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/scrapy_auto/settings.py" />
         <option value="$PROJECT_DIR$/begin.py" />
         <option value="$PROJECT_DIR$/scrapy_auto/spiders/SearchSpiders.py" />
+        <option value="$PROJECT_DIR$/README.md" />
       </list>
     </option>
   </component>
@@ -801,9 +788,6 @@
     <entry file="file://$PROJECT_DIR$/scrapy_auto/service/templates/index.html">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/scrapy_auto/spiders/demo_spider.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file:///Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/scrapy_splash/request.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-81">
@@ -928,13 +912,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/begin.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="18" column="49" selection-start-line="18" selection-start-column="49" selection-end-line="18" selection-end-column="49" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/scrapy_auto/pipelines.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="486">
@@ -959,10 +936,20 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/begin.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="18" column="41" lean-forward="true" selection-start-line="18" selection-start-column="41" selection-end-line="18" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scrapy_auto/spiders/demo_spider.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/scrapy_auto/spiders/SearchSpiders.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="257">
-          <caret line="41" column="41" selection-start-line="41" selection-start-column="41" selection-end-line="41" selection-end-column="41" />
+        <state relative-caret-position="347">
+          <caret line="47" column="16" lean-forward="true" selection-start-line="47" selection-start-column="16" selection-end-line="47" selection-end-column="16" />
           <folding>
             <element signature="e#0#11#0" expanded="true" />
           </folding>
@@ -972,8 +959,8 @@
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="336">
-            <caret line="32" column="6" lean-forward="true" selection-start-line="32" selection-start-column="6" selection-end-line="32" selection-end-column="6" />
+          <first_editor relative-caret-position="217">
+            <caret line="37" column="12" lean-forward="true" selection-start-line="37" selection-start-column="12" selection-end-line="37" selection-end-column="12" />
           </first_editor>
           <second_editor />
         </state>

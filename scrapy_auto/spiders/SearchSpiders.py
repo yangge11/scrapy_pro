@@ -39,7 +39,7 @@ class LanZhouSpider(scrapy.Spider):
 
     def start_requests(self):
         url = 'https://www.lanzous.com/b{item_id}'
-        for item_id in range(12583, 20000):
+        for item_id in range(12583, 12683):
             yield Request(url=url.format(item_id=item_id), headers=self.headers, meta={'fid': item_id})
 
     def parse(self, response):

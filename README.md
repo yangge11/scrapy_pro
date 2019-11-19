@@ -29,6 +29,7 @@ boss直聘爬虫完成，采用定页面层级的方式减少访问次数，提�
 新增头条号文章抓取的增量和全量抓取,对接scrapy-splash
 9. Version1.0.7. 
 新增蓝奏云盘数据采集
+Version1.0.8. 安装启动教程
 
 #TODO:
 1. 根据不同的岗位，生成对应的分布图及对应的词库（时间有限目前暂时是几个demo数据）——
@@ -76,5 +77,10 @@ a: pip install pytest-runner
 无头浏览器（性能差）；scrapy-splash
 
 
-
+### 安装启动
+以蓝奏云盘为例：
+cd 你的code目录/scrapy_pro/
+pip install -r requirements.txt
+scrapy crawl lanzhou_spider -o items.json
+程序跑完后可以在项目目录下查看items.json数据
 
