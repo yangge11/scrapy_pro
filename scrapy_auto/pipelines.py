@@ -10,6 +10,7 @@ import time
 import traceback
 
 import pymongo
+from openpyxl import Workbook
 from scrapy.exporters import JsonItemExporter
 from scrapy.utils.python import to_bytes
 from scrapy.utils.serialize import ScrapyJSONEncoder
@@ -113,3 +114,53 @@ class MySQLPipeline(object):
                                                 passwd=self.PASSWD, db=self.MYSQL_DB_NAME, charset='utf8mb4')
         pass
 
+
+class MySQLDemoPipeline(object):
+
+    @classmethod
+    def from_crawler(cls, crawler):
+        cls.MYSQL_DB_NAME = crawler.settings.get("MYSQL_DB_NAME", 'scrapy_default')
+        cls.HOST = crawler.settings.get("MYSQL_HOST", 'localhost')
+        cls.PORT = crawler.settings.get("MYSQL_PORT", 3306)
+        cls.USER = crawler.settings.get("MYSQL_USER", '')
+        cls.PASSWD = crawler.settings.get("MYSQL_PASSWORD", '')
+        return cls()
+
+    def open_spider(self, spider):
+        self.dbpool = adbapi.ConnectionPool('pymysql', host=self.HOST, port=self.PORT, user=self.USER,
+                                            passwd=self.PASSWD, db=self.MYSQL_DB_NAME, charset='utf8mb4')
+
+    def close_spider(self, spider):
+        self.dbpool.close()
+
+    def process_item(self, item, spider):
+        self.dbpool.runInteraction(self.insert_db, item)
+        return item
+
+    def insert_db(self, tx, item):
+        values = (
+            item['url'],
+            item['name'],
+        )
+        sql = 'INSERT INTO lanzou (`url`,`name`) VALUES (%s,%s)'
+        try:
+            tx.execute(sql, values)
+        except:
+            logging.error('error for mysql %s' % item['url'])
+            traceback.print_exc()
+            self.dbpool = adbapi.ConnectionPool('pymysql', host=self.HOST, port=self.PORT, user=self.USER,
+                                                passwd=self.PASSWD, db=self.MYSQL_DB_NAME, charset='utf8mb4')
+        pass
+
+
+class ExcelPipeline(object):
+    def __init__(self):
+        self.wb = Workbook()
+        self.ws = self.wb.active
+        self.ws.append(['软件链接', '软件名称合集'])
+
+    def process_item(self, item, spider):
+        line = [item['url'], item['name']]
+        self.ws.append(line)
+        self.wb.save('lanzou_soft.xlsx')
+        return item

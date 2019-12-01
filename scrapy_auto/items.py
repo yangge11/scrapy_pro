@@ -71,5 +71,6 @@ class MediaItem(scrapy.Item):
     account = scrapy.Field()
 
 
-class MediaAddItem(scrapy.Item):
-    title = scrapy.Field()
+class LanzouItem(scrapy.Item):
+    url = scrapy.Field()
+    name = scrapy.Field()

@@ -3,6 +3,8 @@ import json
 import scrapy
 from scrapy import Request, FormRequest
 
+from scrapy_auto.items import LanzouItem
+
 
 class LanZhouSpider(scrapy.Spider):
     name = "lanzhou_spider"
@@ -13,7 +15,9 @@ class LanZhouSpider(scrapy.Spider):
         'DOWNLOAD_DELAY': 1,
         'DOWNLOADER_MIDDLEWARES': {
         },
-        'ITEM_PIPELINES': {
+        'ITEM_PIPELINES': {  # 管道，控制你输出数据的方式
+            # 'scrapy_auto.pipelines.MySQLDemoPipeline': 1,
+            # 'scrapy_auto.pipelines.ExcelPipeline': 10,
         },
     }
     headers = {
@@ -72,12 +76,15 @@ class LanZhouSpider(scrapy.Spider):
 
     def parse_content(self, response):
         try:
+            item = LanzouItem()
             print('in parse_content')
             url = response.meta['url']
             content_json = json.loads(response.text)
             content = ''
             for name in content_json['text']:
                 content += name['name_all']
-            yield {'url': url, 'name': content}
+            item['url'] = url
+            item['name'] = content
+            yield item
         except:
             print('error')
