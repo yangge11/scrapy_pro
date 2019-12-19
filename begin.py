@@ -17,7 +17,7 @@ from scrapy import cmdline
 # cmdline.execute("scrapy crawl toutiao_add_spider -o items.json".split())
 # cmdline.execute("scrapy crawl toutiao_all_spider -o items.json".split())
 # cmdline.execute("scrapy crawl lanzhou_spider -o items.json".split())
-cmdline.execute("scrapy crawl lanzhou_spider".split())
+cmdline.execute("scrapy crawl bili_spider".split())
 
 
 

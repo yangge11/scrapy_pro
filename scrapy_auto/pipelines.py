@@ -164,3 +164,17 @@ class ExcelPipeline(object):
         self.ws.append(line)
         self.wb.save('lanzou_soft.xlsx')
         return item
+
+
+class ExcelBiliPipeline(object):
+    def __init__(self):
+        self.wb = Workbook()
+        self.ws = self.wb.active
+        self.ws.append(['是否vip', '封面图', '当前集数', '是否完结', '详情链接', '粉丝大体量级', '番剧标题'])
+
+    def process_item(self, item, spider):
+        line = [item['is_vip'], item['thumb'], item['episode'], item['is_finish'], item['link_detail'],
+                item['fans_info'], item['title']]
+        self.ws.append(line)
+        self.wb.save('b站番剧.xlsx')
+        return item

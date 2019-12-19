@@ -21,6 +21,12 @@ from selenium.webdriver.support.wait import WebDriverWait
 from sh import TimeoutException
 from selenium.webdriver import FirefoxOptions
 
+"""
+1.爬虫代理中间件
+2,user-agent中间件
+
+"""
+
 
 class ScrapyDemoSpiderMiddleware(object):
     # Not all methods need to be defined. If a method is not defined,
@@ -179,6 +185,7 @@ class RandomHttpProxyMiddleware(HttpProxyMiddleware):
     """
     代理中间件，为每一次请求提供随机代理
     """
+    proxy_list = ["http://128.1.41.120:18283", ]
 
     def __init__(self, auth_encoding='latin-1', proxy_list_file=None):
         if not proxy_list_file:
@@ -204,3 +211,15 @@ class RandomHttpProxyMiddleware(HttpProxyMiddleware):
         if creds:
             request.headers['Proxy-Authorization'] = b'Basic ' + creds
 
+    def process_request(self, request, spider):
+        ip = random.choice(self.proxy_list)
+        request.meta['proxy'] = ip
+
+
+class RandomUAMiddleware(HttpProxyMiddleware):
+    ua_list = [
+
+    ]
+
+    def process_request(self, request, spider):
+        ua = random.choice(self.ua_list)

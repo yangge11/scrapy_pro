@@ -5,22 +5,31 @@ from scrapy import Request, FormRequest
 
 from scrapy_auto.items import LanzouItem
 
+"""
+spiders目录:
+用来写所有的爬虫spider
+"""
+
 
 class LanZhouSpider(scrapy.Spider):
-    name = "lanzhou_spider"
-    custom_settings = {
+    name = "lanzhou_spider"  # 唯一区分每个spider的方式
+    custom_settings = {  # 每一个爬虫的自定义配置，settins.py是全局配置
         'COOKIES_ENABLED': False,
         'REDIRECT_ENABLED': False,
         'CONCURRENT_REQUESTS': 1,
         'DOWNLOAD_DELAY': 1,
-        'DOWNLOADER_MIDDLEWARES': {
+        'DOWNLOADER_MIDDLEWARES': {  # 下载中间件，这里面配置你写好的下载中间件，数值越小，优先级越高
+            # 'scrapy_auto.middlewares.RandomHttpProxyMiddleware': 543,  # 代理中间价
+            # 'scrapy_auto.middlewares.RandomUAMiddleware': 501,  # 代理中间价
         },
-        'ITEM_PIPELINES': {  # 管道，控制你输出数据的方式
+        'SPIDER_MIDDLEWARES': {  # 爬虫中间件，这里面配置你写好的爬虫中间件，数值越小，优先级越高
+        },
+        'ITEM_PIPELINES': {  # 管道，控制你输出数据的方式，数值越小，优先级越高
             # 'scrapy_auto.pipelines.MySQLDemoPipeline': 1,
-            # 'scrapy_auto.pipelines.ExcelPipeline': 10,
+            'scrapy_auto.pipelines.ExcelPipeline': 10,
         },
     }
-    headers = {
+    headers = {  # 请求头
         'accept': 'application/json, text/javascript, */*',
         'Accept-Encoding': 'gzip, deflate, br',
         'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.70 Safari/537.36',
@@ -30,7 +39,7 @@ class LanZhouSpider(scrapy.Spider):
         "sec-fetch-site": "same-origin",
         "x-requested-with": "XMLHttpRequest",
     }
-    data = {
+    data = {  # 请求的post数据
         'lx': 2,
         'fid': 978840,
         'uid': 243078,
@@ -41,12 +50,17 @@ class LanZhouSpider(scrapy.Spider):
         'up': 1,
     }
 
-    def start_requests(self):
+    # start_urls = ['www.baidu.com', ]  # 爬虫会先从这些url进行采集
+
+    def start_requests(self):  # 当看到这个函数的时候，就走这个函数，原先start_urls的url不再请求，爬虫第一次启动就进入的函数
         url = 'https://www.lanzous.com/b{item_id}'
         for item_id in range(12583, 12683):
-            yield Request(url=url.format(item_id=item_id), headers=self.headers, meta={'fid': item_id})
+            yield Request(url=url.format(item_id=item_id), headers=self.headers,
+                          meta={'fid': item_id})  # meta是用来做数据间的传递的，Request是get请求构建的方式
 
-    def parse(self, response):
+    def parse(self, response): # 默认处理start_requests的请求，或者来自start_urls构建的请求
+        # 一系列拼接和破解方式
+        # 解析流程图：从start_requests==》parse，走了1，2，3，4，5，6，7这7个步骤
         self.data['fid'] = response.meta['fid']
         begin1_t = response.text.find("'t':") + len("'t':")
         end1_t = response.text.find(",", begin1_t)
@@ -66,6 +80,8 @@ class LanZhouSpider(scrapy.Spider):
         end_uid = response.text.find("'", begin_uid)
         self.data['uid'] = response.text[begin_uid:end_uid]
         print(self.data['t'], self.data['k'], self.data['uid'])
+
+        # 下一个请求，FormRequest是post请求的构建方式，针对post请求，要加上dont_filter=True，callback这个请求交给哪个函数来处理
         url = 'https://www.lanzous.com/filemoreajax.php'
         yield FormRequest(url, method='POST', headers=self.headers,
                           body='lx=2&fid={fid}&uid={uid}&pg=1&rep=0&t={t}&k={k}&up=1'.format(fid=self.data['fid'],
@@ -85,6 +101,6 @@ class LanZhouSpider(scrapy.Spider):
                 content += name['name_all']
             item['url'] = url
             item['name'] = content
-            yield item
+            yield item # 一碰到yield item的时候，我们就开始走管道，存储数据
         except:
             print('error')

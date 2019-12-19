@@ -74,3 +74,14 @@ class MediaItem(scrapy.Item):
 class LanzouItem(scrapy.Item):
     url = scrapy.Field()
     name = scrapy.Field()
+
+
+class BiliItem(scrapy.Item):
+    is_vip = scrapy.Field()  # 1,0
+    thumb = scrapy.Field()  # 封面图
+    episode = scrapy.Field()  # 当前集数
+    is_finish = scrapy.Field()  # 是否完结
+    link_detail = scrapy.Field()  # 详情链接
+    fans_info = scrapy.Field()  # 粉丝大体量级
+    title = scrapy.Field()  # 番剧标题
+    pass
