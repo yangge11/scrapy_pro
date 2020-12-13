@@ -68,7 +68,7 @@ soupsieve==1.9
 sqlparse==0.3.0
 tushare==1.2.35
 Twisted==18.9.0
-urllib3==1.24.1
+urllib3==1.24.2
 w3lib==1.20.0
 Werkzeug==0.15.2
 zope.interface==4.6.0
