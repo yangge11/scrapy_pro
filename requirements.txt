@@ -26,7 +26,7 @@ itsdangerous==1.1.0
 javascripthon==0.10
 jdcal==1.4.1
 jieba==0.39
-Jinja2==2.10
+Jinja2==2.11.3
 jupyter-echarts-pypkg==0.1.2
 kiwisolver==1.0.1
 lml==0.0.2
