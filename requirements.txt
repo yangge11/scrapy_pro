@@ -34,7 +34,7 @@ lxml==4.3.3
 macropy3==1.1.0b2
 MarkupSafe==1.1.1
 matplotlib==3.0.3
-numpy==1.16.2
+numpy==1.22.0
 openpyxl==3.0.2
 pandas==0.24.2
 parsel==1.5.1
